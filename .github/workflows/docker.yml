@@ -32,7 +32,11 @@ jobs:
 
       - name: Start container
         run: |
-          docker run -d             --name pvz-game-smoke             -p 18080:8080             pvz-game:ci
+          docker run -d \
+            --name pvz-game-smoke \
+            -p 18080:8080 \
+            -e PVZ_BACKEND_URL=http://127.0.0.1:13000 \
+            pvz-game:ci
 
       - name: Wait for container health
         run: |
@@ -56,10 +60,11 @@ jobs:
           echo "Container did not become healthy in time"
           exit 1
 
-      - name: Smoke test HTTP routes
+      - name: Smoke test HTTP routes and runtime config
         run: |
           curl --fail --silent --show-error http://127.0.0.1:18080/healthz
           curl --fail --silent --show-error --output /dev/null http://127.0.0.1:18080/game/
+          curl --fail --silent --show-error http://127.0.0.1:18080/runtime-config.js | grep -F 'http://127.0.0.1:13000'
 
       - name: Container logs
         if: failure()
@@ -68,3 +73,111 @@ jobs:
       - name: Cleanup
         if: always()
         run: docker rm -f pvz-game-smoke >/dev/null 2>&1 || true
+
+  frontend-backend-integration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout game
+        uses: actions/checkout@v4
+
+      - name: Checkout backend
+        uses: actions/checkout@v4
+        with:
+          repository: 0b-ivan/pvz-backend
+          ref: feature/docker-runtime
+          path: _integration/pvz-backend
+
+      - name: Build game image
+        run: docker build --build-arg BUILD_SHA="${GITHUB_SHA}" -t pvz-game:integration .
+
+      - name: Build backend image
+        run: docker build -t pvz-backend:integration _integration/pvz-backend
+
+      - name: Start backend
+        run: |
+          docker volume create pvz-integration-data
+          docker run -d \
+            --name pvz-backend-integration \
+            -p 13000:3000 \
+            -v pvz-integration-data:/data \
+            -e GAME_URL=http://127.0.0.1:18080 \
+            -e BACKEND_URL=http://127.0.0.1:13000 \
+            -e ALLOWED_ORIGINS=http://127.0.0.1:18080 \
+            pvz-backend:integration
+
+      - name: Start frontend
+        run: |
+          docker run -d \
+            --name pvz-game-integration \
+            -p 18080:8080 \
+            -e PVZ_BACKEND_URL=http://127.0.0.1:13000 \
+            pvz-game:integration
+
+      - name: Wait for both containers
+        run: |
+          for container in pvz-backend-integration pvz-game-integration; do
+            for attempt in $(seq 1 30); do
+              status="$(docker inspect --format='{{.State.Health.Status}}' "$container")"
+              echo "$container health status: $status"
+
+              if [ "$status" = "healthy" ]; then
+                break
+              fi
+
+              if [ "$status" = "unhealthy" ]; then
+                docker logs "$container"
+                exit 1
+              fi
+
+              sleep 1
+            done
+
+            test "$(docker inspect --format='{{.State.Health.Status}}' "$container")" = "healthy"
+          done
+
+      - name: Verify frontend points to this backend
+        run: |
+          runtime_config="$(curl --fail --silent --show-error http://127.0.0.1:18080/runtime-config.js)"
+          echo "$runtime_config"
+          printf '%s' "$runtime_config" | grep -F 'backendUrl: "http://127.0.0.1:13000"'
+
+      - name: Verify browser-facing API contract
+        run: |
+          curl --fail --silent --show-error http://127.0.0.1:13000/api/health
+
+          curl --fail --silent --show-error \
+            -D /tmp/levels.headers \
+            -o /tmp/levels.body \
+            -H 'Origin: http://127.0.0.1:18080' \
+            -H 'Accept: application/msgpack' \
+            'http://127.0.0.1:13000/api/levels?page=1&limit=1&sort=recent'
+
+          grep -i '^access-control-allow-origin: http://127.0.0.1:18080' /tmp/levels.headers
+          test -s /tmp/levels.body
+
+      - name: Verify CORS preflight
+        run: |
+          curl --fail --silent --show-error \
+            -D /tmp/preflight.headers \
+            -o /dev/null \
+            -X OPTIONS \
+            -H 'Origin: http://127.0.0.1:18080' \
+            -H 'Access-Control-Request-Method: GET' \
+            -H 'Access-Control-Request-Headers: Accept' \
+            http://127.0.0.1:13000/api/levels
+
+          grep -i '^access-control-allow-origin: http://127.0.0.1:18080' /tmp/preflight.headers
+
+      - name: Integration logs
+        if: failure()
+        run: |
+          echo '--- frontend ---'
+          docker logs pvz-game-integration || true
+          echo '--- backend ---'
+          docker logs pvz-backend-integration || true
+
+      - name: Cleanup integration
+        if: always()
+        run: |
+          docker rm -f pvz-game-integration pvz-backend-integration >/dev/null 2>&1 || true
+          docker volume rm pvz-integration-data >/dev/null 2>&1 || true
