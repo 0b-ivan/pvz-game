@@ -10,6 +10,7 @@ var $User = (function () {
 	const isIE = !!(window.attachEvent && !window.opera);
 	const isIE6 = isIE && !window.XMLHttpRequest;
 	const isHTTP = location.protocol.toLowerCase() === "http:" ? 1 : 0;
+	const backendUrl = String(window.PVZ_CONFIG?.backendUrl || window.location.origin).replace(/\/+$/, "");
 
 	// Global Random Helper
 	$Random = isHTTP ? "#" : "?";
@@ -49,7 +50,7 @@ var $User = (function () {
 			Gecko: userAgent.includes("Gecko") && !userAgent.includes("KHTML"),
 		},
 		Server: {
-			URL: "https://backend.pvzm.net",
+			URL: backendUrl,
 		},
 		HTML5: (function () {
 			return !!document.createElement("canvas").getContext;
