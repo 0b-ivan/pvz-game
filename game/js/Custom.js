@@ -445,4 +445,28 @@ $User.Visitor.SaveLvlCallBack = function (o) {
 	if (!levels[o.Lvl]) {
 		levels[o.Lvl] = o;
 	}
+
+	// Persist the updated object. The previous implementation only mutated the
+	// in-memory object, so a completed level could be lost on page reload.
+	StorageUtil.setItem("levels", JSON.stringify(levels));
 };
+
+
+// Load project-specific platform integration without coupling it to the
+// upstream game HTML. This keeps the fork easy to rebase against upstream.
+(() => {
+	if (!document.querySelector('link[data-pvz-platform="mobile"]')) {
+		const stylesheet = document.createElement("link");
+		stylesheet.rel = "stylesheet";
+		stylesheet.href = "mobile.css";
+		stylesheet.dataset.pvzPlatform = "mobile";
+		document.head.appendChild(stylesheet);
+	}
+
+	if (!document.querySelector('script[data-pvz-platform="mobile"]')) {
+		const script = document.createElement("script");
+		script.src = "js/Mobile.js";
+		script.dataset.pvzPlatform = "mobile";
+		document.head.appendChild(script);
+	}
+})();
