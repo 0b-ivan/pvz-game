@@ -1,0 +1,60 @@
+/*
+ * Mobile/PWA foundation for the legacy 900x600 game surface.
+ * Scaling itself is applied through document.body.style.zoom in Mobile.js
+ * because the engine already compensates pointer coordinates for body zoom.
+ */
+
+html,
+body {
+	overscroll-behavior: none;
+	-webkit-text-size-adjust: 100%;
+}
+
+body.pvz-touch {
+	overflow: hidden;
+	touch-action: none;
+}
+
+body.pvz-touch #dAll {
+	touch-action: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#pvz-orientation-hint {
+	position: fixed;
+	inset: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+	background: rgba(0, 0, 0, 0.9);
+	color: #fff;
+	text-align: center;
+	z-index: 1000000;
+}
+
+#pvz-orientation-hint > div {
+	max-width: 420px;
+	font-family: Arial, sans-serif !important;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+#pvz-orientation-hint strong {
+	display: block;
+	margin-bottom: 8px;
+	font-family: Arial, sans-serif !important;
+	font-size: 24px;
+}
+
+body.pvz-touch.pvz-portrait #pvz-orientation-hint {
+	display: flex;
+}
+
+@media (display-mode: standalone) {
+	body {
+		-webkit-touch-callout: none;
+	}
+}
