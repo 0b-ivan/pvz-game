@@ -24,5 +24,5 @@ COPY --from=build /out/ /usr/share/nginx/html/
 
 EXPOSE 8080
 
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=5s --timeout=3s --start-period=2s --retries=3 \
 	CMD wget -qO- http://127.0.0.1:8080/healthz >/dev/null || exit 1
