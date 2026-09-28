@@ -1,4 +1,4 @@
-name: Docker build
+name: Docker
 
 on:
   pull_request:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  build-and-smoke-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,6 +25,46 @@ jobs:
         with:
           context: .
           push: false
+          load: true
           tags: pvz-game:ci
           build-args: |
             BUILD_SHA=${{ github.sha }}
+
+      - name: Start container
+        run: |
+          docker run -d             --name pvz-game-smoke             -p 18080:8080             pvz-game:ci
+
+      - name: Wait for container health
+        run: |
+          for attempt in $(seq 1 30); do
+            status="$(docker inspect --format='{{.State.Health.Status}}' pvz-game-smoke)"
+            echo "health status: $status"
+
+            if [ "$status" = "healthy" ]; then
+              exit 0
+            fi
+
+            if [ "$status" = "unhealthy" ]; then
+              docker logs pvz-game-smoke
+              exit 1
+            fi
+
+            sleep 1
+          done
+
+          docker logs pvz-game-smoke
+          echo "Container did not become healthy in time"
+          exit 1
+
+      - name: Smoke test HTTP routes
+        run: |
+          curl --fail --silent --show-error http://127.0.0.1:18080/healthz
+          curl --fail --silent --show-error --output /dev/null http://127.0.0.1:18080/game/
+
+      - name: Container logs
+        if: failure()
+        run: docker logs pvz-game-smoke || true
+
+      - name: Cleanup
+        if: always()
+        run: docker rm -f pvz-game-smoke >/dev/null 2>&1 || true
