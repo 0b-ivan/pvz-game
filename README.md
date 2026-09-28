@@ -28,3 +28,21 @@ Plants vs. Zombies MODDED is an unofficial modification and is not affiliated wi
 Uses of the PopCap Games or Electronic Arts (EA) names are for identification purposes only and do not imply an endorsement by PopCap Games or EA.
 
 </details>
+
+## Docker
+
+Build the production image:
+
+```bash
+docker build --build-arg BUILD_SHA="$(git rev-parse HEAD)" -t pvz-game:local .
+```
+
+Run it on port 8080:
+
+```bash
+docker run --rm -p 8080:8080 pvz-game:local
+```
+
+The container serves the static game with unprivileged Nginx and exposes `/healthz` for container and Kubernetes probes.
+
+The runtime image contains only the built static site. It does not need a writable filesystem or persistent volume.
