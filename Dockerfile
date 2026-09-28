@@ -19,6 +19,9 @@ RUN npm run build \
 
 FROM nginxinc/nginx-unprivileged:1.27-alpine AS runtime
 
+ENV PVZ_BACKEND_URL=http://localhost:3000
+
+COPY --chmod=755 docker/40-pvz-runtime-config.sh /docker-entrypoint.d/40-pvz-runtime-config.sh
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /out/ /usr/share/nginx/html/
 
