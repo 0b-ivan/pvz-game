@@ -3054,7 +3054,8 @@ var CheckLogin = function () {
 
 var SelectModal = function (level) {
 	try {
-		if (window.abxz) {
+		const isPrivateDeployment = ["staging-pvz.obivan.org", "pvz.obivan.org"].includes(window.location.hostname);
+		if (window.abxz && !isPrivateDeployment) {
 			if (!window.abxz.includes(level)) {
 				const gotofull = confirm(
 					atob(
