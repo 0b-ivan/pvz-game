@@ -3324,8 +3324,16 @@ var CSpeed = function (nowStep, timeStep, displayLabel) {
 	document.getAnimations().forEach((anim) => (anim.playbackRate = nowStep));
 };
 
+var SetStagingMenuMarkerVisible = function (visible) {
+	const marker = $("stagingMenuSign");
+	if (marker) {
+		marker.style.display = visible ? "flex" : "none";
+	}
+};
+
 var ShowLevel = function () {
 	PlaySound2("gravebutton");
+	SetStagingMenuMarkerVisible(false);
 	SetNone($("dOptionsMenu"));
 	SetBlock($("dAdvSmallContainer"));
 };
@@ -3336,11 +3344,14 @@ var HiddenLevel = function () {
 	if (oS.Lvl) {
 		SetNone($("dSurface"));
 		ResetGame($("dMenu0"));
+	} else {
+		SetStagingMenuMarkerVisible(true);
 	}
 };
 
 var ShowMiniGame = function () {
 	PlaySound2("gravebutton");
+	SetStagingMenuMarkerVisible(false);
 	SetBlock($("dMiniSmallContainer"));
 };
 
@@ -3349,10 +3360,14 @@ var HiddenMiniGame = function (isSilent) {
 		PlaySound2("tap");
 	}
 	SetNone($("dMiniSmallContainer"));
+	if (!oS.Lvl) {
+		SetStagingMenuMarkerVisible(true);
+	}
 };
 
 var ShowRiddleGame = function () {
 	PlaySound2("gravebutton");
+	SetStagingMenuMarkerVisible(false);
 	SetBlock($("dRiddleSmallContainer"));
 };
 
@@ -3361,6 +3376,9 @@ var HiddenRiddleGame = function (isSilent) {
 		PlaySound2("tap");
 	}
 	SetNone($("dRiddleSmallContainer"));
+	if (!oS.Lvl) {
+		SetStagingMenuMarkerVisible(true);
+	}
 };
 
 var ShowOptions = function () {
