@@ -6,6 +6,10 @@ npm install -g oxlint oxfmt esbuild html-minifier-terser
 # stamp
 echo "$CF_PAGES_COMMIT_SHA" > game/images/Zombies/CX/v.html
 
+# Scope the service-worker cache to this immutable build so clients cannot
+# keep stale game HTML/JS across deployments.
+sed -i "s|^const CACHE_VERSION = .*;|const CACHE_VERSION = \"pvz-foundation-${CF_PAGES_COMMIT_SHA}\";|" service-worker.js
+
 # lint & format
 oxlint . || true
 oxfmt --write . "**/*.{js,md,html,css,yml}"
