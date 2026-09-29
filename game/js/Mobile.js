@@ -3,8 +3,7 @@
 	const GAME_HEIGHT = 600;
 	const MIN_SCALE = 0.35;
 
-	const isTouchCapable = () =>
-		navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches;
+	const isTouchCapable = () => navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches;
 
 	const updateViewport = () => {
 		if (!isTouchCapable()) {

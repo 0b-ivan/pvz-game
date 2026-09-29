@@ -26,7 +26,7 @@ waitForElm("#commit").then((elm) => {
 		.then((text) => (elm.innerText = text));
 });
 
-const saveWhitelist = [
+const saveWhitelist = new Set([
 	1,
 	2,
 	3,
@@ -127,7 +127,7 @@ const saveWhitelist = [
 	"48",
 	"49",
 	"50",
-];
+]);
 
 console.log("Setting up intervals to monitor changes...");
 
@@ -145,14 +145,14 @@ let checkInterval = setInterval(() => {
 					console.log(`Change detected: ${previousValue} to ${oS.Lvl}`);
 					console.log("Invalid oS.Lvl format detected, reverting...");
 					oS.Lvl = previousValue;
-				} else if (saveWhitelist.includes(oS.Lvl)) {
+				} else if (saveWhitelist.has(oS.Lvl)) {
 					console.log(`Change detected: ${previousValue} to ${oS.Lvl}`);
 					previousValue = oS.Lvl;
 					console.log(`New previousValue set to: ${previousValue}`);
 					if ($ && $("dAdventure")) {
 						let hLvl = oS.Lvl;
 						console.log(`Setting onclick with level: ${hLvl}`);
-						if (saveWhitelist.includes(hLvl)) {
+						if (saveWhitelist.has(hLvl)) {
 							$("dAdventure").onclick = function () {
 								console.log(`Starting adventure with level: ${hLvl}`);
 								StartAdventure(hLvl);
@@ -169,7 +169,7 @@ let checkInterval = setInterval(() => {
 							};
 						}
 					}
-					if (saveWhitelist.includes(oS.Lvl)) {
+					if (saveWhitelist.has(oS.Lvl)) {
 						console.log(`Saving level ${oS.Lvl} to localStorage.`);
 						StorageUtil.setItem("level", oS.Lvl);
 					} else {
@@ -189,7 +189,7 @@ function startInterval2() {
 		/*console.log(
             "Checking if dAdventure is defined and saved level exists & is not blacklisted..."
         );*/
-		if ($("dAdventure") && StorageUtil.getItem("level") && saveWhitelist.includes(StorageUtil.getItem("level"))) {
+		if ($("dAdventure") && StorageUtil.getItem("level") && saveWhitelist.has(StorageUtil.getItem("level"))) {
 			console.log("dAdventure is defined and level is valid, setting onclick...");
 			$("dAdventure").onclick = function () {
 				console.log(`Starting adventure with level from localStorage: ${StorageUtil.getItem("level")}`);
@@ -432,7 +432,7 @@ $User.Visitor.SaveLvlCallBack = function (o) {
 		  - T: time taken to complete the level (divide by 100 to get seconds)
 	*/
 	// check if o.Lvl is valid and is in the whitelist
-	if (!o.Lvl || !saveWhitelist.includes(o.Lvl)) {
+	if (!o.Lvl || !saveWhitelist.has(o.Lvl)) {
 		return;
 	}
 	// save logic
@@ -450,7 +450,6 @@ $User.Visitor.SaveLvlCallBack = function (o) {
 	// in-memory object, so a completed level could be lost on page reload.
 	StorageUtil.setItem("levels", JSON.stringify(levels));
 };
-
 
 // Load project-specific platform integration without coupling it to the
 // upstream game HTML. This keeps the fork easy to rebase against upstream.

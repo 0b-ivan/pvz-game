@@ -31,9 +31,7 @@ self.addEventListener("activate", (event) => {
 			.keys()
 			.then((keys) =>
 				Promise.all(
-					keys
-						.filter((key) => key.startsWith("pvz-foundation-") && key !== SHELL_CACHE && key !== RUNTIME_CACHE)
-						.map((key) => caches.delete(key))
+					keys.filter((key) => key.startsWith("pvz-foundation-") && key !== SHELL_CACHE && key !== RUNTIME_CACHE).map((key) => caches.delete(key))
 				)
 			)
 			.then(() => self.clients.claim())
