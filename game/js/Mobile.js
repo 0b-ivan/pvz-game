@@ -10,16 +10,14 @@
 		window.matchMedia("(display-mode: fullscreen)").matches ||
 		window.navigator.standalone === true;
 
-	const isIOS = () =>
-		/iPad|iPhone|iPod/.test(navigator.userAgent) ||
-		(navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+	const isIPhone = () => /iPhone|iPod/.test(navigator.userAgent);
 
 	const getFullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
 
 	const requestNativeFullscreen = async () => {
 		const root = document.documentElement;
 		if (root.requestFullscreen) {
-			await root.requestFullscreen({ navigationUI: "hide" });
+			await root.requestFullscreen();
 			return true;
 		}
 		if (root.webkitRequestFullscreen) {
@@ -179,7 +177,7 @@
 
 			// iPhone Safari does not expose reliable page fullscreen. The
 			// installed web app is the stable fullscreen-like experience.
-			if (isIOS()) {
+			if (isIPhone()) {
 				showHelp();
 				return;
 			}
@@ -189,7 +187,7 @@
 				if (!requested) {
 					showHelp();
 				}
-			} catch (_) {
+			} catch {
 				showHelp();
 			}
 		});
@@ -204,8 +202,13 @@
 		surfaceFrame.appendChild(help);
 		help.querySelector("#pvz-fullscreen-help-close")?.addEventListener("click", closeHelp);
 
-		document.addEventListener("fullscreenchange", syncButton);
-		document.addEventListener("webkitfullscreenchange", syncButton);
+		const syncFullscreenState = () => {
+			syncButton();
+			updateViewport();
+		};
+
+		document.addEventListener("fullscreenchange", syncFullscreenState);
+		document.addEventListener("webkitfullscreenchange", syncFullscreenState);
 		window.matchMedia("(display-mode: standalone)").addEventListener?.("change", syncButton);
 		window.matchMedia("(display-mode: fullscreen)").addEventListener?.("change", syncButton);
 		syncButton();
