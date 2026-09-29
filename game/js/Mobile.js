@@ -152,6 +152,16 @@
 		};
 
 		const showHelp = () => {
+			const title = help.querySelector("#pvz-fullscreen-help-title");
+			const paragraph = help.querySelector("p");
+			if (!isIPhone()) {
+				if (title) {
+					title.textContent = "Fullscreen unavailable";
+				}
+				if (paragraph) {
+					paragraph.textContent = "This browser cannot enter fullscreen here. Install PVZ as a web app for the cleanest app-like view.";
+				}
+			}
 			help.style.display = "flex";
 		};
 
@@ -175,21 +185,19 @@
 				return;
 			}
 
-			// iPhone Safari does not expose reliable page fullscreen. The
-			// installed web app is the stable fullscreen-like experience.
-			if (isIPhone()) {
-				showHelp();
-				return;
-			}
-
 			try {
 				const requested = await requestNativeFullscreen();
-				if (!requested) {
-					showHelp();
+				if (requested) {
+					return;
 				}
 			} catch {
-				showHelp();
+				// Fall through to the install/help experience below.
 			}
+
+			// iPhone Safari currently has no reliable page-level Fullscreen API.
+			// Prefer capability detection above so this automatically improves
+			// if WebKit adds support later.
+			showHelp();
 		});
 
 		help.addEventListener("click", (event) => {
