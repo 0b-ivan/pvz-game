@@ -30,11 +30,17 @@ jobs:
           build-args: |
             BUILD_SHA=${{ github.sha }}
 
+      - name: Prepare test auth
+        run: |
+          mkdir -p /tmp/pvz-auth
+          printf 'ci:%s\n' "$(openssl passwd -apr1 ci-password)" > /tmp/pvz-auth/.htpasswd
+
       - name: Start container
         run: |
           docker run -d \
             --name pvz-game-smoke \
             -p 18080:8080 \
+            -v /tmp/pvz-auth:/etc/nginx/auth:ro \
             -e PVZ_BACKEND_URL=http://127.0.0.1:13000 \
             pvz-game:ci
 
@@ -63,8 +69,17 @@ jobs:
       - name: Smoke test HTTP routes and runtime config
         run: |
           curl --fail --silent --show-error http://127.0.0.1:18080/healthz
-          curl --fail --silent --show-error --output /dev/null http://127.0.0.1:18080/game/
-          curl --fail --silent --show-error http://127.0.0.1:18080/runtime-config.js | grep -F 'http://127.0.0.1:13000'
+
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:18080/game/)" = "401"
+
+          curl --fail --silent --show-error \
+            --user ci:ci-password \
+            --output /dev/null \
+            http://127.0.0.1:18080/game/
+
+          curl --fail --silent --show-error \
+            --user ci:ci-password \
+            http://127.0.0.1:18080/runtime-config.js | grep -F 'http://127.0.0.1:13000'
 
       - name: Container logs
         if: failure()
@@ -107,12 +122,18 @@ jobs:
             -e ALLOWED_ORIGINS=http://127.0.0.1:18080 \
             pvz-backend:integration
 
+      - name: Prepare integration auth
+        run: |
+          mkdir -p /tmp/pvz-integration-auth
+          printf 'ci:%s\n' "$(openssl passwd -apr1 ci-password)" > /tmp/pvz-integration-auth/.htpasswd
+
       - name: Start frontend
         run: |
           docker run -d \
             --name pvz-game-integration \
             --network pvz-integration \
             -p 18080:8080 \
+            -v /tmp/pvz-integration-auth:/etc/nginx/auth:ro \
             -e PVZ_BACKEND_URL=http://127.0.0.1:13000 \
             -e PVZ_BACKEND_INTERNAL_URL=http://pvz-backend-integration:3000 \
             pvz-game:integration
@@ -141,13 +162,14 @@ jobs:
 
       - name: Verify frontend points to this backend
         run: |
-          runtime_config="$(curl --fail --silent --show-error http://127.0.0.1:18080/runtime-config.js)"
+          runtime_config="$(curl --fail --silent --show-error --user ci:ci-password http://127.0.0.1:18080/runtime-config.js)"
           echo "$runtime_config"
           printf '%s' "$runtime_config" | grep -F 'backendUrl: "http://127.0.0.1:13000"'
 
       - name: Verify browser-facing API contract
         run: |
-          curl --fail --silent --show-error http://127.0.0.1:18080/api/health
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:18080/api/health)" = "401"
+          curl --fail --silent --show-error --user ci:ci-password http://127.0.0.1:18080/api/health
           curl --fail --silent --show-error http://127.0.0.1:13000/api/health
 
           curl --fail --silent --show-error \
@@ -187,3 +209,4 @@ jobs:
           docker rm -f pvz-game-integration pvz-backend-integration >/dev/null 2>&1 || true
           docker volume rm pvz-integration-data >/dev/null 2>&1 || true
           docker network rm pvz-integration >/dev/null 2>&1 || true
+          rm -rf /tmp/pvz-integration-auth
