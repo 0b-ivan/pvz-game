@@ -6,8 +6,8 @@
 	"background_color": "#000000",
 	"display": "standalone",
 	"orientation": "landscape",
-	"scope": "/game",
-	"start_url": "/game",
+	"scope": "/game/",
+	"start_url": "/game/",
 	"description": "Play Plants vs Zombies Modded here for Free - A tower defense game created by PopCap Games and released on May 5, 2009. Click to Play now! Mod by ROBLNET13 on Github.",
 	"icons": [
 		{
