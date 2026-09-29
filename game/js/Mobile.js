@@ -5,6 +5,28 @@
 
 	const isTouchCapable = () => navigator.maxTouchPoints > 0 || window.matchMedia("(pointer: coarse)").matches;
 
+	const isStandalone = () =>
+		window.matchMedia("(display-mode: standalone)").matches ||
+		window.matchMedia("(display-mode: fullscreen)").matches ||
+		window.navigator.standalone === true;
+
+	const isIPhone = () => /iPhone|iPod/.test(navigator.userAgent);
+
+	const getFullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
+
+	const requestNativeFullscreen = async () => {
+		const root = document.documentElement;
+		if (root.requestFullscreen) {
+			await root.requestFullscreen();
+			return true;
+		}
+		if (root.webkitRequestFullscreen) {
+			root.webkitRequestFullscreen();
+			return true;
+		}
+		return false;
+	};
+
 	const getViewportSize = () => {
 		const viewport = window.visualViewport;
 		return {
@@ -99,6 +121,107 @@
 		stopPropagation: () => event.stopPropagation(),
 	});
 
+	const createFullscreenExperience = () => {
+		const surface = document.getElementById("iSurfaceBackground");
+		const surfaceFrame = document.getElementById("dSurface");
+		if (!surface || !surfaceFrame || document.getElementById("pvz-fullscreen-button")) {
+			return;
+		}
+
+		const button = document.createElement("button");
+		button.id = "pvz-fullscreen-button";
+		button.type = "button";
+		button.setAttribute("aria-label", "Fullscreen");
+		button.setAttribute("title", "Fullscreen");
+		button.textContent = "⛶";
+
+		const help = document.createElement("div");
+		help.id = "pvz-fullscreen-help";
+		help.setAttribute("role", "dialog");
+		help.setAttribute("aria-modal", "true");
+		help.setAttribute("aria-labelledby", "pvz-fullscreen-help-title");
+		help.innerHTML =
+			'<div class="pvz-fullscreen-card">' +
+			'<strong id="pvz-fullscreen-help-title">Fullscreen on iPhone</strong>' +
+			'<p>Tap <b>Share</b>, choose <b>Add to Home Screen</b>, then open PVZ from the Home Screen.</p>' +
+			'<button type="button" id="pvz-fullscreen-help-close">Close</button>' +
+			'</div>';
+
+		const closeHelp = () => {
+			help.style.display = "none";
+		};
+
+		const showHelp = () => {
+			const title = help.querySelector("#pvz-fullscreen-help-title");
+			const paragraph = help.querySelector("p");
+			if (!isIPhone()) {
+				if (title) {
+					title.textContent = "Fullscreen unavailable";
+				}
+				if (paragraph) {
+					paragraph.textContent = "This browser cannot enter fullscreen here. Install PVZ as a web app for the cleanest app-like view.";
+				}
+			}
+			help.style.display = "flex";
+		};
+
+		const syncButton = () => {
+			button.hidden = isStandalone();
+			button.setAttribute("aria-pressed", getFullscreenElement() ? "true" : "false");
+		};
+
+		button.addEventListener("click", async () => {
+			if (isStandalone()) {
+				syncButton();
+				return;
+			}
+
+			if (getFullscreenElement()) {
+				if (document.exitFullscreen) {
+					await document.exitFullscreen();
+				} else if (document.webkitExitFullscreen) {
+					document.webkitExitFullscreen();
+				}
+				return;
+			}
+
+			try {
+				const requested = await requestNativeFullscreen();
+				if (requested) {
+					return;
+				}
+			} catch {
+				// Fall through to the install/help experience below.
+			}
+
+			// iPhone Safari currently has no reliable page-level Fullscreen API.
+			// Prefer capability detection above so this automatically improves
+			// if WebKit adds support later.
+			showHelp();
+		});
+
+		help.addEventListener("click", (event) => {
+			if (event.target === help) {
+				closeHelp();
+			}
+		});
+
+		surface.appendChild(button);
+		surfaceFrame.appendChild(help);
+		help.querySelector("#pvz-fullscreen-help-close")?.addEventListener("click", closeHelp);
+
+		const syncFullscreenState = () => {
+			syncButton();
+			updateViewport();
+		};
+
+		document.addEventListener("fullscreenchange", syncFullscreenState);
+		document.addEventListener("webkitfullscreenchange", syncFullscreenState);
+		window.matchMedia("(display-mode: standalone)").addEventListener?.("change", syncButton);
+		window.matchMedia("(display-mode: fullscreen)").addEventListener?.("change", syncButton);
+		syncButton();
+	};
+
 	const installTouchBridge = () => {
 		const game = document.getElementById("dAll");
 		if (!game || !isTouchCapable()) {
@@ -163,6 +286,7 @@
 	const init = () => {
 		createOrientationHint();
 		updateViewport();
+		createFullscreenExperience();
 		installTouchBridge();
 		registerServiceWorker();
 

@@ -108,5 +108,9 @@
 			"label": "Minigame: Wall-nut Bowling 2",
 			"form_factor": "narrow"
 		}
+	],
+	"display_override": [
+		"fullscreen",
+		"standalone"
 	]
 }
