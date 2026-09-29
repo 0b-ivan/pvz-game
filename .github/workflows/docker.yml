@@ -96,8 +96,10 @@ jobs:
       - name: Start backend
         run: |
           docker volume create pvz-integration-data
+          docker network create pvz-integration
           docker run -d \
             --name pvz-backend-integration \
+            --network pvz-integration \
             -p 13000:3000 \
             -v pvz-integration-data:/data \
             -e GAME_URL=http://127.0.0.1:18080 \
@@ -109,8 +111,10 @@ jobs:
         run: |
           docker run -d \
             --name pvz-game-integration \
+            --network pvz-integration \
             -p 18080:8080 \
             -e PVZ_BACKEND_URL=http://127.0.0.1:13000 \
+            -e PVZ_BACKEND_INTERNAL_URL=http://pvz-backend-integration:3000 \
             pvz-game:integration
 
       - name: Wait for both containers
@@ -143,6 +147,7 @@ jobs:
 
       - name: Verify browser-facing API contract
         run: |
+          curl --fail --silent --show-error http://127.0.0.1:18080/api/health
           curl --fail --silent --show-error http://127.0.0.1:13000/api/health
 
           curl --fail --silent --show-error \
@@ -181,3 +186,4 @@ jobs:
         run: |
           docker rm -f pvz-game-integration pvz-backend-integration >/dev/null 2>&1 || true
           docker volume rm pvz-integration-data >/dev/null 2>&1 || true
+          docker network rm pvz-integration >/dev/null 2>&1 || true
