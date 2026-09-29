@@ -18,35 +18,36 @@ html {
 }
 
 body.pvz-touch {
-	width: 900px;
-	height: 600px;
-	min-height: 600px;
 	overflow: hidden;
 	touch-action: none;
 }
 
 /*
- * On touch devices the body itself is the centered/scaled 900x600 stage.
- * Do not center child game frames against Safari's layout viewport again.
+ * The body is a virtual, unscaled visual viewport. Keep all 900x600 legacy
+ * screens centered inside it, then zoom the whole coordinate system once.
  */
 body.pvz-touch .WindowFrame {
-	left: 0 !important;
-	top: 0 !important;
-	margin-left: 0 !important;
+	left: 50% !important;
+	top: 50% !important;
+	margin-left: -450px !important;
+	margin-top: -300px !important;
 }
 
+/* Keep non-WindowFrame overlays aligned to the same centered 900x600 stage. */
 body.pvz-touch #dProcess {
-	left: 8px !important;
-	top: 10px !important;
+	left: 50% !important;
+	top: 50% !important;
+	margin-left: -439px !important;
+	margin-top: -281px !important;
 }
 
 body.pvz-touch #dFlagMeter,
 body.pvz-touch #dFlagMeter1 {
-	top: 0 !important;
+	top: calc(50% - 300px) !important;
 }
 
 body.pvz-touch #dMenu {
-	top: 3px !important;
+	top: calc(50% - 297px) !important;
 }
 
 body.pvz-touch #dAll {

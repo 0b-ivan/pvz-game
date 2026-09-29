@@ -55,19 +55,25 @@
 		 */
 		const layoutWidth = viewport.width / scale;
 		const layoutHeight = viewport.height / scale;
-		const left = Math.max(0, (layoutWidth - GAME_WIDTH) / 2);
-		const top = Math.max(0, (layoutHeight - GAME_HEIGHT) / 2);
 
-		body.style.width = `${GAME_WIDTH}px`;
-		body.style.height = `${GAME_HEIGHT}px`;
-		body.style.minHeight = `${GAME_HEIGHT}px`;
-		body.style.position = "fixed";
-		body.style.left = `${left}px`;
-		body.style.top = `${top}px`;
+		/*
+		 * Make the body represent the full unscaled visual viewport instead of
+		 * trying to move the body itself. Safari applies CSS zoom to the body
+		 * differently from Chromium, which caused the 900x600 stage to stick
+		 * to the left edge on iPhone.
+		 *
+		 * Child frames are centered inside this virtual viewport via mobile.css.
+		 */
+		body.style.width = `${layoutWidth}px`;
+		body.style.height = `${layoutHeight}px`;
+		body.style.minHeight = `${layoutHeight}px`;
+		body.style.position = "relative";
+		body.style.left = "0";
+		body.style.top = "0";
 		body.style.margin = "0";
 		body.style.padding = "0";
 
-		// Set zoom last so positioning values stay in the native coordinate space.
+		// Set zoom last so pointer compensation keeps using the native game scale.
 		body.style.zoom = String(scale);
 	};
 
