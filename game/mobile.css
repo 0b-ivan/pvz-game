@@ -94,7 +94,6 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 	}
 }
 
-
 /* Fullscreen / PWA entry point. Lives inside the 900x600 selector screen so
  * it scales with the legacy game instead of fighting Safari's browser chrome. */
 #pvz-fullscreen-button {
@@ -109,7 +108,9 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 	border-radius: 50%;
 	background: rgba(20, 20, 20, 0.62);
 	color: #fff;
-	font: 700 25px/38px Arial, sans-serif;
+	font:
+		700 25px/38px Arial,
+		sans-serif;
 	text-align: center;
 	cursor: pointer;
 	-webkit-backdrop-filter: blur(4px);
@@ -132,10 +133,7 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	padding:
-		max(24px, env(safe-area-inset-top))
-		max(24px, env(safe-area-inset-right))
-		max(24px, env(safe-area-inset-bottom))
+	padding: max(24px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) max(24px, env(safe-area-inset-bottom))
 		max(24px, env(safe-area-inset-left));
 	box-sizing: border-box;
 	background: rgba(0, 0, 0, 0.78);
@@ -173,7 +171,9 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 	border-radius: 8px;
 	background: #8d623d;
 	color: #fff;
-	font: 700 16px Arial, sans-serif;
+	font:
+		700 16px Arial,
+		sans-serif;
 }
 
 @media (display-mode: standalone), (display-mode: fullscreen) {

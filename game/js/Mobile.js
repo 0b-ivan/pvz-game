@@ -143,9 +143,9 @@
 		help.innerHTML =
 			'<div class="pvz-fullscreen-card">' +
 			'<strong id="pvz-fullscreen-help-title">Fullscreen on iPhone</strong>' +
-			'<p>Tap <b>Share</b>, choose <b>Add to Home Screen</b>, then open PVZ from the Home Screen.</p>' +
+			"<p>Tap <b>Share</b>, choose <b>Add to Home Screen</b>, then open PVZ from the Home Screen.</p>" +
 			'<button type="button" id="pvz-fullscreen-help-close">Close</button>' +
-			'</div>';
+			"</div>";
 
 		const closeHelp = () => {
 			help.style.display = "none";
