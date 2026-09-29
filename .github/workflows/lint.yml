@@ -7,7 +7,12 @@ permissions:
 
 jobs:
     oxlint:
-        runs-on: blacksmith-2vcpu-ubuntu-2404
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v4
-            - run: npx --yes oxlint@latest --format=github
+
+            - name: Lint maintained browser integration code
+              run: |
+                  npx --yes oxlint@latest --format=github \
+                    game/js/Mobile.js \
+                    service-worker.js
