@@ -1489,24 +1489,60 @@ body.game-paused #cover {
 	font-family: "Courier New", Courier, monospace !important;
 }
 
-/* Neutral deployment marker on the selector screen. */
+/* Neutral selector screen: remove the upstream website/login sign entirely. */
+#dNameDiv0 {
+	display: none !important;
+}
+
+/* Environment marker lives on the small sign under the tree. */
 #stagingMenuSign {
 	position: absolute;
-	left: 42px;
-	top: 126px;
-	width: 262px;
-	height: 54px;
-	z-index: 2;
+	left: 17px;
+	top: 332px;
+	width: 150px;
+	height: 58px;
+	z-index: 3;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	box-sizing: border-box;
-	background: url("images/interface/SelectorScreen_WoodSign2_32.png") center / 100% 100% no-repeat;
-	color: #2f2117;
+	transform: rotate(-2deg);
+	border: 4px solid #4f321e;
+	border-radius: 6px 8px 7px 5px;
+	background:
+		linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12)),
+		linear-gradient(90deg, #88603c 0%, #9d7449 48%, #805737 100%);
+	box-shadow:
+		inset 0 2px 0 rgba(255, 220, 160, 0.18),
+		inset 0 -3px 0 rgba(54, 31, 18, 0.25),
+		2px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #2d1c12;
 	font-family: "houseofterrormedium", Georgia, serif;
-	font-size: 28px;
-	letter-spacing: 2px;
-	text-shadow: 0 1px 0 rgba(255, 224, 159, 0.45);
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	line-height: 1;
+	text-shadow: 0 1px 0 rgba(239, 199, 132, 0.5);
 	pointer-events: none;
 	user-select: none;
+}
+
+#stagingMenuSign::before,
+#stagingMenuSign::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #3a281c;
+	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.18);
+}
+
+#stagingMenuSign::before {
+	left: 10px;
+}
+
+#stagingMenuSign::after {
+	right: 10px;
 }
