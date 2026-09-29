@@ -1489,12 +1489,18 @@ body.game-paused #cover {
 	font-family: "Courier New", Courier, monospace !important;
 }
 
-/* Neutral selector screen: remove the upstream website/login sign entirely. */
+/* Keep the original upper selector sign and its support, but remove the old
+   website/login boards that used to hang below it. */
 #dNameDiv0 {
+	display: block !important;
+}
+
+#dNameDiv1,
+#dNameDiv2 {
 	display: none !important;
 }
 
-/* Environment marker lives on the small sign under the tree. */
+/* Environment marker on the small sign under the tree. */
 #stagingMenuSign {
 	position: absolute;
 	left: 17px;
@@ -1509,7 +1515,11 @@ body.game-paused #cover {
 	transform: rotate(-2deg);
 	border: 4px solid #4f321e;
 	border-radius: 6px 8px 7px 5px;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12)), linear-gradient(90deg, #88603c 0%, #9d7449 48%, #805737 100%);
+	background:
+		radial-gradient(circle at 12px 11px, #3a281c 0 2px, transparent 3px),
+		radial-gradient(circle at calc(100% - 12px) 11px, #3a281c 0 2px, transparent 3px),
+		linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12)),
+		linear-gradient(90deg, #88603c 0%, #9d7449 48%, #805737 100%);
 	box-shadow:
 		inset 0 2px 0 rgba(255, 220, 160, 0.18),
 		inset 0 -3px 0 rgba(54, 31, 18, 0.25),
@@ -1525,17 +1535,23 @@ body.game-paused #cover {
 	user-select: none;
 }
 
-#stagingMenuSign::before,
+/* Wooden post for the staging marker. */
 #stagingMenuSign::after {
 	content: "";
 	position: absolute;
-	top: 8px;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: #3a281c;
-	box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.18);
+	left: 67px;
+	top: 50px;
+	width: 16px;
+	height: 92px;
+	z-index: -1;
+	box-sizing: border-box;
+	border-left: 3px solid #4a2f1d;
+	border-right: 3px solid #4a2f1d;
+	background: linear-gradient(90deg, #6f492c 0%, #94663e 45%, #70482b 100%);
+	box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.22);
+	transform: rotate(1deg);
 }
+
 
 #stagingMenuSign::before {
 	left: 10px;
