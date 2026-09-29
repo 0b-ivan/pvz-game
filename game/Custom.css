@@ -1488,3 +1488,26 @@ body.game-paused #cover {
 #debugMenu * {
 	font-family: "Courier New", Courier, monospace !important;
 }
+
+
+/* Neutral deployment marker on the selector screen. */
+#stagingMenuSign {
+	position: absolute;
+	left: 42px;
+	top: 126px;
+	width: 262px;
+	height: 54px;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	background: url("images/interface/SelectorScreen_WoodSign2_32.png") center / 100% 100% no-repeat;
+	color: #2f2117;
+	font-family: "houseofterrormedium", Georgia, serif;
+	font-size: 28px;
+	letter-spacing: 2px;
+	text-shadow: 0 1px 0 rgba(255, 224, 159, 0.45);
+	pointer-events: none;
+	user-select: none;
+}
