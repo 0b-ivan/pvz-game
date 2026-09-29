@@ -10,9 +10,43 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: linear-gradient(-90deg, #0f0f1f, #091a09);
+}
+
 body.pvz-touch {
+	width: 900px;
+	height: 600px;
+	min-height: 600px;
 	overflow: hidden;
 	touch-action: none;
+}
+
+/*
+ * On touch devices the body itself is the centered/scaled 900x600 stage.
+ * Do not center child game frames against Safari's layout viewport again.
+ */
+body.pvz-touch .WindowFrame {
+	left: 0 !important;
+	top: 0 !important;
+	margin-left: 0 !important;
+}
+
+body.pvz-touch #dProcess {
+	left: 8px !important;
+	top: 10px !important;
+}
+
+body.pvz-touch #dFlagMeter,
+body.pvz-touch #dFlagMeter1 {
+	top: 0 !important;
+}
+
+body.pvz-touch #dMenu {
+	top: 3px !important;
 }
 
 body.pvz-touch #dAll {
