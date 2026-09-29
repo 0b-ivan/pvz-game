@@ -7,7 +7,7 @@ permissions:
 
 jobs:
     oxlint:
-        runs-on: blacksmith-2vcpu-ubuntu-2404
+        runs-on: ubuntu-24.04
         steps:
             - uses: actions/checkout@v4
             - run: npx --yes oxlint@latest --format=github
