@@ -1509,9 +1509,7 @@ body.game-paused #cover {
 	transform: rotate(-2deg);
 	border: 4px solid #4f321e;
 	border-radius: 6px 8px 7px 5px;
-	background:
-		linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12)),
-		linear-gradient(90deg, #88603c 0%, #9d7449 48%, #805737 100%);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.12)), linear-gradient(90deg, #88603c 0%, #9d7449 48%, #805737 100%);
 	box-shadow:
 		inset 0 2px 0 rgba(255, 220, 160, 0.18),
 		inset 0 -3px 0 rgba(54, 31, 18, 0.25),
