@@ -120,6 +120,7 @@ jobs:
             -e GAME_URL=http://127.0.0.1:18080 \
             -e BACKEND_URL=http://127.0.0.1:13000 \
             -e ALLOWED_ORIGINS=http://127.0.0.1:18080 \
+            -e USE_ADMIN_UI=true \
             pvz-backend:integration
 
       - name: Prepare integration auth
