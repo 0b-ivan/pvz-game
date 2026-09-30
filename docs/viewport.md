@@ -31,12 +31,12 @@ Menu, Help and Quit actions are retained. The STAGING marker remains beneath
 the tree; the upper blank sign remains blank. Gameplay instruction text spans
 the available viewport.
 
-The selector includes falling SVG leaves and an SVG zombie head and shoulders
-peeking from behind the gravestone. The eyes close briefly twice per animation
-cycle; no walking sprite or legacy hand is shown. Reduced-motion mode disables
-the peeking and eyelid animations and hides falling leaves. These animations
-do not use the gameplay scheduler. This recreates the
-motion with this game's artwork, rather than importing the native app's menu.
+The selector uses the native QotL widescreen tree, garden and gravestone layers
+plus its original leaf sprites and menu-button artwork. A real in-game basic
+zombie sprite peeks from behind the gravestone; two short CSS eyelid closures
+add the requested blink because the native idle pose itself does not blink.
+Reduced-motion mode disables peeking/blinking and hides falling leaves. These
+animations remain independent of the gameplay scheduler.
 
 `UpdateGameStageOffset` normalizes the board origin to native engine units.
 Chromium includes body CSS zoom in `getBoundingClientRect`; WebKit reports
@@ -70,26 +70,25 @@ playthrough of every special level.
 
 ## Menu artwork
 
-The built-in Imagegen tool produced the new scenery and a transparent menu
-foreground using `game/images/interface/Surface.jpg` as the visual reference.
-The original asset is preserved.
+The generated selector replacements have been removed. The touch/fullscreen
+selector now composes source artwork from
+`nasiftanjim/PvZ-QotL-Widescreen-NT`:
 
-- `game/images/interface/SelectorLandscape-v1.png`: 2048×768 scenery.
-- `game/images/interface/SelectorStone-v1.png`: 1536×1024 RGBA foreground.
+- `SelectorScreen_BG_Left.png`: tree and left foreground.
+- `SelectorScreen_BG_Center.png`: house and central lawn.
+- `SelectorScreen_BG_Right.png`: gravestone and right foreground.
+- Native Adventure, Mini-Games, Puzzle, Almanac, Options, Help and Quit art.
+- `SelectorScreen_Leaf1.png` through `SelectorScreen_Leaf5.png` for motion.
 
-Background prompt: create a wide hand-painted Plants vs Zombies garden
-landscape with the large tree on the left, suburban houses, rolling green
-hills, a winding street, blue sky and clouds, and grass/dirt foreground.
-Keep the middle/right open for separate interactive menu elements. Exclude
-gravestones, labels, pots, signs, text, logos and interface elements.
+The source layers retain their aspect ratios. The tree remains left-anchored;
+the 900px legacy control coordinate system is centered with
+`--pvz-menu-shift`, so rendered labels and existing click/touch targets move
+together. The STAGING marker remains under the tree and the upper sign is kept.
 
-Foreground prompt: extract the gravestone, base and Menu/Help/Quit pots from
-the original menu onto a transparent canvas. Preserve its 3:2 proportions,
-positions and inscriptions so the original click targets can be retained.
-Complete the cropped right contour while preserving text panels and pots.
-
-Both images are scaled uniformly by CSS. The landscape may crop decorative
-edges to cover the screen; interactive menu elements use their own layout.
+The selector zombie uses the repository's real
+`game/images/Zombies/Zombie/0.gif` game sprite instead of a drawn SVG. The
+sprite is placed below the gravestone layer so the stone occludes it naturally.
+Only the eyelid closure is supplemental CSS animation.
 
 ## Scene painting and Safari
 
@@ -116,8 +115,6 @@ them at runtime instead of replacing their original files.
 Native board replacement between levels rebinds the renderer and clears the
 previous transforms. UI menus retain their original proportional layout.
 
-`SelectorZombie.svg` is a vector interpretation of the reference pose; it is
-not an extracted animation from the native game.
 
 ## PvZ-Portable comparison
 

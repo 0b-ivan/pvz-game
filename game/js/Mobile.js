@@ -186,7 +186,7 @@
 				const translation = styles.transform === "none" ? 0 : new DOMMatrix(styles.transform).m41;
 				artwork.style.setProperty("--pvz-panorama-offset", `${(parseFloat(styles.left) || 0) + translation - stage.scrollLeft}px`);
 			}
-			if (isSelector) image = 'url("images/interface/SelectorLandscape-v1.png")';
+			if (isSelector) image = "";
 			image = image === "none" ? "" : image;
 			if (image !== previousImage) {
 				artwork.style.backgroundImage = image;
@@ -271,18 +271,32 @@
 		const world = document.createElement("div");
 		world.id = "pvz-menu-world";
 		world.setAttribute("aria-hidden", "true");
+		const selectorAsset = "images/interface/selector/";
+		const leafFiles = [
+			"SelectorScreen_Leaf1.png",
+			"SelectorScreen_Leaf2.png",
+			"SelectorScreen_Leaf3.png",
+			"SelectorScreen_Leaf4.png",
+			"SelectorScreen_Leaf5.png",
+		];
 		world.innerHTML =
-			'<div class="pvz-menu-zombie"><img src="images/interface/SelectorZombie.svg" alt="" width="180" height="230"></div>' +
-			'<div class="pvz-menu-stone"></div>' +
+			`<img class="pvz-menu-layer pvz-menu-left" src="${selectorAsset}SelectorScreen_BG_Left.png" alt="">` +
+			`<img class="pvz-menu-layer pvz-menu-center" src="${selectorAsset}SelectorScreen_BG_Center.png" alt="">` +
+			'<div class="pvz-menu-zombie">' +
+			'<img class="pvz-menu-zombie-sprite" src="images/Zombies/Zombie/0.gif" alt="" width="166" height="144">' +
+			'<span class="pvz-menu-zombie-lid pvz-menu-zombie-lid-left"></span>' +
+			'<span class="pvz-menu-zombie-lid pvz-menu-zombie-lid-right"></span>' +
+			"</div>" +
+			`<img class="pvz-menu-layer pvz-menu-right" src="${selectorAsset}SelectorScreen_BG_Right.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-adventure-art" src="${selectorAsset}SelectorScreen_Adventure_button.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-minigames-art" src="${selectorAsset}SelectorScreen_Minigames_button.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-puzzle-art" src="${selectorAsset}SelectorScreen_Puzzle_button.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-almanac-art" src="${selectorAsset}SelectorScreen_Almanac.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-options-art" src="${selectorAsset}SelectorScreen_Options.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-help-art" src="${selectorAsset}SelectorScreen_Help.png" alt="">` +
+			`<img class="pvz-menu-button-art pvz-menu-quit-art" src="${selectorAsset}SelectorScreen_Quit.png" alt="">` +
 			'<div class="pvz-menu-leaves">' +
-			Array.from(
-				{ length: 7 },
-				(_, index) =>
-					`<svg class="pvz-menu-leaf" style="--leaf:${index}" viewBox="0 0 40 48">` +
-					'<path d="M20 43C-6 30 3 8 31 3C43 20 40 35 20 43Z" fill="#8cc832" stroke="#41651d" stroke-width="2"/>' +
-					'<path d="M17 47L29 9M22 31L10 21M25 22L35 17" fill="none" stroke="#567e21" stroke-width="2"/>' +
-					"</svg>"
-			).join("") +
+			leafFiles.map((file, index) => `<img class="pvz-menu-leaf" style="--leaf:${index}" src="${selectorAsset}${file}" alt="">`).join("") +
 			"</div>";
 		surface.prepend(world);
 

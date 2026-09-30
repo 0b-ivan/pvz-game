@@ -179,6 +179,8 @@ async function mobileTest(browserType, origin) {
 		const firstTransform = await leaf.evaluate((element) => getComputedStyle(element).transform);
 		await page.waitForFunction((first) => getComputedStyle(document.querySelector(".pvz-menu-leaf")).transform !== first, firstTransform);
 		assert.ok(await page.locator(".pvz-menu-zombie").isVisible(), "animated menu zombie visible");
+		assert.ok(await page.locator(".pvz-menu-right").isVisible(), "native gravestone layer visible");
+		assert.equal(await page.locator(".pvz-menu-button-art").count(), 7, "native selector controls are rendered as separate artwork");
 		await page.waitForFunction(() => document.querySelector(".pvz-menu-zombie img").naturalWidth > 0);
 		await page.waitForFunction(() =>
 			document
@@ -190,7 +192,7 @@ async function mobileTest(browserType, origin) {
 		assert.equal(await page.locator("#pvz-scene-backdrop > div").isVisible(), false, "menu has one sharp background");
 		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-${browserType.name()}.png` });
 		await page.emulateMedia({ reducedMotion: "reduce" });
-		assert.ok((await page.locator(".pvz-menu-zombie img").getAttribute("src")).endsWith("SelectorZombie.svg"), "menu uses peeking zombie artwork");
+		assert.ok((await page.locator(".pvz-menu-zombie img").getAttribute("src")).endsWith("images/Zombies/Zombie/0.gif"), "menu uses the real in-game zombie sprite");
 		assert.equal(await leaf.isVisible(), false, "reduced motion hides falling leaves");
 		assert.equal(await page.locator(".pvz-menu-zombie").evaluate((element) => element.getAnimations().length), 0, "reduced motion stops zombie movement");
 		await page.emulateMedia({ reducedMotion: "no-preference" });
