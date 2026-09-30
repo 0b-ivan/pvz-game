@@ -129,6 +129,10 @@ const saveWhitelist = new Set([
 	"50",
 ]);
 
+if (typeof PVZPlayerProgress !== "undefined") {
+	PVZPlayerProgress.load();
+}
+
 console.log("Setting up intervals to monitor changes...");
 
 let checkInterval = setInterval(() => {
@@ -172,6 +176,9 @@ let checkInterval = setInterval(() => {
 					if (saveWhitelist.has(oS.Lvl)) {
 						console.log(`Saving level ${oS.Lvl} to localStorage.`);
 						StorageUtil.setItem("level", oS.Lvl);
+						if (typeof PVZPlayerProgress !== "undefined") {
+							PVZPlayerProgress.setCurrentAdventureLevel(oS.Lvl);
+						}
 					} else {
 						console.log(`Level ${oS.Lvl} isn't whitelisted, not saving to localStorage.`);
 					}
@@ -449,6 +456,9 @@ $User.Visitor.SaveLvlCallBack = function (o) {
 	// Persist the updated object. The previous implementation only mutated the
 	// in-memory object, so a completed level could be lost on page reload.
 	StorageUtil.setItem("levels", JSON.stringify(levels));
+	if (typeof PVZPlayerProgress !== "undefined") {
+		PVZPlayerProgress.recordAdventureCompletion(o);
+	}
 };
 
 // Load project-specific platform integration without coupling it to the
