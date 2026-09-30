@@ -116,7 +116,6 @@ them at runtime instead of replacing their original files.
 Native board replacement between levels rebinds the renderer and clears the
 previous transforms. UI menus retain their original proportional layout.
 
-
 ## PvZ-Portable comparison
 
 Reference inspected: `wszqkzqk/PvZ-Portable` at commit
