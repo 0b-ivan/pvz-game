@@ -16,7 +16,7 @@
 		active = false,
 		width = 900,
 		height = 600;
-	let x = axis(140, 855, 900, 900),
+	let x = axis(140, 855, 900, 855),
 		y = axis(85, 600, 600, 600);
 	const shifted = new Set(),
 		pending = new Set(),
@@ -77,20 +77,23 @@
 	};
 	const roots = () => [...stage.children, ...document.getElementById("dPZ").children, ...document.getElementById("dZombie").children];
 	const makeTiles = (parent) => {
-		for (let i = 0; i < 6; i++) {
+		for (let i = 0; i < 4; i++) {
 			const tile = document.createElement("div");
 			tile.className = "pvz-art-tile";
 			tile.appendChild(document.createElement("div"));
 			parent.appendChild(tile);
 		}
 	};
+	// The playable source ends at native x=855 (image x=970 after the
+	// camera settles at -115). The sidewalk/street to its right is not a
+	// gameplay strip: the lawn itself reaches the viewport edge.
 	const paintLayer = (layer, image, offset) => {
-		const columns = [0, 140, 855, 900],
+		const columns = [0, 140, 855],
 			rows = [0, 85, 600];
 		let index = 0;
 		const tiles = [...layer.children].filter((child) => child.classList.contains("pvz-art-tile"));
 		for (let r = 0; r < 2; r++)
-			for (let c = 0; c < 3; c++) {
+			for (let c = 0; c < 2; c++) {
 				const tile = tiles[index++],
 					art = tile.firstElementChild;
 				const left = x.map(columns[c]),
@@ -150,8 +153,8 @@
 				Object.assign(cell.style, {
 					left: `${x.map(l)}px`,
 					top: `${y.map(t)}px`,
-					width: `${x.map(r) - x.map(l)}px`,
-					height: `${y.map(b) - y.map(t)}px`,
+					width: `${x.map(r + 1) - x.map(l)}px`,
+					height: `${y.map(b + 1) - y.map(t)}px`,
 				});
 				cells.appendChild(cell);
 			}
@@ -194,7 +197,7 @@
 		active = true;
 		width = parseFloat(document.body.style.getPropertyValue("--pvz-board-width")) || 900;
 		height = parseFloat(document.body.style.getPropertyValue("--pvz-board-height")) || 600;
-		x = axis(140, 855, width, 900);
+		x = axis(140, 855, width, 855);
 		y = axis(85, 600, height, 600);
 		spacer.style.width = `${width + 500}px`;
 		schedule(true);

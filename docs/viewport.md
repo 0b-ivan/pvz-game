@@ -11,8 +11,10 @@ so planting positions, plants, zombies, projectiles and shovel targets move
 with the grid. Sprite dimensions retain one uniform scale.
 
 `AdaptiveBoard.js` composes the actual scene inside `dAll` from the repository's
-1400×600 level artwork. It preserves the left house/entry strip and right
-boundary while widening the central lawn/pool/roof area. A separate top strip
+1400×600 level artwork. It preserves the left house/entry strip and extends the central
+lawn/pool/roof area to the right viewport edge. The background source stops at
+native x=855 (image x=970 after the camera settles); the sidewalk and street
+are outside the gameplay crop. A separate top strip
 lets taller views expand row spacing. Tutorial lawn-roll overlays use the same
 projection and retain their animated reveal. There is no second gameplay
 panorama beneath the board. Camera scrolling uses the same artwork offsets.
@@ -29,12 +31,12 @@ Menu, Help and Quit actions are retained. The STAGING marker remains beneath
 the tree; the upper blank sign remains blank. Gameplay instruction text spans
 the available viewport.
 
-The selector includes falling SVG leaves and an SVG zombie head and shoulders
-peeking from behind the gravestone. The eyes close briefly twice per animation
-cycle; no walking sprite or legacy hand is shown. Reduced-motion mode disables
-the peeking and eyelid animations and hides falling leaves. These animations
-do not use the gameplay scheduler. This recreates the
-motion with this game's artwork, rather than importing the native app's menu.
+The selector uses the native QotL widescreen tree, garden and gravestone layers
+plus its original leaf sprites and menu-button artwork. A real in-game basic
+zombie sprite peeks from behind the gravestone; two short CSS eyelid closures
+add the requested blink because the native idle pose itself does not blink.
+Reduced-motion mode disables peeking/blinking and hides falling leaves. These
+animations remain independent of the gameplay scheduler.
 
 `UpdateGameStageOffset` normalizes the board origin to native engine units.
 Chromium includes body CSS zoom in `getBoundingClientRect`; WebKit reports
@@ -54,7 +56,11 @@ planting before and after resizing, unequal safe-area insets, portrait rotation
 help, scene changes, pause, desktop fullscreen entry and fullscreen exit.
 They also verify a real projectile damaging a zombie, undistorted plant/zombie
 sprites, planting in the expanded last column, and removing that plant with
-the shovel, plus collecting a sun from an expanded column.
+the shovel, plus collecting a sun from an expanded column. They verify the
+last planting column reaches the viewport edge and the background source
+stops before the sidewalk/street. Chromium also starts with an active old
+cache-first worker and stale unversioned layout assets, verifying the new
+layout works on the first navigation.
 They cover 844×390, 926×428, 844×280, 1536×709, 1366×1024,
 2560×1080 and 390×844. Sun is supplied by the fixture and audio playback
 is suppressed: audio permission behavior is outside this layout suite.
@@ -64,26 +70,26 @@ playthrough of every special level.
 
 ## Menu artwork
 
-The built-in Imagegen tool produced the new scenery and a transparent menu
-foreground using `game/images/interface/Surface.jpg` as the visual reference.
-The original asset is preserved.
+The generated selector replacements have been removed. The touch/fullscreen
+selector now composes source artwork from
+`nasiftanjim/PvZ-QotL-Widescreen-NT`:
 
-- `game/images/interface/SelectorLandscape-v1.png`: 2048×768 scenery.
-- `game/images/interface/SelectorStone-v1.png`: 1536×1024 RGBA foreground.
+- `SelectorScreen_BG.png`: native blue sky/sun base layer.
+- `SelectorScreen_BG_Left.png`: tree and left foreground.
+- `SelectorScreen_BG_Center.png`: house and central lawn.
+- `SelectorScreen_BG_Right.png`: gravestone and right foreground.
+- Native Adventure, Mini-Games, Puzzle, Almanac, Options, Help and Quit art.
+- `SelectorScreen_Leaf1.png` through `SelectorScreen_Leaf5.png` for motion.
 
-Background prompt: create a wide hand-painted Plants vs Zombies garden
-landscape with the large tree on the left, suburban houses, rolling green
-hills, a winding street, blue sky and clouds, and grass/dirt foreground.
-Keep the middle/right open for separate interactive menu elements. Exclude
-gravestones, labels, pots, signs, text, logos and interface elements.
+The source layers retain their aspect ratios. The tree remains left-anchored;
+the 900px legacy control coordinate system is centered with
+`--pvz-menu-shift`, so rendered labels and existing click/touch targets move
+together. The STAGING marker remains under the tree and the upper sign is kept.
 
-Foreground prompt: extract the gravestone, base and Menu/Help/Quit pots from
-the original menu onto a transparent canvas. Preserve its 3:2 proportions,
-positions and inscriptions so the original click targets can be retained.
-Complete the cropped right contour while preserving text panels and pots.
-
-Both images are scaled uniformly by CSS. The landscape may crop decorative
-edges to cover the screen; interactive menu elements use their own layout.
+The selector zombie uses the repository's real
+`game/images/Zombies/Zombie/0.gif` game sprite instead of a drawn SVG. The
+sprite is placed below the gravestone layer so the stone occludes it naturally.
+Only the eyelid closure is supplemental CSS animation.
 
 ## Scene painting and Safari
 
@@ -110,5 +116,28 @@ them at runtime instead of replacing their original files.
 Native board replacement between levels rebinds the renderer and clears the
 previous transforms. UI menus retain their original proportional layout.
 
-`SelectorZombie.svg` is a vector interpretation of the reference pose; it is
-not an extracted animation from the native game.
+
+## PvZ-Portable comparison
+
+Reference inspected: `wszqkzqk/PvZ-Portable` at commit
+`848b1dddbe82a5976ee6005992b51bb8fa79b00c`.
+`src/GameConstants.h` defines an 800×600 board and a 220px image offset.
+`src/SexyAppFramework/graphics/GLInterface.cpp::UpdateViewport` preserves 4:3
+with letterboxing. `src/Lawn/Board.cpp::DrawBackdrop` clips lawn-reveal source
+rectangles independently from the background. The repository contains no game
+artwork; it loads user-supplied `main.pak`/properties. Its coordinates and crop
+approach are useful references, but it does not implement a wider lawn.
+This browser engine uses its own 900×600 coordinates and existing artwork.
+
+## Build updates
+
+`scripts/stamp-build.cjs` assigns the build SHA to the game HTML, script/style
+URLs and worker shell-cache version before minification. Dynamically loaded
+Mobile.js/mobile.css use the same build ID. An old controlling worker cannot
+substitute its unversioned cached layout files for these new URLs.
+`AdaptiveBoard.js` is included in the precached shell. Layout still needs a
+normal page reload after deployment; already running games keep their loaded
+code until navigation.
+
+To test the actual stamped/minified output, set `PVZ_TEST_ROOT` to its directory
+when running `npm run test:viewport`.

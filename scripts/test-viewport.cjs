@@ -5,9 +5,10 @@ const { stat } = require("node:fs/promises");
 const path = require("node:path");
 const { chromium, webkit } = require("playwright");
 
-const root = path.resolve(__dirname, "..");
+const root = path.resolve(process.env.PVZ_TEST_ROOT || path.resolve(__dirname, ".."));
 const mime = {
 	".svg": "image/svg+xml",
+	".txt": "text/plain; charset=utf-8",
 	".html": "text/html; charset=utf-8",
 	".js": "text/javascript",
 	".css": "text/css",
@@ -15,6 +16,20 @@ const mime = {
 	".webmanifest": "application/manifest+json",
 };
 const server = createServer(async (req, res) => {
+	if (req.url === "/__viewport-old-worker.js") {
+		res.setHeader("Content-Type", "text/javascript");
+		res.end(`
+            self.addEventListener("install", event => event.waitUntil((async () => {
+                const cache = await caches.open("pvz-foundation-old-shell");
+                for (const asset of ["/game/mobile.css", "/game/js/Mobile.js", "/game/js/AdaptiveBoard.js", "/game/js/Cfunction.js"])
+                    await cache.put(asset, new Response("STALE_VIEWPORT_ASSET", {headers: {"Content-Type": "text/javascript"}}));
+                await self.skipWaiting();
+            })()));
+            self.addEventListener("activate", event => event.waitUntil(self.clients.claim()));
+            self.addEventListener("fetch", event => event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request))));
+        `);
+		return;
+	}
 	let file = path.resolve(root, "." + decodeURIComponent(new URL(req.url, "http://localhost").pathname));
 	if (!file.startsWith(root + path.sep)) {
 		res.writeHead(403).end();
@@ -72,6 +87,15 @@ async function checkLayout(page, width, height) {
 		});
 		assert.ok(Math.abs(layout.stage.width - (width - safe.left - safe.right)) < 1, "live board fills safe viewport width");
 		assert.ok(Math.abs(layout.stage.height - (height - safe.top - safe.bottom)) < 1, "live board fills safe viewport height");
+		await page.waitForFunction(() => {
+			const edge = document.querySelector('#pvz-board-cells [data-row="3"][data-column="9"]').getBoundingClientRect().right;
+			return Math.abs(edge - document.getElementById("dAll").getBoundingClientRect().right) < 1;
+		});
+		const lawn = await page.locator('#pvz-board-cells [data-row="3"][data-column="9"]').boundingBox();
+		assert.ok(
+			Math.abs(lawn.x + lawn.width - layout.stage.right) < 1,
+			`the last lawn column reaches the viewport edge; no street strip: ${JSON.stringify({ lawn, stage: layout.stage })}`
+		);
 	}
 	assert.ok(
 		layout.stage.left >= -1 && layout.stage.top >= -1 && layout.stage.right <= width + 1 && layout.stage.bottom <= height + 1,
@@ -121,7 +145,33 @@ async function mobileTest(browserType, origin) {
 		page.on("pageerror", (error) => errors.push(error.message));
 		await page.route(/^https?:\/\/(?!127\.0\.0\.1)/, (route) => route.abort());
 		page.on("dialog", (dialog) => dialog.dismiss());
+		// Start under the previous cache-first worker with stale unversioned
+		// assets. A fresh navigation must use this build's layout immediately.
+		if (browserType === chromium) {
+			await page.goto(`${origin}/robots.txt`);
+			await page.evaluate(async () => {
+				await navigator.serviceWorker.register("/__viewport-old-worker.js", { scope: "/" });
+				await navigator.serviceWorker.ready;
+				if (!navigator.serviceWorker.controller)
+					await new Promise((resolve) => navigator.serviceWorker.addEventListener("controllerchange", resolve, { once: true }));
+			});
+			assert.equal(
+				await page.evaluate(() => fetch("/game/js/Mobile.js").then((response) => response.text())),
+				"STALE_VIEWPORT_ASSET",
+				"fixture is controlled by the stale worker"
+			);
+		}
 		await openMenu(page, origin);
+		await page.waitForFunction(() => performance.getEntriesByType("resource").some((entry) => entry.name.includes("/Mobile.js?v=")));
+		assert.ok(
+			await page.evaluate(() =>
+				performance
+					.getEntriesByType("resource")
+					.filter((entry) => /\/(Mobile|AdaptiveBoard|Cfunction)\.js/.test(entry.name))
+					.every((entry) => new URL(entry.name).searchParams.get("v") === window.PVZ_BUILD_ID)
+			),
+			"layout assets belong to the same immutable build"
+		);
 		await checkLayout(page, 844, 390);
 		const selector = await page.locator("#dSurface").boundingBox();
 		assert.ok(Math.abs(selector.width - 844) < 1, "main menu fills available width");
@@ -129,6 +179,8 @@ async function mobileTest(browserType, origin) {
 		const firstTransform = await leaf.evaluate((element) => getComputedStyle(element).transform);
 		await page.waitForFunction((first) => getComputedStyle(document.querySelector(".pvz-menu-leaf")).transform !== first, firstTransform);
 		assert.ok(await page.locator(".pvz-menu-zombie").isVisible(), "animated menu zombie visible");
+		assert.ok(await page.locator(".pvz-menu-right").isVisible(), "native gravestone layer visible");
+		assert.equal(await page.locator(".pvz-menu-button-art").count(), 7, "native selector controls are rendered as separate artwork");
 		await page.waitForFunction(() => document.querySelector(".pvz-menu-zombie img").naturalWidth > 0);
 		await page.waitForFunction(() =>
 			document
@@ -140,7 +192,7 @@ async function mobileTest(browserType, origin) {
 		assert.equal(await page.locator("#pvz-scene-backdrop > div").isVisible(), false, "menu has one sharp background");
 		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-${browserType.name()}.png` });
 		await page.emulateMedia({ reducedMotion: "reduce" });
-		assert.ok((await page.locator(".pvz-menu-zombie img").getAttribute("src")).endsWith("SelectorZombie.svg"), "menu uses peeking zombie artwork");
+		assert.ok((await page.locator(".pvz-menu-zombie img").getAttribute("src")).endsWith("images/Zombies/Zombie/0.gif"), "menu uses the real in-game zombie sprite");
 		assert.equal(await leaf.isVisible(), false, "reduced motion hides falling leaves");
 		assert.equal(await page.locator(".pvz-menu-zombie").evaluate((element) => element.getAnimations().length), 0, "reduced motion stops zombie movement");
 		await page.emulateMedia({ reducedMotion: "no-preference" });
@@ -152,8 +204,21 @@ async function mobileTest(browserType, origin) {
 		await page.waitForFunction(() => document.querySelector("#pvz-scene-backdrop > div")?.classList.contains("pvz-game-panorama"));
 		assert.equal(await leaf.evaluate((element) => getComputedStyle(element).animationPlayState), "paused", "menu animation pauses during gameplay");
 		await checkLayout(page, 844, 390);
-		assert.equal(await page.locator("#pvz-adaptive-scene > .pvz-art-tile").count(), 6, "repo artwork is composed inside the live board");
+		assert.equal(
+			await page.locator("#pvz-adaptive-scene > .pvz-art-tile").count(),
+			4,
+			"house and lawn source rectangles are composed inside the live board"
+		);
 		assert.equal(await page.locator(".pvz-game-panorama").isVisible(), false, "no panorama is placed beneath the board");
+		const sourceRight = await page
+			.locator("#pvz-adaptive-scene > .pvz-art-tile")
+			.nth(1)
+			.evaluate((tile) => {
+				const art = tile.firstElementChild;
+				const scale = new DOMMatrix(getComputedStyle(art).transform).a;
+				return -parseFloat(art.style.backgroundPositionX) + tile.offsetWidth / scale;
+			});
+		assert.equal(Math.round(sourceRight), 970, "source crop stops at lawn, before sidewalk and street");
 		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-game-${browserType.name()}.png` });
 		await plantAt(page, 3);
 		await page.evaluate(() => {
@@ -188,6 +253,7 @@ async function mobileTest(browserType, origin) {
 		await checkLayout(page, 926, 428);
 		await plantAt(page, 7);
 		await plantAt(page, 9);
+		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-planted-${browserType.name()}.png` });
 		await page.evaluate(() => {
 			SetVisible($("dTop"), $("tdShovel"), $("imgShovel"));
 		});

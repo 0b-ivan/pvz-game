@@ -457,14 +457,14 @@ $User.Visitor.SaveLvlCallBack = function (o) {
 	if (!document.querySelector('link[data-pvz-platform="mobile"]')) {
 		const stylesheet = document.createElement("link");
 		stylesheet.rel = "stylesheet";
-		stylesheet.href = "mobile.css";
+		stylesheet.href = `mobile.css?v=${encodeURIComponent(window.PVZ_BUILD_ID || "development")}`;
 		stylesheet.dataset.pvzPlatform = "mobile";
 		document.head.appendChild(stylesheet);
 	}
 
 	if (!document.querySelector('script[data-pvz-platform="mobile"]')) {
 		const script = document.createElement("script");
-		script.src = "js/Mobile.js";
+		script.src = `js/Mobile.js?v=${encodeURIComponent(window.PVZ_BUILD_ID || "development")}`;
 		script.dataset.pvzPlatform = "mobile";
 		document.head.appendChild(script);
 	}
