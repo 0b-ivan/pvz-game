@@ -61,7 +61,18 @@ async function checkLayout(page, width, height) {
 	layout.stage.right = layout.stage.x + layout.stage.width;
 	layout.stage.bottom = layout.stage.y + layout.stage.height;
 	layout.backdrop = await page.locator("#pvz-scene-backdrop").boundingBox();
-	assert.ok(Math.abs(layout.stage.width / layout.stage.height - 1.5) < 0.002, "game proportions");
+	const gameplay = await page.evaluate(() => document.body.classList.contains("pvz-gameplay"));
+	if (!gameplay) assert.ok(Math.abs(layout.stage.width / layout.stage.height - 1.5) < 0.002, "menu proportions");
+	else {
+		const safe = await page.evaluate(() => {
+			const styles = getComputedStyle(document.body);
+			return Object.fromEntries(
+				["left", "right", "top", "bottom"].map((side) => [side, parseFloat(styles.getPropertyValue(`--pvz-inset-${side}`)) || 0])
+			);
+		});
+		assert.ok(Math.abs(layout.stage.width - (width - safe.left - safe.right)) < 1, "live board fills safe viewport width");
+		assert.ok(Math.abs(layout.stage.height - (height - safe.top - safe.bottom)) < 1, "live board fills safe viewport height");
+	}
 	assert.ok(
 		layout.stage.left >= -1 && layout.stage.top >= -1 && layout.stage.right <= width + 1 && layout.stage.bottom <= height + 1,
 		`entire board visible: ${JSON.stringify(layout)}`
@@ -81,12 +92,18 @@ async function plantAt(page, column) {
 	await page.waitForFunction(() => ArCard[0]?.CDReady && ArCard[0]?.SunReady);
 	await page.locator("#dCardoPeashooter").tap();
 	await page.waitForFunction(() => oS.Chose === 1);
-	const cell = await page.evaluate((column) => {
-		return { x: GetX(column), y: GetY(3) - 30 };
-	}, column);
-	const rect = await page.locator("#dAll").boundingBox();
-	await page.touchscreen.tap(rect.x + (cell.x * rect.width) / 900, rect.y + (cell.y * rect.height) / 600);
+	const cell = await page.locator(`#pvz-board-cells [data-row="3"][data-column="${column}"]`).boundingBox();
+	await page.touchscreen.tap(cell.x + cell.width / 2, cell.y + cell.height / 2);
 	await page.waitForFunction((column) => Object.values($P).some((plant) => plant.EName === "oPeashooter" && plant.R === 3 && plant.C === column), column);
+	const id = await page.evaluate(
+		(column) => Object.values($P).find((plant) => plant.EName === "oPeashooter" && plant.R === 3 && plant.C === column).id,
+		column
+	);
+	await page.locator(`[id="${id}"] > img`).nth(1).waitFor();
+	await page.waitForFunction((id) => document.getElementById(id).children[1].naturalWidth > 0, id);
+	const sprite = await page.locator(`[id="${id}"] > img`).nth(1).boundingBox();
+	assert.ok(Math.abs(sprite.width / sprite.height - 1) < 0.01, `plant sprite keeps its proportions: ${JSON.stringify(sprite)}`);
+	assert.ok(sprite.x + sprite.width / 2 >= cell.x && sprite.x + sprite.width / 2 <= cell.x + cell.width, "plant is drawn in its actual expanded cell");
 }
 
 async function mobileTest(browserType, origin) {
@@ -113,7 +130,12 @@ async function mobileTest(browserType, origin) {
 		await page.waitForFunction((first) => getComputedStyle(document.querySelector(".pvz-menu-leaf")).transform !== first, firstTransform);
 		assert.ok(await page.locator(".pvz-menu-zombie").isVisible(), "animated menu zombie visible");
 		await page.waitForFunction(() => document.querySelector(".pvz-menu-zombie img").naturalWidth > 0);
-		await page.waitForFunction(() => document.getElementById("dNameDiv0").getAnimations().every((animation) => animation.playState === "finished"));
+		await page.waitForFunction(() =>
+			document
+				.getElementById("dNameDiv0")
+				.getAnimations()
+				.every((animation) => animation.playState === "finished")
+		);
 		assert.equal(await page.locator("#ZombieHand").isVisible(), false, "legacy hand does not cover the menu");
 		assert.equal(await page.locator("#pvz-scene-backdrop > div").isVisible(), false, "menu has one sharp background");
 		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-${browserType.name()}.png` });
@@ -130,13 +152,50 @@ async function mobileTest(browserType, origin) {
 		await page.waitForFunction(() => document.querySelector("#pvz-scene-backdrop > div")?.classList.contains("pvz-game-panorama"));
 		assert.equal(await leaf.evaluate((element) => getComputedStyle(element).animationPlayState), "paused", "menu animation pauses during gameplay");
 		await checkLayout(page, 844, 390);
-		const ground = await page.locator("#tGround").boundingBox();
-		const panorama = await page.locator(".pvz-game-panorama").boundingBox();
-		assert.ok(Math.abs(ground.x - panorama.x) < 1, "panorama matches the board background origin");
+		assert.equal(await page.locator("#pvz-adaptive-scene > .pvz-art-tile").count(), 6, "repo artwork is composed inside the live board");
+		assert.equal(await page.locator(".pvz-game-panorama").isVisible(), false, "no panorama is placed beneath the board");
+		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-game-${browserType.name()}.png` });
 		await plantAt(page, 3);
+		await page.evaluate(() => {
+			const zombie = new oZombie();
+			const html = zombie.CustomBirth(3, 5, 0, "auto");
+			oP.NumZombies++;
+			asyncInnerHTML(
+				html,
+				(fragment, instance) => {
+					EDPZ.appendChild(fragment);
+					instance.Birth();
+					window.viewportZombie = instance.id;
+				},
+				zombie
+			);
+		});
+		await page.waitForFunction(() => $Z[window.viewportZombie]?.HP < 270);
+		const zombieId = await page.evaluate(() => window.viewportZombie);
+		const zombieSprite = await page.locator(`[id="${zombieId}"] > img`).nth(1).boundingBox();
+		assert.ok(Math.abs(zombieSprite.width / zombieSprite.height - 166 / 144) < 0.02, "zombie proportions survive board expansion");
+		await page.evaluate(() => $Z[window.viewportZombie]?.DisappearDie());
+		const sunBefore = await page.evaluate(() => {
+			const known = new Set(Object.keys(ArSun));
+			AppearSun(GetX(8) - 39, GetY(3) - 30, 25, 0);
+			window.viewportSun = Object.keys(ArSun).find((id) => !known.has(id));
+			return oS.SunNum;
+		});
+		const sunId = await page.evaluate(() => window.viewportSun);
+		await page.locator(`[id="${sunId}"]`).tap();
+		await page.waitForFunction((before) => oS.SunNum === before + 25, sunBefore);
 		await page.setViewportSize({ width: 926, height: 428 });
 		await checkLayout(page, 926, 428);
 		await plantAt(page, 7);
+		await plantAt(page, 9);
+		await page.evaluate(() => {
+			SetVisible($("dTop"), $("tdShovel"), $("imgShovel"));
+		});
+		await page.locator("#imgShovel").tap();
+		await page.waitForFunction(() => oS.Chose === -1);
+		const shovelCell = await page.locator('#pvz-board-cells [data-row="3"][data-column="9"]').boundingBox();
+		await page.touchscreen.tap(shovelCell.x + shovelCell.width / 2, shovelCell.y + shovelCell.height / 2);
+		await page.waitForFunction(() => !Object.values($P).some((plant) => plant.EName === "oPeashooter" && plant.R === 3 && plant.C === 9));
 		// Safari changes visualViewport when its browser bars change height.
 		await page.setViewportSize({ width: 844, height: 280 });
 		await checkLayout(page, 844, 280);

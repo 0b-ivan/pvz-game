@@ -203,6 +203,7 @@ var oS = {
 		// DOM Element setup
 		EDAll = $("dAll");
 		EDPZ = $("dPZ");
+		globalThis.PVZAdaptiveBoard?.init();
 		UpdateGameStageOffset();
 		window.addEventListener("resize", UpdateGameStageOffset);
 		EDNewAll = EDAll.cloneNode(true);
@@ -1730,11 +1731,15 @@ var UpdateGameStageOffset = function () {
 	EDAlloffsetTop = rect.top / measuredScale;
 };
 
+var GetGamePointerPosition = function (e) {
+	const zoom = parseFloat(document.body.style.zoom) || 1;
+	const point = { x: e.clientX / zoom - EDAlloffsetLeft, y: e.clientY / zoom - EDAlloffsetTop };
+	return globalThis.PVZAdaptiveBoard?.nativePoint(point) || point;
+};
+
 var GroundOnmousedown = function (e) {
 	e = window.event || e;
-	var zoom = parseFloat(document.body.style.zoom) || 1;
-	const x = e.clientX / zoom - EDAlloffsetLeft;
-	const y = e.clientY / zoom - EDAlloffsetTop;
+	const { x, y } = GetGamePointerPosition(e);
 
 	const cellX = ChosePlantX(x);
 	const cellY = ChosePlantY(y);
@@ -1811,9 +1816,7 @@ var GroundOnmousemove = function () {};
 
 var GroundOnmousemove1 = function (e) {
 	e = window.event || e;
-	var zoom = parseFloat(document.body.style.zoom) || 1;
-	const x = e.clientX / zoom - EDAlloffsetLeft;
-	const y = e.clientY / zoom - EDAlloffsetTop;
+	const { x, y } = GetGamePointerPosition(e);
 
 	const cardIdx = oS.ChoseCard;
 	const cellX = ChosePlantX(x);
@@ -1844,9 +1847,7 @@ var GroundOnmousemove1 = function (e) {
 
 var GroundOnmousemove2 = function (e) {
 	e = window.event || e;
-	var zoom = parseFloat(document.body.style.zoom) || 1;
-	const x = e.clientX / zoom - EDAlloffsetLeft;
-	const y = e.clientY / zoom - EDAlloffsetTop;
+	const { x, y } = GetGamePointerPosition(e);
 
 	const cellX = ChosePlantX(x);
 	const cellY = ChosePlantY(y);
@@ -2424,9 +2425,7 @@ var ChosePlant = function (e, index) {
 	}
 	PlaySound2("seedlift");
 	e = window.event || e;
-	var zoom = parseFloat(document.body.style.zoom) || 1;
-	const x = e.clientX / zoom - EDAlloffsetLeft;
-	const y = e.clientY / zoom - EDAlloffsetTop;
+	const { x, y } = GetGamePointerPosition(e);
 
 	const proto = card.PName.prototype;
 	const len = ArCard.length;
@@ -2484,9 +2483,7 @@ var ShovelPlant = function (data) {
 var ChoseShovel = function (e) {
 	PlaySound2("shovel");
 	if (WhichMouseButton(e) < 2) {
-		var zoom = parseFloat(document.body.style.zoom) || 1;
-		const x = e.clientX / zoom - EDAlloffsetLeft;
-		const y = e.clientY / zoom - EDAlloffsetTop;
+		const { x, y } = GetGamePointerPosition(e);
 		SetHidden($("imgShovel"));
 		NewImg("tShovel", "images/interface/Shovel/0.gif", `left:${x - 10}px;top:${y - 17}px;z-index:1`, EDAll);
 		oS.Chose = -1;
@@ -2714,8 +2711,10 @@ var MoveClickSun = function (id) {
 	const startY = sun.offsetY || 0;
 
 	const el = $(id);
-	el.style.setProperty("--sun-start", startX + "px " + startY + "px");
-	el.style.setProperty("--sun-end", destX - cssX + "px " + (destY - cssY) + "px");
+	if (!globalThis.PVZAdaptiveBoard?.prepareSunCollection(el, sun, destX, destY)) {
+		el.style.setProperty("--sun-start", startX + "px " + startY + "px");
+		el.style.setProperty("--sun-end", destX - cssX + "px " + (destY - cssY) + "px");
+	}
 	el.classList.add("sun-collect");
 	el.getAnimations().forEach((a) => (a.playbackRate = oSym.NowStep));
 

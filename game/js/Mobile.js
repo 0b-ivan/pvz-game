@@ -50,6 +50,7 @@
 		}
 		body.classList.remove("pvz-touch", "pvz-portrait");
 		document.documentElement.classList.remove("pvz-touch");
+		globalThis.PVZAdaptiveBoard?.resize();
 		globalThis.UpdateGameStageOffset?.();
 	};
 
@@ -102,20 +103,26 @@
 		body.style.margin = "0";
 		body.style.padding = "0";
 		const extra = (safeWidth / scale - GAME_WIDTH) / 2;
-		const stageLeft = inset("left") / scale + (body.classList.contains("pvz-gameplay") ? Math.min(115, extra) : extra);
+		const stageLeft = inset("left") / scale + (body.classList.contains("pvz-gameplay") ? 0 : extra);
 		body.style.setProperty("--pvz-stage-left", `${stageLeft}px`);
-		body.style.setProperty("--pvz-stage-top", `${(inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2) / scale}px`);
+		body.style.setProperty(
+			"--pvz-stage-top",
+			`${(inset("top") + (body.classList.contains("pvz-gameplay") ? 0 : (safeHeight - GAME_HEIGHT * scale) / 2)) / scale}px`
+		);
 		body.style.setProperty("--pvz-safe-right", `${inset("right") / scale}px`);
 		body.style.setProperty("--pvz-menu-left", `${inset("left") / scale}px`);
 		body.style.setProperty("--pvz-menu-width", `${safeWidth / scale}px`);
 		body.style.setProperty("--pvz-menu-shift", `${(safeWidth / scale - GAME_WIDTH) / 2}px`);
 
+		body.style.setProperty("--pvz-board-width", `${safeWidth / scale}px`);
+		body.style.setProperty("--pvz-board-height", `${safeHeight / scale}px`);
 		// Set zoom last so pointer compensation keeps using the native game scale.
 		body.style.zoom = String(scale);
 		document.documentElement.style.setProperty("--pvz-scale", String(scale));
 		document.documentElement.style.setProperty("--pvz-screen-stage-left", `${stageLeft * scale}px`);
 		document.documentElement.style.setProperty("--pvz-screen-stage-top", `${inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2}px`);
 		globalThis.UpdateGameStageOffset?.();
+		globalThis.PVZAdaptiveBoard?.resize();
 	};
 
 	const createSceneBackdrop = () => {
@@ -204,6 +211,8 @@
 		const watchScenes = () => {
 			observer.disconnect();
 			observer.observe(document.body, { childList: true });
+			const container = document.getElementById("dBody");
+			if (container) observer.observe(container, { childList: true });
 			const stage = document.getElementById("dAll");
 			const sourceTeachBar = document.getElementById("DivTeachBar");
 			if (sourceTeachBar)
@@ -428,6 +437,7 @@
 	const init = () => {
 		createOrientationHint();
 		createSceneBackdrop();
+		globalThis.PVZAdaptiveBoard?.init();
 		updateViewport();
 		createFullscreenExperience();
 		installTouchBridge();
