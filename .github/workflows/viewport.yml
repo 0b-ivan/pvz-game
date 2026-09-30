@@ -1,0 +1,27 @@
+name: Viewport and touch gameplay
+
+on:
+  pull_request:
+    branches: [main, staging]
+    paths:
+      - 'game/**'
+      - 'scripts/test-viewport.cjs'
+      - 'package*.json'
+      - '.github/workflows/viewport.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  viewport:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:viewport
