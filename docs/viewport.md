@@ -5,12 +5,22 @@ scale from `visualViewport` and the display's safe-area insets. Resize and
 orientation events recompute the layout. Desktop browser windows retain the
 classic layout.
 
-The engine's playable board remains 900×600 with the original rows, columns,
-timers, projectile distances and sprite proportions. Wide screens reveal more
-of the existing 1400×600 background around that board. This extra scenery is
-decorative: it does not add planting cells. The foreground and panorama share
-the same scale and background offset. Extremely wide/tall screens also use a
-uniformly scaled scenery background to fill the remaining area.
+The live gameplay board fills the safe viewport. Its nine planting columns
+(and the level's five or six rows) are projected across the available space,
+so planting positions, plants, zombies, projectiles and shovel targets move
+with the grid. Sprite dimensions retain one uniform scale.
+
+`AdaptiveBoard.js` composes the actual scene inside `dAll` from the repository's
+1400×600 level artwork. It preserves the left house/entry strip and right
+boundary while widening the central lawn/pool/roof area. A separate top strip
+lets taller views expand row spacing. Tutorial lawn-roll overlays use the same
+projection and retain their animated reveal. There is no second gameplay
+panorama beneath the board. Camera scrolling uses the same artwork offsets.
+
+The simulation's rows, columns, timers and collision coordinates stay native;
+`GetGamePointerPosition` inverts the view projection for planting, preview and
+shovel input. Grid spacing expands; figures and UI groups keep their shapes.
+This changes the view, not the number of playable columns or game difficulty.
 
 The main selector uses an independent landscape and transparent gravestone.
 The available width grows while the gravestone, signs, original click targets
@@ -42,6 +52,9 @@ npm run test:viewport
 The browser tests exercise the real Adventure button, exact-cell touch
 planting before and after resizing, unequal safe-area insets, portrait rotation
 help, scene changes, pause, desktop fullscreen entry and fullscreen exit.
+They also verify a real projectile damaging a zombie, undistorted plant/zombie
+sprites, planting in the expanded last column, and removing that plant with
+the shovel, plus collecting a sun from an expanded column.
 They cover 844×390, 926×428, 844×280, 1536×709, 1366×1024,
 2560×1080 and 390×844. Sun is supplied by the fixture and audio playback
 is suppressed: audio permission behavior is outside this layout suite.
@@ -74,14 +87,28 @@ edges to cover the screen; interactive menu elements use their own layout.
 
 ## Scene painting and Safari
 
-Scenery is attached to the document root, outside the zoomed body. Controls
-remain inside display safe areas while one sharp menu landscape paints the
-entire viewport, including the space below the home indicator. The intro
-appears once and is centered. Gameplay panorama offsets are converted to
-physical screen units and follow the moving board background. Remaining
-space beyond the source panorama uses landscape colors instead of a second,
-misaligned copy of the house. Safari browser chrome remains under browser
+Menu scenery is attached to the document root, outside the zoomed body.
+Gameplay artwork is composed inside the expanded live board. Controls remain
+inside display safe areas. Safari browser chrome remains under browser
 control; a real iPhone check is still needed for its landscape safe areas.
+
+### Existing gameplay artwork
+
+All files below are already in `game/images/interface/`; the renderer adapts
+them at runtime instead of replacing their original files.
+
+| Scenes                        | Artwork                                                                            |
+| ----------------------------- | ---------------------------------------------------------------------------------- |
+| Day lawn                      | `background1.jpg`                                                                  |
+| Tutorial dirt and lawn reveal | `background1unsodded.jpg`, `background1unsodded_1.jpg`, `background1unsodded2.jpg` |
+| Night lawn                    | `background2.jpg`                                                                  |
+| Pool                          | `background3.jpg` and variants                                                     |
+| Night pool                    | `background4.jpg`                                                                  |
+| Roof                          | `background5.jpg`                                                                  |
+| Custom level landscapes       | `backgroundX*.jpg`, `backgroundwall*.jpg`, other existing 1400×600 backgrounds     |
+
+Native board replacement between levels rebinds the renderer and clears the
+previous transforms. UI menus retain their original proportional layout.
 
 `SelectorZombie.svg` is a vector interpretation of the reference pose; it is
 not an extracted animation from the native game.
