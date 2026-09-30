@@ -15,4 +15,9 @@ jobs:
               run: |
                   npx --yes oxlint@latest --format=github \
                     game/js/Mobile.js \
+                    game/js/PlayerProgress.js \
+                    scripts/test-player-progress.cjs \
                     service-worker.js
+
+            - name: Test player progress migration
+              run: node scripts/test-player-progress.cjs
