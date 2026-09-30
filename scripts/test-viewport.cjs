@@ -7,6 +7,7 @@ const { chromium, webkit } = require("playwright");
 
 const root = path.resolve(__dirname, "..");
 const mime = {
+	".svg": "image/svg+xml",
 	".html": "text/html; charset=utf-8",
 	".js": "text/javascript",
 	".css": "text/css",
@@ -35,6 +36,11 @@ async function openMenu(page, origin) {
 	const play = page.getByText("PLAY!", { exact: true });
 	if (await play.count()) await play.click();
 	await page.waitForSelector("#dLogo");
+	if (await page.evaluate(() => document.body.classList.contains("pvz-touch"))) {
+		const intro = await page.locator("#dAll").boundingBox();
+		const width = page.viewportSize().width;
+		assert.ok(Math.abs(intro.x + intro.width / 2 - width / 2) < 1, "intro is centered");
+	}
 	await page.locator("#LogoWord > span").first().click();
 	await page.waitForFunction(() => document.body.classList.contains("pvz-selector"));
 }
@@ -106,9 +112,13 @@ async function mobileTest(browserType, origin) {
 		const firstTransform = await leaf.evaluate((element) => getComputedStyle(element).transform);
 		await page.waitForFunction((first) => getComputedStyle(document.querySelector(".pvz-menu-leaf")).transform !== first, firstTransform);
 		assert.ok(await page.locator(".pvz-menu-zombie").isVisible(), "animated menu zombie visible");
+		await page.waitForFunction(() => document.querySelector(".pvz-menu-zombie img").naturalWidth > 0);
+		await page.waitForFunction(() => document.getElementById("dNameDiv0").getAnimations().every((animation) => animation.playState === "finished"));
+		assert.equal(await page.locator("#ZombieHand").isVisible(), false, "legacy hand does not cover the menu");
+		assert.equal(await page.locator("#pvz-scene-backdrop > div").isVisible(), false, "menu has one sharp background");
 		if (process.env.PVZ_MENU_SCREENSHOT) await page.screenshot({ path: process.env.PVZ_MENU_SCREENSHOT + `-${browserType.name()}.png` });
 		await page.emulateMedia({ reducedMotion: "reduce" });
-		await page.waitForFunction(() => document.querySelector(".pvz-menu-zombie img").currentSrc.endsWith("/0.gif"));
+		assert.ok((await page.locator(".pvz-menu-zombie img").getAttribute("src")).endsWith("SelectorZombie.svg"), "menu uses peeking zombie artwork");
 		assert.equal(await leaf.isVisible(), false, "reduced motion hides falling leaves");
 		assert.equal(await page.locator(".pvz-menu-zombie").evaluate((element) => element.getAnimations().length), 0, "reduced motion stops zombie movement");
 		await page.emulateMedia({ reducedMotion: "no-preference" });
@@ -120,6 +130,9 @@ async function mobileTest(browserType, origin) {
 		await page.waitForFunction(() => document.querySelector("#pvz-scene-backdrop > div")?.classList.contains("pvz-game-panorama"));
 		assert.equal(await leaf.evaluate((element) => getComputedStyle(element).animationPlayState), "paused", "menu animation pauses during gameplay");
 		await checkLayout(page, 844, 390);
+		const ground = await page.locator("#tGround").boundingBox();
+		const panorama = await page.locator(".pvz-game-panorama").boundingBox();
+		assert.ok(Math.abs(ground.x - panorama.x) < 1, "panorama matches the board background origin");
 		await plantAt(page, 3);
 		await page.setViewportSize({ width: 926, height: 428 });
 		await checkLayout(page, 926, 428);

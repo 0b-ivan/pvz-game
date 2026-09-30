@@ -19,6 +19,8 @@ html {
 
 body.pvz-touch {
 	overflow: hidden;
+	background: transparent;
+	z-index: 1;
 	touch-action: none;
 	isolation: isolate;
 	--pvz-inset-left: env(safe-area-inset-left, 0px);
@@ -31,16 +33,16 @@ body.pvz-touch {
  * Cover scales the artwork uniformly. Only this decorative layer is cropped. */
 #pvz-scene-backdrop {
 	display: none;
-	position: absolute;
+	position: fixed;
 	inset: 0;
 	overflow: hidden;
 	pointer-events: none;
-	z-index: -1;
+	z-index: 0;
 	background-size: cover;
 	background-position: center;
 }
 
-body.pvz-touch #pvz-scene-backdrop {
+html.pvz-touch #pvz-scene-backdrop {
 	display: block;
 }
 
@@ -58,8 +60,10 @@ body.pvz-touch #pvz-scene-backdrop {
  * This joins the existing tGround image without stretching the artwork. */
 #pvz-scene-backdrop > .pvz-game-panorama {
 	inset: auto;
-	left: calc(var(--pvz-stage-left) + var(--pvz-panorama-offset, -115px));
-	top: var(--pvz-stage-top);
+	left: var(--pvz-screen-stage-left);
+	top: var(--pvz-screen-stage-top);
+	transform: scale(var(--pvz-scale)) translateX(var(--pvz-panorama-offset, -115px));
+	transform-origin: left top;
 	width: 1400px;
 	height: 600px;
 	background-size: auto 600px;
@@ -150,7 +154,7 @@ body.pvz-touch.pvz-selector #iSurfaceBackground {
 	position: relative;
 	width: 100%;
 	height: 600px;
-	background: url(images/interface/SelectorLandscape-v1.png) left center / cover no-repeat;
+	background: none;
 }
 
 body.pvz-touch.pvz-selector #iSurfaceBackground > img {
@@ -180,9 +184,9 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 .pvz-menu-zombie {
 	position: absolute;
 	left: calc(var(--pvz-menu-shift) + 300px);
-	top: 100px;
-	width: 320px;
-	height: 278px;
+	top: 115px;
+	width: 210px;
+	height: 268px;
 	transform-origin: 75% 85%;
 	animation: pvz-zombie-peek 7s ease-in-out infinite;
 	animation-play-state: paused;
@@ -191,7 +195,7 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 .pvz-menu-zombie img {
 	width: 100%;
 	height: 100%;
-	transform: rotate(-20deg) scaleX(-1);
+	transform: rotate(-14deg);
 }
 
 .pvz-menu-leaves {
@@ -220,13 +224,13 @@ body.pvz-touch.pvz-selector .pvz-menu-zombie {
 @keyframes pvz-zombie-peek {
 	0%,
 	100% {
-		transform: rotate(-2deg) translateY(3px);
+		transform: translateX(4px);
 	}
 	45% {
-		transform: rotate(2deg) translateY(-4px);
+		transform: translateX(-5px);
 	}
 	65% {
-		transform: rotate(1deg) translateY(0);
+		transform: translateX(-2px);
 	}
 }
 
@@ -396,4 +400,23 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 	#pvz-fullscreen-button {
 		display: none !important;
 	}
+}
+
+/* Paint one sharp scene behind the safe areas; the controls still fit inside them. */
+html.pvz-touch { background: #557c38; }
+html.pvz-touch.pvz-selector #pvz-scene-backdrop { background-position: left center; }
+html.pvz-touch.pvz-selector #pvz-scene-backdrop > div { display: none; }
+body.pvz-touch.pvz-selector #ZombieHand { display: none !important; }
+body.pvz-touch.pvz-selector #dAll { opacity: 0; pointer-events: none; }
+/* The intro artwork appears once, centered; duplicating it as a blurred cover
+ * made the title compete with itself on wide displays. */
+html.pvz-touch:not(.pvz-selector) #pvz-scene-backdrop:not(:has(.pvz-game-panorama)) {
+ background-image: none !important;
+ background: radial-gradient(ellipse at center, #34464b, #152b30);
+}
+html.pvz-touch:not(.pvz-selector) #pvz-scene-backdrop:not(:has(.pvz-game-panorama)) > div { display: none; }
+/* A second cover copy produces a repeated house at the moving panorama edge. */
+html.pvz-touch #pvz-scene-backdrop:has(.pvz-game-panorama) {
+ background-image: none !important;
+ background: linear-gradient(#86bce3 0%, #c2d7bc 35%, #658e43 75%, #927245);
 }
