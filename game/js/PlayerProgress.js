@@ -194,6 +194,7 @@
 
 	const migrateLegacyAdventure = (state, storage) => {
 		let changed = false;
+		let highestCompletedLevel = 0;
 		const legacyLevel = storage.getItem("level");
 		if (legacyLevel !== null && legacyLevel !== undefined) {
 			const migratedLevel = toAdventureLevel(legacyLevel);
@@ -210,10 +211,19 @@
 				if (!Number.isFinite(level) || level < 1 || level > MAX_ADVENTURE_LEVEL || !isObject(record)) {
 					continue;
 				}
+				highestCompletedLevel = Math.max(highestCompletedLevel, level);
 				if (!state.adventure.completedLevels[String(level)]) {
 					state.adventure.completedLevels[String(level)] = clone(record);
 					changed = true;
 				}
+			}
+		}
+
+		if (highestCompletedLevel > 0) {
+			const inferredCurrentLevel = Math.min(MAX_ADVENTURE_LEVEL, highestCompletedLevel + 1);
+			if (inferredCurrentLevel > state.adventure.currentLevel) {
+				state.adventure.currentLevel = inferredCurrentLevel;
+				changed = true;
 			}
 		}
 
@@ -230,14 +240,32 @@
 		return clone(state);
 	};
 
+	const getSchemaVersion = (state) => {
+		if (!isObject(state)) {
+			return 0;
+		}
+		const version = Number.parseInt(state.schemaVersion, 10);
+		return Number.isFinite(version) && version >= 0 ? version : 0;
+	};
+
+	const isFutureSchema = (state) => getSchemaVersion(state) > SCHEMA_VERSION;
+
 	const load = () => {
 		const storage = getStorage();
 		const raw = storage.getItem(STORAGE_KEY);
 		const parsed = readJson(raw);
+
+		if (isFutureSchema(parsed)) {
+			console.warn(
+				`PlayerProgress schema ${parsed.schemaVersion} is newer than supported schema ${SCHEMA_VERSION}; using it read-only.`
+			);
+			return clone(parsed);
+		}
+
 		const state = normalizeState(parsed);
 		const migrated = migrateLegacyAdventure(state, storage);
 
-		if (!parsed || parsed.schemaVersion !== SCHEMA_VERSION || migrated) {
+		if (!parsed || getSchemaVersion(parsed) !== SCHEMA_VERSION || migrated) {
 			state.updatedAt = nowIso();
 			writeState(state);
 		}
@@ -246,6 +274,13 @@
 	};
 
 	const save = (candidate) => {
+		if (isFutureSchema(candidate)) {
+			console.warn(
+				`PlayerProgress schema ${candidate.schemaVersion} is newer than supported schema ${SCHEMA_VERSION}; refusing to overwrite it.`
+			);
+			return clone(candidate);
+		}
+
 		const state = normalizeState(candidate);
 		state.revision += 1;
 		state.updatedAt = nowIso();
@@ -257,6 +292,9 @@
 			throw new TypeError("PlayerProgress.update requires a function.");
 		}
 		const state = load();
+		if (isFutureSchema(state)) {
+			return state;
+		}
 		const replacement = mutator(state);
 		return save(replacement === undefined ? state : replacement);
 	};
