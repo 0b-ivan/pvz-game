@@ -433,3 +433,58 @@ html.pvz-touch #pvz-scene-backdrop:has(.pvz-game-panorama) {
 	background-image: none !important;
 	background: linear-gradient(#86bce3 0%, #c2d7bc 35%, #658e43 75%, #927245);
 }
+
+/* The live board fills the safe viewport. Artwork is sliced within this board,
+ * and every live entity is projected onto the same enlarged planting cells. */
+body.pvz-touch.pvz-gameplay #dAll {
+	width: var(--pvz-board-width);
+	height: var(--pvz-board-height);
+}
+body.pvz-touch.pvz-gameplay #tGround {
+	opacity: 0;
+}
+html.pvz-touch #pvz-scene-backdrop:has(.pvz-game-panorama) > div {
+	display: none;
+}
+#pvz-adaptive-scene,
+#pvz-adaptive-spacer,
+#pvz-board-cells {
+	display: none;
+	pointer-events: none;
+}
+body.pvz-touch.pvz-gameplay #pvz-adaptive-scene,
+body.pvz-touch.pvz-gameplay #pvz-adaptive-spacer,
+body.pvz-touch.pvz-gameplay #pvz-board-cells {
+	display: block;
+	position: absolute;
+	top: 0;
+}
+#pvz-adaptive-scene {
+	z-index: 0;
+}
+#pvz-adaptive-scene .pvz-art-tile {
+	position: absolute;
+	overflow: hidden;
+}
+#pvz-adaptive-scene .pvz-art-tile > div {
+	width: 1400px;
+	height: 600px;
+	background-repeat: no-repeat;
+	transform-origin: left top;
+}
+#pvz-adaptive-spacer {
+	height: 1px;
+}
+#pvz-board-cells > div {
+	position: absolute;
+}
+
+#pvz-adaptive-scene .pvz-native-overlay {
+	position: absolute;
+	inset: 0;
+	width: var(--pvz-board-width);
+	height: var(--pvz-board-height);
+}
+body.pvz-touch.pvz-gameplay [data-pvz-background-source] {
+	opacity: 0 !important;
+}
