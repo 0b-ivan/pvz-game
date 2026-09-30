@@ -9,7 +9,8 @@
 		"test:viewport": "node scripts/test-viewport.cjs",
 		"lint": "oxlint",
 		"fix": "oxlint --fix",
-		"build": "bash scripts/build.sh"
+		"build": "bash scripts/build.sh",
+		"test:player-progress": "node scripts/test-player-progress.cjs"
 	},
 	"devDependencies": {
 		"html-minifier-terser": "^7.2.0",
