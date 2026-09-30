@@ -11,8 +11,10 @@ so planting positions, plants, zombies, projectiles and shovel targets move
 with the grid. Sprite dimensions retain one uniform scale.
 
 `AdaptiveBoard.js` composes the actual scene inside `dAll` from the repository's
-1400×600 level artwork. It preserves the left house/entry strip and right
-boundary while widening the central lawn/pool/roof area. A separate top strip
+1400×600 level artwork. It preserves the left house/entry strip and extends the central
+lawn/pool/roof area to the right viewport edge. The background source stops at
+native x=855 (image x=970 after the camera settles); the sidewalk and street
+are outside the gameplay crop. A separate top strip
 lets taller views expand row spacing. Tutorial lawn-roll overlays use the same
 projection and retain their animated reveal. There is no second gameplay
 panorama beneath the board. Camera scrolling uses the same artwork offsets.
@@ -54,7 +56,11 @@ planting before and after resizing, unequal safe-area insets, portrait rotation
 help, scene changes, pause, desktop fullscreen entry and fullscreen exit.
 They also verify a real projectile damaging a zombie, undistorted plant/zombie
 sprites, planting in the expanded last column, and removing that plant with
-the shovel, plus collecting a sun from an expanded column.
+the shovel, plus collecting a sun from an expanded column. They verify the
+last planting column reaches the viewport edge and the background source
+stops before the sidewalk/street. Chromium also starts with an active old
+cache-first worker and stale unversioned layout assets, verifying the new
+layout works on the first navigation.
 They cover 844×390, 926×428, 844×280, 1536×709, 1366×1024,
 2560×1080 and 390×844. Sun is supplied by the fixture and audio playback
 is suppressed: audio permission behavior is outside this layout suite.
@@ -112,3 +118,28 @@ previous transforms. UI menus retain their original proportional layout.
 
 `SelectorZombie.svg` is a vector interpretation of the reference pose; it is
 not an extracted animation from the native game.
+
+## PvZ-Portable comparison
+
+Reference inspected: `wszqkzqk/PvZ-Portable` at commit
+`848b1dddbe82a5976ee6005992b51bb8fa79b00c`.
+`src/GameConstants.h` defines an 800×600 board and a 220px image offset.
+`src/SexyAppFramework/graphics/GLInterface.cpp::UpdateViewport` preserves 4:3
+with letterboxing. `src/Lawn/Board.cpp::DrawBackdrop` clips lawn-reveal source
+rectangles independently from the background. The repository contains no game
+artwork; it loads user-supplied `main.pak`/properties. Its coordinates and crop
+approach are useful references, but it does not implement a wider lawn.
+This browser engine uses its own 900×600 coordinates and existing artwork.
+
+## Build updates
+
+`scripts/stamp-build.cjs` assigns the build SHA to the game HTML, script/style
+URLs and worker shell-cache version before minification. Dynamically loaded
+Mobile.js/mobile.css use the same build ID. An old controlling worker cannot
+substitute its unversioned cached layout files for these new URLs.
+`AdaptiveBoard.js` is included in the precached shell. Layout still needs a
+normal page reload after deployment; already running games keep their loaded
+code until navigation.
+
+To test the actual stamped/minified output, set `PVZ_TEST_ROOT` to its directory
+when running `npm run test:viewport`.

@@ -8,7 +8,7 @@ echo "$CF_PAGES_COMMIT_SHA" > game/images/Zombies/CX/v.html
 
 # Scope the service-worker cache to this immutable build so clients cannot
 # keep stale game HTML/JS across deployments.
-sed -i "s|^const CACHE_VERSION = .*;|const CACHE_VERSION = \"pvz-foundation-${CF_PAGES_COMMIT_SHA}\";|" service-worker.js
+node scripts/stamp-build.cjs
 
 # lint & format
 oxlint . || true

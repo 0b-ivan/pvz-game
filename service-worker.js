@@ -1,4 +1,4 @@
-const CACHE_VERSION = "pvz-foundation-v1";
+const CACHE_VERSION = "pvz-foundation-development";
 const SHELL_CACHE = `${CACHE_VERSION}-shell`;
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 
@@ -10,6 +10,7 @@ const APP_SHELL = [
 	"/game/mobile.css",
 	"/game/js/StorageUtil.js",
 	"/game/js/Cfunction.js",
+	"/game/js/AdaptiveBoard.js",
 	"/game/js/Welcome.js",
 	"/game/js/Menus.js",
 	"/game/js/Custom.js",
@@ -18,7 +19,7 @@ const APP_SHELL = [
 	"/game/js/CZombie.js",
 	"/game/js/IZombie.js",
 	"/app.webmanifest",
-];
+].map((path) => (/\.(js|css)$/.test(path) ? `${path}?v=${CACHE_VERSION.slice("pvz-foundation-".length)}` : path));
 
 self.addEventListener("install", (event) => {
 	event.waitUntil(caches.open(SHELL_CACHE).then((cache) => cache.addAll(APP_SHELL)));
