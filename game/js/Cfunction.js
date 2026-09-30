@@ -203,14 +203,8 @@ var oS = {
 		// DOM Element setup
 		EDAll = $("dAll");
 		EDPZ = $("dPZ");
-		// Use getBoundingClientRect to get actual visual position after CSS transforms
-		function updateEDAllOffset() {
-			const rect = EDAll.getBoundingClientRect();
-			EDAlloffsetLeft = rect.left;
-			EDAlloffsetTop = rect.top;
-		}
-		updateEDAllOffset();
-		window.addEventListener("resize", updateEDAllOffset);
+		UpdateGameStageOffset();
+		window.addEventListener("resize", UpdateGameStageOffset);
 		EDNewAll = EDAll.cloneNode(true);
 		EDNewFlagMeter = $("dFlagMeter").cloneNode(true);
 		ESSunNum = $("sSunNum");
@@ -1723,6 +1717,19 @@ var WhichMouseButton = function (e) {
 	return $SEql(e.which, { 1: 1, 3: 2, default: 1 });
 };
 
+// Pointer handlers divide screen coordinates by body zoom. The stage origin
+// must use the same coordinate space, including after rotation or PWA resize.
+var UpdateGameStageOffset = function () {
+	const stage = document.getElementById("dAll");
+	if (!stage) return;
+	const rect = stage.getBoundingClientRect();
+	// Chromium includes CSS zoom in this rect; WebKit reports native units.
+	// Measure the rect's scale instead of assuming either browser convention.
+	const measuredScale = rect.width / stage.offsetWidth || 1;
+	EDAlloffsetLeft = rect.left / measuredScale;
+	EDAlloffsetTop = rect.top / measuredScale;
+};
+
 var GroundOnmousedown = function (e) {
 	e = window.event || e;
 	var zoom = parseFloat(document.body.style.zoom) || 1;
@@ -2303,9 +2310,7 @@ var ViewPlantTitle = function (index) {
 	}
 
 	titleDiv.innerHTML = html;
-	const rect = EDAll.getBoundingClientRect();
-	EDAlloffsetLeft = rect.left;
-	EDAlloffsetTop = rect.top;
+	UpdateGameStageOffset();
 	SetStyle(titleDiv, {
 		top: EDAlloffsetTop + 60 * index + "px",
 		left: EDAlloffsetLeft + 100 + "px",
