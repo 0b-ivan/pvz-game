@@ -61,5 +61,5 @@ levels while backend GitHub OAuth is disabled. For separate administrator
 permissions, enable the backend's GitHub OAuth and allowed-user list.
 
 The backend must have `USE_PUBLIC_FOLDER=true` and `USE_ADMIN_UI=true`
-(the defaults). The backend test homepage is not proxied: the game keeps its
+in its environment (the container disables the admin UI by default). The backend test homepage is not proxied: the game keeps its
 own homepage.
