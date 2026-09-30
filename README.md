@@ -46,3 +46,20 @@ docker run --rm -p 8080:8080 pvz-game:local
 The container serves the static game with unprivileged Nginx and exposes `/healthz` for container and Kubernetes probes.
 
 The runtime image contains only the built static site. It does not need a writable filesystem or persistent volume.
+
+### Backend admin dashboard
+
+The frontend proxy serves the backend's existing dashboard at `/admin.html`,
+including its stylesheet and modal script. On staging, open:
+
+https://staging-pvz.obivan.org/admin.html
+
+Use the same HTTP Basic Auth credentials as for the game. The dashboard and
+`/api/admin/` inherit the proxy's authentication; no extra public backend port
+or hostname is needed. Everyone with the shared game credentials can manage
+levels while backend GitHub OAuth is disabled. For separate administrator
+permissions, enable the backend's GitHub OAuth and allowed-user list.
+
+The backend must have `USE_PUBLIC_FOLDER=true` and `USE_ADMIN_UI=true`
+in its environment (the container disables the admin UI by default). The backend test homepage is not proxied: the game keeps its
+own homepage.
