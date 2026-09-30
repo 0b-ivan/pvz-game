@@ -103,7 +103,26 @@ function cleanup() {
 	const state = api.load();
 
 	assert.equal(state.adventure.finished, true);
-	assert.equal(state.adventure.currentLevel, 1);
+	assert.equal(state.adventure.currentLevel, 50);
+}
+
+{
+	const futureState = {
+		schemaVersion: 2,
+		revision: 99,
+		adventure: { currentLevel: 22 },
+		futureOnly: { keepMe: true },
+	};
+	const rawFutureState = JSON.stringify(futureState);
+	const { api, storage } = loadProgress({
+		"pvz.playerProgress": rawFutureState,
+	});
+	const loaded = api.load();
+	const afterUpdate = api.setCurrentAdventureLevel(23);
+
+	assert.equal(loaded.schemaVersion, 2);
+	assert.equal(afterUpdate.schemaVersion, 2);
+	assert.equal(storage.getItem(api.STORAGE_KEY), rawFutureState, "newer schemas must never be downgraded or overwritten");
 }
 
 {
