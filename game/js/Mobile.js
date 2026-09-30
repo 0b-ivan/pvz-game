@@ -49,6 +49,7 @@
 			body.style.removeProperty(property);
 		}
 		body.classList.remove("pvz-touch", "pvz-portrait");
+		document.documentElement.classList.remove("pvz-touch");
 		globalThis.UpdateGameStageOffset?.();
 	};
 
@@ -63,6 +64,7 @@
 		const isPortrait = viewport.height > viewport.width;
 
 		body.classList.add("pvz-touch");
+		document.documentElement.classList.add("pvz-touch");
 		body.classList.toggle("pvz-portrait", isPortrait);
 
 		const styles = getComputedStyle(body);
@@ -99,7 +101,8 @@
 		body.style.top = "0";
 		body.style.margin = "0";
 		body.style.padding = "0";
-		const stageLeft = inset("left") / scale + Math.min(115, (safeWidth / scale - GAME_WIDTH) / 2);
+		const extra = (safeWidth / scale - GAME_WIDTH) / 2;
+		const stageLeft = inset("left") / scale + (body.classList.contains("pvz-gameplay") ? Math.min(115, extra) : extra);
 		body.style.setProperty("--pvz-stage-left", `${stageLeft}px`);
 		body.style.setProperty("--pvz-stage-top", `${(inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2) / scale}px`);
 		body.style.setProperty("--pvz-safe-right", `${inset("right") / scale}px`);
@@ -109,6 +112,9 @@
 
 		// Set zoom last so pointer compensation keeps using the native game scale.
 		body.style.zoom = String(scale);
+		document.documentElement.style.setProperty("--pvz-scale", String(scale));
+		document.documentElement.style.setProperty("--pvz-screen-stage-left", `${stageLeft * scale}px`);
+		document.documentElement.style.setProperty("--pvz-screen-stage-top", `${(inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2)}px`);
 		globalThis.UpdateGameStageOffset?.();
 	};
 
@@ -119,7 +125,7 @@
 		backdrop.setAttribute("aria-hidden", "true");
 		const artwork = document.createElement("div");
 		backdrop.appendChild(artwork);
-		document.body.prepend(backdrop);
+		document.documentElement.appendChild(backdrop);
 		const teachBar = document.createElement("div");
 		teachBar.id = "pvz-viewport-teach-bar";
 		teachBar.setAttribute("aria-hidden", "true");
@@ -157,6 +163,11 @@
 			}
 			const isGame = currentScene?.id === "tGround" && globalThis.oS?.Lvl !== 0;
 			const isSelector = currentScene?.id === "iSurfaceBackground";
+			document.documentElement.classList.toggle("pvz-selector", isSelector);
+			if (document.body.classList.contains("pvz-gameplay") !== isGame) {
+				document.body.classList.toggle("pvz-gameplay", isGame);
+				updateViewport();
+			}
 			if (document.body.classList.contains("pvz-selector") !== isSelector) {
 				document.body.classList.toggle("pvz-selector", isSelector);
 				requestAnimationFrame(sync);
@@ -168,6 +179,7 @@
 				const translation = styles.transform === "none" ? 0 : new DOMMatrix(styles.transform).m41;
 				artwork.style.setProperty("--pvz-panorama-offset", `${(parseFloat(styles.left) || 0) + translation - stage.scrollLeft}px`);
 			}
+			if (isSelector) image = 'url("images/interface/SelectorLandscape-v1.png")';
 			image = image === "none" ? "" : image;
 			if (image !== previousImage) {
 				artwork.style.backgroundImage = image;
@@ -251,10 +263,8 @@
 		world.id = "pvz-menu-world";
 		world.setAttribute("aria-hidden", "true");
 		world.innerHTML =
-			'<picture class="pvz-menu-zombie">' +
-			'<source media="(prefers-reduced-motion: reduce)" srcset="images/Zombies/Zombie/0.gif">' +
-			'<img src="images/Zombies/Zombie/1.gif" alt="" width="166" height="144">' +
-			'</picture><div class="pvz-menu-stone"></div>' +
+			'<div class="pvz-menu-zombie"><img src="images/interface/SelectorZombie.svg" alt="" width="180" height="230"></div>' +
+			'<div class="pvz-menu-stone"></div>' +
 			'<div class="pvz-menu-leaves">' +
 			Array.from(
 				{ length: 7 },

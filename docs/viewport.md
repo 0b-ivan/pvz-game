@@ -19,10 +19,11 @@ Menu, Help and Quit actions are retained. The STAGING marker remains beneath
 the tree; the upper blank sign remains blank. Gameplay instruction text spans
 the available viewport.
 
-The selector includes falling SVG leaves and the existing animated idle zombie
-sprite behind the gravestone, inspired by the supplied menu recording. Their
-CSS animation does not use the gameplay scheduler. Reduced-motion mode hides
-the falling leaves and selects the static zombie sprite. This recreates the
+The selector includes falling SVG leaves and an SVG zombie head and shoulders
+peeking from behind the gravestone. The eyes close briefly twice per animation
+cycle; no walking sprite or legacy hand is shown. Reduced-motion mode disables
+the peeking and eyelid animations and hides falling leaves. These animations
+do not use the gameplay scheduler. This recreates the
 motion with this game's artwork, rather than importing the native app's menu.
 
 `UpdateGameStageOffset` normalizes the board origin to native engine units.
@@ -70,3 +71,17 @@ Complete the cropped right contour while preserving text panels and pots.
 
 Both images are scaled uniformly by CSS. The landscape may crop decorative
 edges to cover the screen; interactive menu elements use their own layout.
+
+## Scene painting and Safari
+
+Scenery is attached to the document root, outside the zoomed body. Controls
+remain inside display safe areas while one sharp menu landscape paints the
+entire viewport, including the space below the home indicator. The intro
+appears once and is centered. Gameplay panorama offsets are converted to
+physical screen units and follow the moving board background. Remaining
+space beyond the source panorama uses landscape colors instead of a second,
+misaligned copy of the house. Safari browser chrome remains under browser
+control; a real iPhone check is still needed for its landscape safe areas.
+
+`SelectorZombie.svg` is a vector interpretation of the reference pose; it is
+not an extracted animation from the native game.
