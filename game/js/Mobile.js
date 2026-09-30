@@ -114,7 +114,7 @@
 		body.style.zoom = String(scale);
 		document.documentElement.style.setProperty("--pvz-scale", String(scale));
 		document.documentElement.style.setProperty("--pvz-screen-stage-left", `${stageLeft * scale}px`);
-		document.documentElement.style.setProperty("--pvz-screen-stage-top", `${(inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2)}px`);
+		document.documentElement.style.setProperty("--pvz-screen-stage-top", `${inset("top") + (safeHeight - GAME_HEIGHT * scale) / 2}px`);
 		globalThis.UpdateGameStageOffset?.();
 	};
 

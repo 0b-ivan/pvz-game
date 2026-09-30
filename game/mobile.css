@@ -403,20 +403,33 @@ body.pvz-touch.pvz-portrait #pvz-orientation-hint {
 }
 
 /* Paint one sharp scene behind the safe areas; the controls still fit inside them. */
-html.pvz-touch { background: #557c38; }
-html.pvz-touch.pvz-selector #pvz-scene-backdrop { background-position: left center; }
-html.pvz-touch.pvz-selector #pvz-scene-backdrop > div { display: none; }
-body.pvz-touch.pvz-selector #ZombieHand { display: none !important; }
-body.pvz-touch.pvz-selector #dAll { opacity: 0; pointer-events: none; }
+html.pvz-touch {
+	background: #557c38;
+}
+html.pvz-touch.pvz-selector #pvz-scene-backdrop {
+	background-position: left center;
+}
+html.pvz-touch.pvz-selector #pvz-scene-backdrop > div {
+	display: none;
+}
+body.pvz-touch.pvz-selector #ZombieHand {
+	display: none !important;
+}
+body.pvz-touch.pvz-selector #dAll {
+	opacity: 0;
+	pointer-events: none;
+}
 /* The intro artwork appears once, centered; duplicating it as a blurred cover
  * made the title compete with itself on wide displays. */
 html.pvz-touch:not(.pvz-selector) #pvz-scene-backdrop:not(:has(.pvz-game-panorama)) {
- background-image: none !important;
- background: radial-gradient(ellipse at center, #34464b, #152b30);
+	background-image: none !important;
+	background: radial-gradient(ellipse at center, #34464b, #152b30);
 }
-html.pvz-touch:not(.pvz-selector) #pvz-scene-backdrop:not(:has(.pvz-game-panorama)) > div { display: none; }
+html.pvz-touch:not(.pvz-selector) #pvz-scene-backdrop:not(:has(.pvz-game-panorama)) > div {
+	display: none;
+}
 /* A second cover copy produces a repeated house at the moving panorama edge. */
 html.pvz-touch #pvz-scene-backdrop:has(.pvz-game-panorama) {
- background-image: none !important;
- background: linear-gradient(#86bce3 0%, #c2d7bc 35%, #658e43 75%, #927245);
+	background-image: none !important;
+	background: linear-gradient(#86bce3 0%, #c2d7bc 35%, #658e43 75%, #927245);
 }
