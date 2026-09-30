@@ -74,6 +74,7 @@ The generated selector replacements have been removed. The touch/fullscreen
 selector now composes source artwork from
 `nasiftanjim/PvZ-QotL-Widescreen-NT`:
 
+- `SelectorScreen_BG.png`: native blue sky/sun base layer.
 - `SelectorScreen_BG_Left.png`: tree and left foreground.
 - `SelectorScreen_BG_Center.png`: house and central lawn.
 - `SelectorScreen_BG_Right.png`: gravestone and right foreground.

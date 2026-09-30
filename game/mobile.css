@@ -169,6 +169,7 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 	inset: 0;
 	overflow: hidden;
 	pointer-events: none;
+	background: url(images/interface/selector/SelectorScreen_BG.png) center / cover no-repeat;
 }
 
 .pvz-menu-layer,
