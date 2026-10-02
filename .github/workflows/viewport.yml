@@ -6,6 +6,8 @@ on:
     paths:
       - 'game/**'
       - 'scripts/test-viewport.cjs'
+      - 'scripts/*pak*'
+      - 'docs/pak-import.json'
       - 'scripts/build.sh'
       - 'scripts/stamp-build.cjs'
       - 'service-worker.js'
@@ -26,6 +28,11 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - run: python scripts/test-pak-assets.py
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run build
         env:
