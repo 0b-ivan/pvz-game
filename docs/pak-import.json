@@ -1122,7 +1122,10 @@
       "kind": "cards",
       "model": "PeaShooter",
       "animation": "anim_full_idle",
-      "sha256": "7e1accd2b6cb61bee11934492863af80c7f458feb28914486a00282a7ceccc12"
+      "hidden": [
+        "peashooter_eyebrow"
+      ],
+      "sha256": "ce2172cf553098c2ec660c210e241b9318d57abdc37fc106ed10a4b7d1292f49"
     },
     {
       "target": "images/Card/Plants/Plantern.webp",
@@ -1135,8 +1138,8 @@
       "target": "images/Card/Plants/PotatoMine.webp",
       "kind": "cards",
       "model": "PotatoMine",
-      "animation": "anim_idle",
-      "sha256": "7ad5e14ec6db7c8ef4bb0ebd8836e217dce362918a7558c4cced7f5f3be24cd7"
+      "animation": "anim_armed",
+      "sha256": "40a01abaa9cff89dc4e77d4507333bf1413d57418215d990b384a6e2d60be117"
     },
     {
       "target": "images/Card/Plants/PuffShroom.webp",
@@ -1185,6 +1188,9 @@
       "kind": "cards",
       "model": "SnowPea",
       "animation": "anim_full_idle",
+      "hidden": [
+        "peashooter_eyebrow"
+      ],
       "sha256": "726486c5081e5852cf1313d4cd496221710b97177687ff839eceb39abf8d7d13"
     },
     {
@@ -2433,7 +2439,10 @@
           69
         ]
       },
-      "sha256": "2c179d7628dcab0f958381d2f3bc5e3f757378314ba862165c8fabb6f4bd79b4"
+      "hidden": [
+        "peashooter_eyebrow"
+      ],
+      "sha256": "01d29930cad7a52cc32e0f6352b22b833dbb301645b4d0b785a5885dfd625f33"
     },
     {
       "target": "images/Plants/Peashooter/Peashooter.gif",
@@ -2453,7 +2462,10 @@
           71
         ]
       },
-      "sha256": "2194a1e761675a790bbd6fddc300a780bb6b2c3303f7fbe841865b3b7cbaf15c"
+      "hidden": [
+        "peashooter_eyebrow"
+      ],
+      "sha256": "165b62acc559b6a3d6238bcd86055aba7d9f2ba27420c7df3ae869520d280c44"
     },
     {
       "target": "images/Plants/Plantern/0.gif",
@@ -2499,7 +2511,7 @@
       "target": "images/Plants/PotatoMine/0.gif",
       "kind": "animations",
       "model": "PotatoMine",
-      "animation": "anim_idle",
+      "animation": "anim_armed",
       "still": true,
       "geometry": {
         "size": [
@@ -2513,27 +2525,7 @@
           53
         ]
       },
-      "sha256": "9b48fc343a64cb0cfce87d1e2f9bfb384a5afa69209fba1b99a2b8480e2ae0f8"
-    },
-    {
-      "target": "images/Plants/PotatoMine/ExplosionSpudow.gif",
-      "kind": "animations",
-      "model": "PotatoMine",
-      "animation": "anim_idle",
-      "still": false,
-      "geometry": {
-        "size": [
-          186,
-          58
-        ],
-        "bounds": [
-          4,
-          2,
-          180,
-          54
-        ]
-      },
-      "sha256": "382e335265e092dfc863a368c28b2867bc3dd8aa253a7269cdd3f41f60665ba4"
+      "sha256": "ae9d7d92fa2aece1c46cb48c315188047ac60c77e73376ad72aaee226fd83446"
     },
     {
       "target": "images/Plants/PotatoMine/PotatoMine.gif",
@@ -2654,112 +2646,6 @@
         ]
       },
       "sha256": "0539aa41467256de7d020c4fda848286d4f6f48ce5dd3329f6f210b1434f6fab"
-    },
-    {
-      "target": "images/Plants/PumpkinHead/0.gif",
-      "kind": "animations",
-      "model": "Pumpkin",
-      "animation": "anim_idle",
-      "still": true,
-      "geometry": {
-        "size": [
-          97,
-          67
-        ],
-        "bounds": [
-          1,
-          6,
-          93,
-          66
-        ]
-      },
-      "sha256": "a571d71ddc2f58e7f03cd884c53d7d07f4de4396c384db0fbe9d927abdd63ec2"
-    },
-    {
-      "target": "images/Plants/PumpkinHead/PumpkinHead.gif",
-      "kind": "animations",
-      "model": "Pumpkin",
-      "animation": "anim_idle",
-      "still": false,
-      "geometry": {
-        "size": [
-          97,
-          67
-        ],
-        "bounds": [
-          0,
-          3,
-          96,
-          66
-        ]
-      },
-      "sha256": "1e6887efa0113f60d8136591e92e86f3b8ce478fa287d349542dcc80c19c84b9"
-    },
-    {
-      "target": "images/Plants/PumpkinHead/Pumpkin_back.gif",
-      "kind": "animations",
-      "model": "Pumpkin",
-      "animation": "anim_idle",
-      "hidden": [
-        "pumpkin_front"
-      ],
-      "geometry": {
-        "size": [
-          97,
-          67
-        ],
-        "bounds": [
-          6,
-          3,
-          87,
-          57
-        ]
-      },
-      "sha256": "2f6483bfff2e41ff9064ca960d45335017de0bf15afce6c94b4b9f15b9fb2b7c"
-    },
-    {
-      "target": "images/Plants/PumpkinHead/Pumpkin_damage1.gif",
-      "kind": "animations",
-      "model": "Pumpkin",
-      "animation": "anim_idle",
-      "overrides": {
-        "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE2"
-      },
-      "geometry": {
-        "size": [
-          97,
-          67
-        ],
-        "bounds": [
-          0,
-          7,
-          97,
-          65
-        ]
-      },
-      "sha256": "70559038a1838d9e6d3318d0b0e05e99df0cdd03ed5e3cc4626f5f18c683229e"
-    },
-    {
-      "target": "images/Plants/PumpkinHead/Pumpkin_damage2.gif",
-      "kind": "animations",
-      "model": "Pumpkin",
-      "animation": "anim_idle",
-      "overrides": {
-        "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE3"
-      },
-      "geometry": {
-        "size": [
-          97,
-          67
-        ],
-        "bounds": [
-          0,
-          9,
-          96,
-          64
-        ]
-      },
-      "sha256": "3b5e653e025cc34d1ffbd0855d47678dde6eefd998a0d74315df206bc7a46b06"
     },
     {
       "target": "images/Plants/Repeater/0.gif",
@@ -3200,66 +3086,6 @@
         ]
       },
       "sha256": "864b76a90f6236a904ebed3aef8616e05203a4207aeb073fc856f9c3f9fa75a3"
-    },
-    {
-      "target": "images/Plants/Squash/SquashAttack.gif",
-      "kind": "animations",
-      "model": "Squash",
-      "animation": "anim_jumpup",
-      "still": false,
-      "geometry": {
-        "size": [
-          100,
-          226
-        ],
-        "bounds": [
-          2,
-          1,
-          96,
-          226
-        ]
-      },
-      "sha256": "cc6f02e4b657beeaa45ae5e1f4bf81e64945d7600e407a2b3f289568f68eba10"
-    },
-    {
-      "target": "images/Plants/Squash/SquashL.png",
-      "kind": "animations",
-      "model": "Squash",
-      "animation": "anim_idle",
-      "still": true,
-      "geometry": {
-        "size": [
-          100,
-          226
-        ],
-        "bounds": [
-          17,
-          144,
-          85,
-          226
-        ]
-      },
-      "sha256": "92fc1c5b0a398415dfeaa2149587d851f8e18ec09a609fd7a445217bbbbef810"
-    },
-    {
-      "target": "images/Plants/Squash/SquashR.png",
-      "kind": "animations",
-      "model": "Squash",
-      "animation": "anim_idle",
-      "still": true,
-      "geometry": {
-        "size": [
-          100,
-          226
-        ],
-        "bounds": [
-          17,
-          144,
-          85,
-          226
-        ]
-      },
-      "sha256": "92fc1c5b0a398415dfeaa2149587d851f8e18ec09a609fd7a445217bbbbef810"
     },
     {
       "target": "images/Plants/Starfruit/0.gif",
@@ -4058,222 +3884,6 @@
       "sha256": "6f39cbdc3cac4db5d2366c5331e5534efcf7b8f79a4508c5057636c17f7d0a3b"
     },
     {
-      "target": "images/Zombies/BalloonZombie/0.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": true,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          18,
-          4,
-          95,
-          129
-        ]
-      },
-      "sha256": "368787b0b9dbd860c745a448031993cf9e85b4ec19c23d82b461616c9f91001c"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/1.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          18,
-          3,
-          103,
-          140
-        ]
-      },
-      "sha256": "f8db4cb088e0f7c38dda7b27a4a181315fc23263fe4bed212691de55b979261b"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Attack.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          17,
-          85,
-          99,
-          189
-        ]
-      },
-      "sha256": "36e46105ee0b399d92d52e31445e8d4b8a6b46b4503657ff5c2c015d72b0a4c0"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Attack2.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          17,
-          108,
-          99,
-          189
-        ]
-      },
-      "sha256": "d1fe5808304b945f3d9048e8d2f848d121045af9d764a52e96d2a7725e3dfc1c"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Die.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          12,
-          107,
-          184,
-          189
-        ]
-      },
-      "sha256": "975f4de7546848a551774854e7f2abb32d5084ac552b20e1468c58b7ef20c3b5"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Drop.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_pop",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          6,
-          0,
-          122,
-          193
-        ]
-      },
-      "sha256": "92155f2498ee13e8edf650fd7abb38ec7e356d5bfb2366b74d0b4376d2c315fa"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Head.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_walk",
-      "hidden": [
-        "anim_idle",
-        "anim_swing",
-        "anim_pop",
-        "anim_eat",
-        "anim_walk",
-        "anim_death",
-        "_ground",
-        "zombie_balloon_innerleg_lower",
-        "zombie_balloon_innerleg_foot",
-        "zombie_balloon_innerleg_upper",
-        "zombie_innerarm_hand",
-        "zombie_balloon_innerarm_upper",
-        "zombie_balloon_innerarm_lower",
-        "zombie_balloon_string",
-        "zombie_balloon_bottom",
-        "zombie_balloon_top",
-        "zombie_balloon_body2",
-        "zombie_balloon_body1",
-        "zombie_balloon_outerleg_foot",
-        "zombie_balloon_outerleg_lower",
-        "zombie_balloon_outerleg_upper",
-        "zombie_outerarm_hand",
-        "zombie_outerarm_upper",
-        "zombie_outerarm_lower",
-        "hat",
-        "balloon_pop",
-        "propeller"
-      ],
-      "geometry": {
-        "size": [
-          207,
-          209
-        ],
-        "bounds": [
-          32,
-          25,
-          175,
-          209
-        ]
-      },
-      "sha256": "358e15106e8081426422172a4bb1a8b3d66ddc4277bfa2b86b21419f93d8fa08"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Walk.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          13,
-          76,
-          108,
-          189
-        ]
-      },
-      "sha256": "ff842aa32ea4a7402956ae796039639fef77311fde75e14b64f884358c982603"
-    },
-    {
-      "target": "images/Zombies/BalloonZombie/Walk2.gif",
-      "kind": "animations",
-      "model": "Zombie_balloon",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          207,
-          197
-        ],
-        "bounds": [
-          13,
-          102,
-          108,
-          189
-        ]
-      },
-      "sha256": "297e46a98027c8a539504f85bc88bfb05d86682b1f96a10a3d09fe7abda443f3"
-    },
-    {
       "target": "images/Zombies/BoomDie.gif",
       "kind": "animations",
       "model": "Zombie_charred",
@@ -4890,691 +4500,6 @@
       "sha256": "38d7be758c1ed072751a88837f50114db67175eed40fe9bdb85ef7371fe83f1a"
     },
     {
-      "target": "images/Zombies/Diggerzombie/0.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": true,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          53,
-          27,
-          146,
-          156
-        ]
-      },
-      "sha256": "743f9e589214a4bb427c80740d386ae75862552ffe1825a807ce857861c1728e"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Attack1.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          39,
-          17,
-          146,
-          156
-        ]
-      },
-      "sha256": "b959b2d3913f4b87f2fd175992b0cb0fd403c6166f68b563b2e39f6d789e3fc5"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Attack2.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          39,
-          17,
-          146,
-          156
-        ]
-      },
-      "sha256": "b959b2d3913f4b87f2fd175992b0cb0fd403c6166f68b563b2e39f6d789e3fc5"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/BoomDie.gif",
-      "kind": "animations",
-      "model": "Zombie_charred_digger",
-      "animation": "anim_crumble",
-      "geometry": {
-        "size": [
-          154,
-          204
-        ],
-        "bounds": [
-          32,
-          16,
-          131,
-          136
-        ]
-      },
-      "sha256": "ca3c6fe44d5ca693f3572dd9aee06ec94c342efef991d0724b5af160ae004f4d"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Die.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          6,
-          34,
-          150,
-          161
-        ]
-      },
-      "sha256": "5b8f57374e390d664a255b8d7da02e791c8bc7d0e91189c7882bb0c756a38c89"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/DiggerZombie.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_dig",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          53,
-          27,
-          146,
-          156
-        ]
-      },
-      "sha256": "8885ad96f13e74b5f4790c706d98791e686b8bf72c99951a48daf94210cb9466"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Down.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_dig",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          42,
-          7,
-          147,
-          156
-        ]
-      },
-      "sha256": "354539a61cb9d3ef9e5c9ddb5d4bbad5418a66c10c694dd907b72e45ebcf603e"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Down1.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_drill",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          42,
-          7,
-          147,
-          156
-        ]
-      },
-      "sha256": "b1373c9155dabb02cc329eae1accc712409dc751a275af243ffaba2f9ab9fe0a"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Up.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_landing",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          68,
-          6,
-          158,
-          146
-        ]
-      },
-      "sha256": "83dc5ea8db7925426ddce2c7cacd58317319737f0f89f52f6d7910a0291029ef"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Walk1.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          81,
-          118,
-          151,
-          157
-        ]
-      },
-      "sha256": "f601caae8557c828c88f1afa27943e13549e36f93d14f5579347b9ae98098703"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Walk2.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_dig",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          45,
-          18,
-          149,
-          156
-        ]
-      },
-      "sha256": "4d5f14a9cb75f225e01639375d012d645f8ad4bd9847b4bd0d795ad5ab51da2f"
-    },
-    {
-      "target": "images/Zombies/Diggerzombie/Walk3.gif",
-      "kind": "animations",
-      "model": "Zombie_digger",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          167,
-          170
-        ],
-        "bounds": [
-          45,
-          18,
-          149,
-          156
-        ]
-      },
-      "sha256": "c6f04b6bf71313ad162e0007aaeafb34c17e6a18e95738c1a9830e952e424bda"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/0.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": true,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          107,
-          88,
-          206,
-          199
-        ]
-      },
-      "sha256": "816f5dfd724a80565a187397b6fb21d4c83ed88b0e8c2c2bfce0335dfabc4872"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/1.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          102,
-          88,
-          206,
-          199
-        ]
-      },
-      "sha256": "301d152539ba3c32f247fdb94783fa542dcf5664fc7afbb6f458986347155494"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Attack.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          22,
-          117,
-          99,
-          201
-        ]
-      },
-      "sha256": "e78cec3e4a2968775f79a7f795ec463006afac1701d93fd4aab3b87c6a4c4d88"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Die.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          182,
-          126,
-          272,
-          195
-        ]
-      },
-      "sha256": "3a2133175d638f4c3b24a17ae674609a54d6212bdae81b8d220944418a48416f"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Die2.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          55,
-          148,
-          97,
-          210
-        ]
-      },
-      "sha256": "fed66660d952cf2d0b67b432f6d6e5e5260b0a61fae22718e3b09ed1944e042f"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Head.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_walk",
-      "hidden": [
-        "anim_idle",
-        "anim_walkdolphin",
-        "anim_walk",
-        "anim_jumpinpool",
-        "anim_ride",
-        "anim_dolphinjump",
-        "anim_eat",
-        "anim_swim",
-        "anim_death",
-        "_ground",
-        "zombie_dolphinrider_innerarm_hand",
-        "zombie_dolphinrider_innerarm_lower",
-        "zombie_dolphinrider_innerarm_upper",
-        "zombie_dolphinrider_innerleg_foot",
-        "zombie_dolphinrider_innerleg_lower",
-        "zombie_dolphinrider_innerleg_upper",
-        "zombie_dolphinrider_dolphininwater",
-        "layer 185",
-        "layer 1852",
-        "layer 1853",
-        "layer 1854",
-        "layer 1855",
-        "zombie_dolphinrider_body2",
-        "zombie_dolphinrider_body1",
-        "zombie_dolphinrider_watershadow",
-        "zombie_dolphinrider_outerleg_foot1",
-        "zombie_dolphinrider_outerleg_foot2",
-        "zombie_dolphinrider_outerleg_lower",
-        "zombie_dolphinrider_outerleg_upper",
-        "zombie_dolphinrider_whitewater",
-        "zombie_dolphinrider_dolphinbody2",
-        "zombie_dolphinrider_dolphinfin2",
-        "zombie_dolphinrider_dolphinjaw",
-        "zombie_dolphinrider_dolphinbody1",
-        "zombie_dolphinrider_dolphinfin1",
-        "zombie_outerarm_hand",
-        "zombie_outerarm_lower",
-        "zombie_dolphinrider_outerarm_upper"
-      ],
-      "geometry": {
-        "size": [
-          144,
-          210
-        ],
-        "bounds": [
-          47,
-          52,
-          144,
-          206
-        ]
-      },
-      "sha256": "4ad179c4f8887e1e4b3c4d9cdd6adea3e7ef1726b5e37ef7ef8308da21575461"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Jump.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_jumpinpool",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          0,
-          5,
-          222,
-          210
-        ]
-      },
-      "sha256": "3b34e3408e43be357646654c89592be9a3af6186d73a006077d5865f23df9292"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Jump2.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_dolphinjump",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          99,
-          2,
-          271,
-          195
-        ]
-      },
-      "sha256": "725d826901a2d1852035905c707ee948c72cd62ec862250755063d7c53b947d0"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Jump3.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_dolphinjump",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          69,
-          66,
-          163,
-          210
-        ]
-      },
-      "sha256": "2eeba46d8572c593b9046d206277c53997782673acdfa75463908e549bbcc17c"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Walk1.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_walkdolphin",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          96,
-          74,
-          209,
-          199
-        ]
-      },
-      "sha256": "ceb553b19df500ad043ce12021bb6d817bbcba06505be29279d1bf64f36c9af1"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Walk2.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_ride",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          174,
-          105,
-          272,
-          195
-        ]
-      },
-      "sha256": "1088882fdf9a58db723fdda2599477063d953597874e08e473a36dba6464c7d8"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Walk3.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_swim",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          19,
-          117,
-          99,
-          201
-        ]
-      },
-      "sha256": "d5b30f85106d27857cf52032dc5a51fba4626740e0b5630980de7c809ffb099b"
-    },
-    {
-      "target": "images/Zombies/DolphinRiderZombie/Walk4.gif",
-      "kind": "animations",
-      "model": "Zombie_dolphinrider",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          282,
-          210
-        ],
-        "bounds": [
-          13,
-          67,
-          103,
-          191
-        ]
-      },
-      "sha256": "342b6f95db2a45dcc35bfc8a6c77ca11d945e2d0f3088a294826213f9f45e9e9"
-    },
-    {
-      "target": "images/Zombies/FlagZombie/0.gif",
-      "kind": "animations",
-      "model": "Zombie",
-      "animation": "anim_idle",
-      "hidden": [
-        "duck",
-        "whitewater",
-        "mustache",
-        "flaghand",
-        "anim_tongue",
-        "anim_cone",
-        "anim_bucket",
-        "screendoor"
-      ],
-      "still": true,
-      "geometry": {
-        "size": [
-          166,
-          144
-        ],
-        "bounds": [
-          50,
-          1,
-          149,
-          142
-        ]
-      },
-      "sha256": "6138af8405bb315068f27671d8b66586952afe9a618415b47a0ca3694288060f"
-    },
-    {
-      "target": "images/Zombies/FlagZombie/FlagZombie.gif",
-      "kind": "animations",
-      "model": "Zombie",
-      "animation": "anim_walk",
-      "hidden": [
-        "duck",
-        "whitewater",
-        "mustache",
-        "flaghand",
-        "anim_tongue",
-        "anim_cone",
-        "anim_bucket",
-        "screendoor"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          166,
-          144
-        ],
-        "bounds": [
-          48,
-          0,
-          160,
-          142
-        ]
-      },
-      "sha256": "1da93a248e504bcc30630637cb2eed55ac853a0f98db3df85bb744fde2379489"
-    },
-    {
-      "target": "images/Zombies/FlagZombie/FlagZombieAttack.gif",
-      "kind": "animations",
-      "model": "Zombie",
-      "animation": "anim_eat",
-      "hidden": [
-        "duck",
-        "whitewater",
-        "mustache",
-        "flaghand",
-        "anim_tongue",
-        "anim_cone",
-        "anim_bucket",
-        "screendoor"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          166,
-          144
-        ],
-        "bounds": [
-          50,
-          0,
-          150,
-          142
-        ]
-      },
-      "sha256": "88249fd13006410e7469c291fb35bcc31a6f6b247e8fdf675d936e7ab1c9ea1b"
-    },
-    {
-      "target": "images/Zombies/FlagZombie/FlagZombieLostHeadAttack.gif",
-      "kind": "animations",
-      "model": "Zombie",
-      "animation": "anim_eat",
-      "hidden": [
-        "duck",
-        "whitewater",
-        "mustache",
-        "flaghand",
-        "anim_tongue",
-        "anim_cone",
-        "anim_bucket",
-        "screendoor",
-        "anim_head",
-        "anim_hair",
-        "anim_tongue",
-        "neck"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          166,
-          144
-        ],
-        "bounds": [
-          50,
-          0,
-          150,
-          142
-        ]
-      },
-      "sha256": "8c95e418c401cf7ff8b9de96c6759b7551ca93921b2d31cd161e7731ae7a15e7"
-    },
-    {
       "target": "images/Zombies/FootballZombie/0.gif",
       "kind": "animations",
       "model": "Zombie_football",
@@ -5685,9 +4610,10 @@
       "model": "Zombie_football",
       "animation": "anim_eat",
       "hidden": [
-        "anim_head",
         "anim_hair",
+        "anim_head",
         "anim_tongue",
+        "football_helmet",
         "neck"
       ],
       "still": false,
@@ -5703,14 +4629,16 @@
           160
         ]
       },
-      "sha256": "e42199384a147c8d9a0a7b3e9ace825a001fb9d4e6decdceac20c9c01d1a95ba"
+      "sha256": "15c143c4f320907198ecd568161f47d92855d8d9ea41951db7cb5332f7a8cebe"
     },
     {
       "target": "images/Zombies/FootballZombie/OrnLost.gif",
       "kind": "animations",
       "model": "Zombie_football",
       "animation": "anim_walk",
-      "hidden": [],
+      "hidden": [
+        "football_helmet"
+      ],
       "still": false,
       "geometry": {
         "size": [
@@ -5724,14 +4652,16 @@
           161
         ]
       },
-      "sha256": "ae4af63cadcb12210420b15c05c16b57a0804a17126709610d6de843d047896b"
+      "sha256": "a2d8ff15c9d7450a33e13f395dd0a9585faa88fc0b658ed5ffb1717ad55cbe39"
     },
     {
       "target": "images/Zombies/FootballZombie/OrnLostAttack.gif",
       "kind": "animations",
       "model": "Zombie_football",
       "animation": "anim_eat",
-      "hidden": [],
+      "hidden": [
+        "football_helmet"
+      ],
       "still": false,
       "geometry": {
         "size": [
@@ -5745,248 +4675,7 @@
           160
         ]
       },
-      "sha256": "6ad4738e00aaf8b2b0ff3cd07a57c62ab95894051bff44c6b0ae1971fd23062e"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/0.png",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": true,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          148,
-          67,
-          335,
-          285
-        ]
-      },
-      "sha256": "f97b756eda395b4cd678e7ca24c59d4544b96e2d4419cdbd02cee1a0a468a189"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/Attack.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_smash",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          64,
-          16,
-          386,
-          298
-        ]
-      },
-      "sha256": "dd9d396827c59a159260df2473ee6f13c8103943f163bda350cf46ab8ba812f6"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/AttackNoImp.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_smash",
-      "hidden": [
-        "imp"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          64,
-          16,
-          386,
-          298
-        ]
-      },
-      "sha256": "b3f814dfc540368638143abc120f733b3478e97bee07ac84816890d6e8880424"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/Death.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          23,
-          67,
-          364,
-          299
-        ]
-      },
-      "sha256": "aacc8accab191f11987814155afaa483c30c5ee6e2ccf2965e2b1606992c5f87"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/DeathNoImp.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_death",
-      "hidden": [
-        "imp"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          23,
-          68,
-          364,
-          299
-        ]
-      },
-      "sha256": "cab537685085e2b51c5e989efa3d6ff8e56e7454cf71ee7ecf2d7e4d31786f1b"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/Idle.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          141,
-          64,
-          335,
-          293
-        ]
-      },
-      "sha256": "02880b9a2500aa4cfdb1d86abbc5c344da080b8ad560f599c9ef6e1825c0d207"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/IdleNoImp.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_idle",
-      "hidden": [
-        "imp"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          141,
-          87,
-          335,
-          293
-        ]
-      },
-      "sha256": "9be493d349cf4d14fe370b8be2b481db6a97c88e642cdc9b464eb6abd67f2901"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/Throw.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_throw",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          8,
-          35,
-          333,
-          286
-        ]
-      },
-      "sha256": "08366c2c93c5a5de91d7c986e951d2fe79429974c7229122ddcc4a244e84c4a4"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/ThrowNoImp.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_throw",
-      "hidden": [
-        "imp"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          77,
-          54,
-          332,
-          286
-        ]
-      },
-      "sha256": "37135ee0d5b81513199b56fc9f27abc9d927120117121fa9b4eb6c4d72cd96c0"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/Walk.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          122,
-          65,
-          354,
-          286
-        ]
-      },
-      "sha256": "e95434c920962a4fdae645022a0105618a0a64dec5be293a47c2afd8b7e9ee4d"
-    },
-    {
-      "target": "images/Zombies/Gargantuar/WalkNoImp.webp",
-      "kind": "animations",
-      "model": "Zombie_gargantuar",
-      "animation": "anim_walk",
-      "hidden": [
-        "imp"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          390,
-          299
-        ],
-        "bounds": [
-          122,
-          77,
-          354,
-          286
-        ]
-      },
-      "sha256": "477544409a50128efb3f711bf9e680449570a27a83554f8a0a3cbed8a641c3f8"
+      "sha256": "16c82752fe0d9dedd1375d48100e010e70d2048823fc3721a44867ff47d6b0d0"
     },
     {
       "target": "images/Zombies/Imp/Zombie.gif",
@@ -6624,291 +5313,6 @@
         ]
       },
       "sha256": "153312363eb60d44b52ca1f9bdc55924bee34e8741c94a186a4df304827f183c"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/0.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": true,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          98,
-          80,
-          287,
-          209
-        ]
-      },
-      "sha256": "1bcb87eb097e7f92ce989eea5a1f9c851c156f6592c0d142fb727099abe14a80"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/1.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_idle",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          95,
-          80,
-          287,
-          209
-        ]
-      },
-      "sha256": "ac255944a5344bc64089eaf65ed5c87ea888d59907e6f90ed4992ee75107586a"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/BoomDie.gif",
-      "kind": "animations",
-      "model": "Zombie_charred",
-      "animation": "anim_crumble",
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          189,
-          89,
-          269,
-          204
-        ]
-      },
-      "sha256": "000e5b8f311bd128821a67963136db1eb85a94d4e36bc614502ca9d08adf1871"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombie.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_run",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          90,
-          57,
-          297,
-          211
-        ]
-      },
-      "sha256": "166e722c75e428fc4cd882d471afc2d0c6a84100ee9c3b3511e4d734669bc75e"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieAttack.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_eat",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          172,
-          83,
-          265,
-          214
-        ]
-      },
-      "sha256": "451137da758635242e9e72d3b33dfca14424a6252af62764d0536ac35f662cd4"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieDie.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_death",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          121,
-          109,
-          272,
-          218
-        ]
-      },
-      "sha256": "33da8cb8a0f094fa239f15d6c34912f6cb208688e90ffaaaaf7bf6ddea8d4f6f"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieHead.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_walk",
-      "hidden": [
-        "anim_idle",
-        "anim_run",
-        "anim_jump",
-        "anim_walk",
-        "anim_death",
-        "anim_eat",
-        "_ground",
-        "zombie_polevaulter_pole2",
-        "zombie_polevaulter_pole",
-        "zombie_polevaulter_innerhand",
-        "zombie_polevaulter_innerleg_upper",
-        "zombie_polevaulter_innerleg_foot",
-        "zombie_polevaulter_innerleg_toe",
-        "zombie_polevaulter_innerleg_lower",
-        "zombie_polevaulter_outerleg_upper",
-        "zombie_polevaulter_outerleg_foot",
-        "zombie_polevaulter_outerleg_toe",
-        "zombie_polevaulter_outerleg_lower",
-        "zombie_polevaulter_innerarm_upper",
-        "zombie_polevaulter_innerarm_lower",
-        "zombie_polevaulter_body2",
-        "zombie_polevaulter_body1",
-        "zombie_outerarm_hand",
-        "zombie_polevaulter_outerarm_upper",
-        "zombie_polevaulter_outerarm_lower"
-      ],
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          201,
-          50,
-          277,
-          210
-        ]
-      },
-      "sha256": "fdceda56da64577db0967c36ef75cfc4e02209a33839720627e63ed498ccf333"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_jump",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          0,
-          1,
-          315,
-          209
-        ]
-      },
-      "sha256": "72e1001d3d1ce18571e67c9cbbd0428ca6e1eb83204b3e6118cd4dd9a596d945"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_jump",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          192,
-          34,
-          325,
-          209
-        ]
-      },
-      "sha256": "a3d57520d0661558051a07a3e35e2a42f56df9ef51e7a5c9457794b95d3aa235"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadAttack.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_eat",
-      "hidden": [
-        "anim_head",
-        "anim_hair",
-        "anim_tongue",
-        "neck"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          172,
-          95,
-          265,
-          214
-        ]
-      },
-      "sha256": "0fdcafb6f80f6de275a04bf7898636def452df2aeb1a0aa58089b7bd5c610042"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadWalk.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_walk",
-      "hidden": [
-        "anim_head",
-        "anim_hair",
-        "anim_tongue",
-        "neck"
-      ],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          189,
-          104,
-          276,
-          214
-        ]
-      },
-      "sha256": "bc151e82adbc9a992a3f4db1a398070774d1e12f6ae8ebbde9792bdad11a1640"
-    },
-    {
-      "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif",
-      "kind": "animations",
-      "model": "Zombie_polevaulter",
-      "animation": "anim_walk",
-      "hidden": [],
-      "still": false,
-      "geometry": {
-        "size": [
-          348,
-          218
-        ],
-        "bounds": [
-          185,
-          69,
-          276,
-          214
-        ]
-      },
-      "sha256": "72a87543f6a0d4e068b426bdb4d17e1d6b3487fe7e4ca9d71366d1e8c2959c1e"
     },
     {
       "target": "images/Zombies/ScreenDoorZombie/0.gif",
@@ -7630,145 +6034,6 @@
         ]
       },
       "sha256": "d7d49fc33d710a68aba6930d3110310e0c89ce4d384dd3c22f45fa5ac56c7448"
-    },
-    {
-      "target": "images/Zombies/Zomboni/0.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": true,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          123,
-          113,
-          295,
-          279
-        ]
-      },
-      "sha256": "0e9f83a22580690e714a9732618bf8bfec392c848236b4592559e815d0859292"
-    },
-    {
-      "target": "images/Zombies/Zomboni/1.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": false,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          123,
-          112,
-          295,
-          279
-        ]
-      },
-      "sha256": "91f80c7d4db50675c36a30bb6ed86780c3f60995d5cc9f47f407040c9a61f111"
-    },
-    {
-      "target": "images/Zombies/Zomboni/2.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": false,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          125,
-          112,
-          295,
-          279
-        ]
-      },
-      "sha256": "aeba9d3a50baf9a5bf6b60fa65a377ee74fdd64895583b74b6a78109d46c3b6a"
-    },
-    {
-      "target": "images/Zombies/Zomboni/3.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": false,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          125,
-          112,
-          295,
-          279
-        ]
-      },
-      "sha256": "aeba9d3a50baf9a5bf6b60fa65a377ee74fdd64895583b74b6a78109d46c3b6a"
-    },
-    {
-      "target": "images/Zombies/Zomboni/4.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": false,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          115,
-          90,
-          321,
-          279
-        ]
-      },
-      "sha256": "6e68843fedb671dcc6b52b9eb2a877658b1b43114936d25d4d5928aae9d19891"
-    },
-    {
-      "target": "images/Zombies/Zomboni/5.gif",
-      "kind": "animations",
-      "model": "Zombie_zamboni",
-      "animation": "anim_drive",
-      "still": false,
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          0,
-          0,
-          464,
-          364
-        ]
-      },
-      "sha256": "624e0b3d23fa9d314c9c2ccd75322ce6c1fd41ceabf1efa2c3b63e1860f5e4f5"
-    },
-    {
-      "target": "images/Zombies/Zomboni/BoomDie.gif",
-      "kind": "animations",
-      "model": "Zombie_charred_zamboni",
-      "animation": "anim_crumble",
-      "geometry": {
-        "size": [
-          464,
-          364
-        ],
-        "bounds": [
-          122,
-          114,
-          296,
-          280
-        ]
-      },
-      "sha256": "4111ee69d1ba91b4766b59b1591a4b442701e15169949bdd20f455b2a556346d"
     },
     {
       "target": "images/interface/Almanac_GroundDay.jpg",
@@ -8507,13 +6772,52 @@
       "target": "images/interface/selector/SelectorScreen_BG_Center.png",
       "kind": "static",
       "source": "reanim/SelectorScreen_BG_Center.png",
-      "sha256": "eee609aaa9c94acfff129ee37b7cf11deaa8d2720875aa5c71c848d3756bccc8"
+      "sha256": "937f9f995cff0f8dfd262d393a4f411518f18aec65dd524415390f677ab3a74b"
     },
     {
       "target": "images/interface/selector/SelectorScreen_BG_Left.png",
       "kind": "static",
       "source": "reanim/SelectorScreen_BG_Left.png",
       "sha256": "742c00e46e7994d7d96b317cb26de820e11789bf70c5e8c4cdde3a79d8c69889"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_BG_Right.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_BG_Right.png",
+      "size": [
+        973,
+        639
+      ],
+      "sha256": "2f2467a4518e1c5f13801676ab0b3a40ba4ae567e84fb3a0eb04d3f0fd991ee4"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_BG_Right_Edge.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_BG_Right.png",
+      "crop": [
+        877,
+        0,
+        973,
+        639
+      ],
+      "mirror_tile": true,
+      "size": [
+        192,
+        639
+      ],
+      "sha256": "47486d0235ff4d274e381c43281935d2fa94547d1b84f110a08f8ce7567468b5"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_EmptySign.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_WoodSign1.png",
+      "crop": [
+        17,
+        177,
+        280,
+        258
+      ],
+      "sha256": "858093fd5311ec51e6fabd250acec16698809cc4c93712a1ff62685a99735124"
     },
     {
       "target": "images/interface/selector/SelectorScreen_Leaf1.png",
@@ -8548,14 +6852,14 @@
     {
       "target": "images/interface/selector/SelectorScreen_Minigames_button.png",
       "kind": "static",
-      "source": "reanim/SelectorScreen_Challenges_button.png",
-      "sha256": "b39c7a39834ab00acd0436c6d6390215041b8669de342b518645cc2b33caa365"
+      "source": "reanim/SelectorScreen_Survival_button.png",
+      "sha256": "7bf944baf86feb00b58647928c24f5c9bafd8677153fe9f4c0759d8ab1c0a91c"
     },
     {
       "target": "images/interface/selector/SelectorScreen_Puzzle_button.png",
       "kind": "static",
-      "source": "reanim/SelectorScreen_Vasebreaker_button.png",
-      "sha256": "0cf92e6114a21acf4b571e174909cdfc425e03ee9f62333f67576469631567b3"
+      "source": "reanim/SelectorScreen_Challenges_button.png",
+      "sha256": "54d87392a91c11de545a0d1ae065aaf8c89aa2fecff5a214dad28e2dc8f39176"
     },
     {
       "target": "images/interface/trophy.png",
@@ -8570,5 +6874,318 @@
       "sha256": "186b8fcaefa27dad5e7f06469777578a0ae8411c522e42a3113e4630c28a7eed"
     }
   ],
-  "failed": []
+  "failed": [],
+  "restored_originals": {
+    "commit": "dd0d9a00889beeb2647efb5214a38262a9cd0d97",
+    "assets": [
+      {
+        "target": "images/Plants/PotatoMine/ExplosionSpudow.gif",
+        "sha256": "5df2b67857fac592051593f9be5b60b4978c00fda805fecc07837734f801be5b"
+      },
+      {
+        "target": "images/Plants/Squash/SquashL.png",
+        "sha256": "d65c1276e01599c93b513ae0040c03ddca8474eda4811b4a44cd3f235740bdc4"
+      },
+      {
+        "target": "images/Plants/Squash/SquashR.png",
+        "sha256": "4c5bb6cfbedda507c7ecd9ae1aba7bec7a4f04660889970cf453d2e5698425e7"
+      },
+      {
+        "target": "images/Plants/Squash/SquashAttack.gif",
+        "sha256": "6cde22901bdd9c7ba5732f2b69ffa9669553519319748bb704193e2f1243e1a4"
+      },
+      {
+        "target": "images/Plants/PumpkinHead/PumpkinHead.gif",
+        "sha256": "8da3a01548b427ae9ae64445d2d56d5fdfdf3da03e492d110cd0441c646d297d"
+      },
+      {
+        "target": "images/Plants/PumpkinHead/0.gif",
+        "sha256": "13fc325e86f83b7a96e58d89597ccf9ff558707608434cabc3eb09d8ccb3f522"
+      },
+      {
+        "target": "images/Zombies/FlagZombie/FlagZombieAttack.gif",
+        "sha256": "744f8c72fcad33ff7bcfbe050d045e8e7d555d6e2d1cb9aa54c9c5831c3a5dd6"
+      },
+      {
+        "target": "images/Zombies/FlagZombie/0.gif",
+        "sha256": "74943d14db820d682e383a41fcbd2e70cfb8c6af155cf61c615111a3eb640525"
+      },
+      {
+        "target": "images/Zombies/FlagZombie/FlagZombieLostHeadAttack.gif",
+        "sha256": "f5ee16759e83792e25ccbfb83f124c46cec3ddcc70f14760ba4ca69b6951305b"
+      },
+      {
+        "target": "images/Zombies/FlagZombie/FlagZombie.gif",
+        "sha256": "cc091673cf6419116ad1042a8221ed28283fd7254c2b9a5b5739f8e867faa6e1"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombie.gif",
+        "sha256": "44ac059621f9d7bf7643fc0f8f1d4be9b4f38428cc4d02c2f9b56ea4e0ce2bd4"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif",
+        "sha256": "54139cfdb2312647522c3db58530a342f277d255fb27d1ea3fa995825ded7df5"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieDie.gif",
+        "sha256": "734cc0f5d7d3bc38d65f6959638aed68acd880b4ee1d155c3b92bc99aca19f2e"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieAttack.gif",
+        "sha256": "e1c5d031b158b630c39a8d96d7ee64a197a552b7b8b2011434637dbd7e147f7d"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/0.gif",
+        "sha256": "49087c002be26bfeaad69c72c09dd2dd1b979e1834e76f13608cb58c4d6168af"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif",
+        "sha256": "49c04cc4c8e23b8a5c7b3701d9acecfb718a756e19be086b2e3574d676700045"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadWalk.gif",
+        "sha256": "6f5fceadd7357465c40cd57a4e896753e6773dfdff01d3834dc2d2ee75bffa25"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadAttack.gif",
+        "sha256": "e81521966e2fa8c38783b445f41c26b3278a3b9885698ecba90486c14a1528a2"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif",
+        "sha256": "a7fa834789f45bfccd7929635bb3e5810738b04c6ea413dcd70ee45063cfc289"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/1.gif",
+        "sha256": "2841d8fb41e6f1fa19631d8dacd65a1e8ecb86baf5963e7477ab6149d991d704"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Down1.gif",
+        "sha256": "3138b027e9086b78e6203dc56d7553c9f870c276445c2328b7a7eb1efd82f3e0"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Walk2.gif",
+        "sha256": "0c4d1bdacbdf0cac3d2e66ce31a5b7f223ad94e2ede94d944f88d105e7c98835"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Attack2.gif",
+        "sha256": "0226f8e5703e09b36194b323380a8b17a5a4d69023b6dd6d115a5e24377b421a"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Down.gif",
+        "sha256": "8f77006e6ec017df3aaa4d2c1d5a6a6089c6e206f3ca905e222719e0c08e8467"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/0.gif",
+        "sha256": "7132d367a8d67fbede2b4c1ed59c55c777d340a029c4978bf034a4ab76d72130"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Up.gif",
+        "sha256": "04b5f90980b21165f44ae3afe043d4c635952c81025fcda8713f9fe1bf8339b3"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Walk3.gif",
+        "sha256": "bc3db6be2c66c1451860fb49b94f640002a832895352f4baf12e670224e2548d"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Die.gif",
+        "sha256": "ee76e44a73812ef5e8c2f4fd330b3303308e85f20c13ff72d7482ab578f920af"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Attack1.gif",
+        "sha256": "7ae61e0cc5bc043b20dbad2117b7241e97b3ac497968761226af7a21d4d4ccd3"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/Walk1.gif",
+        "sha256": "84ff5983e05fff4dd81f2acaea356ddcaff6a44d80340586f158deccf0dd814e"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/DiggerZombie.gif",
+        "sha256": "7132d367a8d67fbede2b4c1ed59c55c777d340a029c4978bf034a4ab76d72130"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Jump3.gif",
+        "sha256": "070c050d13988322c360e3a7b566f7ce7cdb97cb6ce6060a6ceb351842b707a5"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Walk2.gif",
+        "sha256": "2c8c9b01f68ea96eacad92312615ccf1171f5b560200c85e20fb8464b2d9c2cb"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/0.gif",
+        "sha256": "4b0cb744c4a6bd38c76c1a50dc2e50c62cf9f47a84c823aa687de93e0867ca5c"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Walk4.gif",
+        "sha256": "69358413a2929ca9e6c04fd395e19bc9af035f8d0bd22d914dbd40e3a69ba718"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Walk3.gif",
+        "sha256": "45d227071dc8d39b4a6814a845125a4a0e7697b1703bb14391b4df8c475b3f97"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Jump2.gif",
+        "sha256": "8c60fd5dbadaa16856aafd55991910516a1456957cbf5d557d62520fb6200dcc"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Die.gif",
+        "sha256": "532a215c55bfae36a3496198953bc94e73eaeb7d4500a745233b738d9afe1a63"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Jump.gif",
+        "sha256": "87ffd7cf52afc2b96ac85d51fb4b9d8d04f73ebf088d8ba4f6748ce54c2de6c2"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Die2.gif",
+        "sha256": "a1c3e76719ea94a3b8be748814d109861319513a576d0a5b8b0835ade7044112"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Walk1.gif",
+        "sha256": "46e469a42369d75dada1573421a03b34d252f037a18288efb36f23e36b99ec8d"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Attack.gif",
+        "sha256": "e9a7d124a61714870bece89966e796319979c4d46ba7f28aa29ab3033f507559"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/1.gif",
+        "sha256": "1abcc0439021e9ec738c292eaac34f8b874e433bdab0d2ed9f2960aa4f479811"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Walk.gif",
+        "sha256": "1acf65efbeb7fca031e9ffce17cc191f2b731f76f2e526108ffd7fa025dd5498"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Walk2.gif",
+        "sha256": "9cc04b9adc0ad7c56bb660db6d326c0f7a175265c59a6cacdc9a07467cfcb006"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Attack2.gif",
+        "sha256": "a5261bbf57b74d29f7dc4eed6e0b53aaf72ee5d9ccb1240822361776269e585c"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/0.gif",
+        "sha256": "36b40ffc793c8668d80ae4b4116984ffa82a8cf1d1116448f6b652627a69a295"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Die.gif",
+        "sha256": "04ad7e3d394f650f1e02c0bf19ab01e87eb9428197bb48a99fefa09b5fc3c9f6"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Attack.gif",
+        "sha256": "77bae7d382a23a6cbabeb5131c354c91c1cb64ef12af84cacd3fa8cfe17500f5"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Drop.gif",
+        "sha256": "685be01d1039202a3102e8851a8859d23ebf4203629fc3aa41fabbe661b6141c"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/1.gif",
+        "sha256": "6b3e3415114fa04de1196d63e4a0046d0e0f5c5a0fb6faa7882e1b75aa30f88e"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/DeathNoImp.webp",
+        "sha256": "026b7d12587996134878bf5f8dabaa304af34198b1495a8d27411b5e6bacd691"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/Idle.webp",
+        "sha256": "67efc52a287340ade6f506332e5b7b1482d90cfc0130e8cdd5fe101b2244f4c4"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/Walk.webp",
+        "sha256": "572ff68cba5c19bb426cafba456ea07b105dd45c556fd5db909da2aaa73951f8"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/Death.webp",
+        "sha256": "a1df87d806e17b050889a3834a4151530376da1873243d774d17641eaabd23a6"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/0.png",
+        "sha256": "8603d1dccbc2c6ca95399142ac029e946aeef4ebefca17cb079f1ef535c141ed"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/IdleNoImp.webp",
+        "sha256": "2a17d8fac3d79d98caf464bac15daf90d7ede7feaac62379d2801aa3485849c8"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/WalkNoImp.webp",
+        "sha256": "0aa112d7025cd8933ac626a17da16446b0302fbe1ec3b687fb0f50dfa6f21768"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/AttackNoImp.webp",
+        "sha256": "18e7807d10454c5947961b1f56ea42e8b19f34cc33cc092d32fff27cbb98514a"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/Attack.webp",
+        "sha256": "3a44f703f3c8b5befd3ed3505d6c30605aa74e1d8df542e799efbd29751edaa8"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/Throw.webp",
+        "sha256": "8c0b3d73f636bce0185346e81f6177d68ca3259ef2945344954276e12101c674"
+      },
+      {
+        "target": "images/Zombies/Gargantuar/ThrowNoImp.webp",
+        "sha256": "de2aa353b39afc398d4eee6c8ff6c0c2b709d53ae163c7d4cfc27b697dfa33e5"
+      },
+      {
+        "target": "images/Plants/PumpkinHead/Pumpkin_damage1.gif",
+        "sha256": "7f3f4c82c11cfcdf50a0d81b295133bb3464b45eb9837a848667e453851622c4"
+      },
+      {
+        "target": "images/Plants/PumpkinHead/Pumpkin_damage2.gif",
+        "sha256": "18b01ec31d2a610396f4b96eb2c2cc9394d454456a928977a3ca0867e0ad149c"
+      },
+      {
+        "target": "images/Plants/PumpkinHead/Pumpkin_back.gif",
+        "sha256": "239d40de16c0cbbeae09f052889f07b12fdd29842c1d23cf86995f6391711f49"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieHead.gif",
+        "sha256": "427b5a41d06e32089a0a2b21ff095020d793c1d51b494f058f77cd3354763ef2"
+      },
+      {
+        "target": "images/Zombies/PoleVaultingZombie/BoomDie.gif",
+        "sha256": "5da87ffd00f5f941ff12dbc1eb43bfa99a300f8a70c3a2ba7385f976837a7bfb"
+      },
+      {
+        "target": "images/Zombies/Diggerzombie/BoomDie.gif",
+        "sha256": "99456fcc7a5b618fd2e811951feb07b4b916095c94ecf73506b793a206ceae12"
+      },
+      {
+        "target": "images/Zombies/DolphinRiderZombie/Head.gif",
+        "sha256": "d044eed37843af7cf1484a37eac5edac9dc8e3301903522314a86205e80a7dda"
+      },
+      {
+        "target": "images/Zombies/BalloonZombie/Head.gif",
+        "sha256": "91a985b4ff15489ef700f86a3666f5dec039f82db8e25e47adb5ca6baf6f8955"
+      },
+      {
+        "target": "images/Zombies/Zomboni/2.gif",
+        "sha256": "bb53d77d10226f678f0e66c5e232dc5980b56a435376c9b3a854c6faf78cf2a1"
+      },
+      {
+        "target": "images/Zombies/Zomboni/0.gif",
+        "sha256": "28f6ea38693a081eb521a284bab42b2d26fa667127eccb4391c1d9d6461c7904"
+      },
+      {
+        "target": "images/Zombies/Zomboni/5.gif",
+        "sha256": "8c2a57d429583c68e00afc60e523bb991f7dadc6eb0c41db09bf041674087287"
+      },
+      {
+        "target": "images/Zombies/Zomboni/3.gif",
+        "sha256": "53e0f436a5953a0e28a47cb3562cfca6bcb3d83f4e30b2512fb81d692003e38b"
+      },
+      {
+        "target": "images/Zombies/Zomboni/BoomDie.gif",
+        "sha256": "d34dd94e9b37f7c07ec2a0fc327b9cbb4e879902f5da6664311887b95830889a"
+      },
+      {
+        "target": "images/Zombies/Zomboni/4.gif",
+        "sha256": "51eead9d6f20454195ac4f12c31b8b9fd2db7017b9d026cbd26b06897c1d6615"
+      },
+      {
+        "target": "images/Zombies/Zomboni/1.gif",
+        "sha256": "c70342ea21a8d3117d1f681d7e575e69afabe7fd7262c711c42a69eabafe3e04"
+      }
+    ]
+  }
 }

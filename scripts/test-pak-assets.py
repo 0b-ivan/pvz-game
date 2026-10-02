@@ -45,6 +45,44 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(image.getbbox(),(2,2,3,3))
         self.assertGreater(image.getpixel((2,2))[0],240)
 
+    def test_png_separate_alpha_mask(self):
+        color=BytesIO();Image.new('RGB',(5,5),'red').save(color,'PNG')
+        mask=BytesIO();im=Image.new('L',(5,5),0);im.putpixel((2,2),255);im.save(mask,'PNG')
+        source={'reanim/test.png':color.getvalue(),'reanim/test_.png':mask.getvalue()}
+        self.assertEqual(assets.source_image(source,'reanim/test.png').getbbox(),(2,2,3,3))
+
+    def test_menu_scenery_is_transparent(self):
+        image=Image.open(ROOT/'game/images/interface/selector/SelectorScreen_BG_Center.png').convert('RGBA')
+        self.assertEqual(image.getpixel((0,0))[3],0,'sky must show through the middle scenery')
+        self.assertEqual(image.getpixel((image.width//2,image.height-1))[3],255,'the lawn must remain opaque')
+
+    def test_starter_portrait_differs_from_repeater(self):
+        from PIL import ImageChops
+        pea=Image.open(ROOT/'game/images/Card/Plants/Peashooter.webp').convert('RGB')
+        repeater=Image.open(ROOT/'game/images/Card/Plants/Repeater.webp').convert('RGB')
+        self.assertIsNotNone(ImageChops.difference(pea,repeater).getbbox(),'starter and upgrade must have different portraits')
+
+    def test_menu_right_uses_matching_source_geometry(self):
+        with Image.open(ROOT/'game/images/interface/selector/SelectorScreen_BG_Right.png') as image:
+            self.assertEqual(image.size,(973,639))
+
+    def test_football_lost_armor_hides_helmet(self):
+        mapping=json.loads((ROOT/'scripts/pak-asset-map.json').read_text())
+        states=[r for r in mapping if '/FootballZombie/' in r['target'] and ('OrnLost' in r['target'] or 'LostHead' in r['target'])]
+        self.assertEqual(len(states),3)
+        for state in states:
+            self.assertIn('football_helmet',state['hidden'])
+
+    def test_restored_state_assets_remain_original(self):
+        report=json.loads((ROOT/'docs/pak-import.json').read_text())
+        restored=report['restored_originals']['assets']
+        imported={r['target'] for r in report['imported']}
+        self.assertEqual(len(restored),77)
+        for record in restored:
+            with self.subTest(target=record['target']):
+                self.assertNotIn(record['target'],imported)
+                self.assertEqual(hashlib.sha256((ROOT/'game'/record['target']).read_bytes()).hexdigest(),record['sha256'])
+
     def test_large_negative_transform(self):
         blob=BytesIO();Image.new('RGBA',(4,6),(255,0,0,255)).save(blob,'PNG')
         renderer=assets.Renderer({'reanim/test.png':blob.getvalue()})

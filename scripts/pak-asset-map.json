@@ -350,7 +350,10 @@
         62,
         69
       ]
-    }
+    },
+    "hidden": [
+      "peashooter_eyebrow"
+    ]
   },
   {
     "target": "images/Plants/Peashooter/Peashooter.gif",
@@ -369,7 +372,10 @@
         71,
         71
       ]
-    }
+    },
+    "hidden": [
+      "peashooter_eyebrow"
+    ]
   },
   {
     "target": "images/Plants/SunFlower/SunFlower.gif",
@@ -543,29 +549,10 @@
     }
   },
   {
-    "target": "images/Plants/PotatoMine/ExplosionSpudow.gif",
-    "kind": "animations",
-    "model": "PotatoMine",
-    "animation": "anim_idle",
-    "still": false,
-    "geometry": {
-      "size": [
-        186,
-        58
-      ],
-      "bounds": [
-        4,
-        2,
-        180,
-        54
-      ]
-    }
-  },
-  {
     "target": "images/Plants/PotatoMine/0.gif",
     "kind": "animations",
     "model": "PotatoMine",
-    "animation": "anim_idle",
+    "animation": "anim_armed",
     "still": true,
     "geometry": {
       "size": [
@@ -1246,63 +1233,6 @@
     }
   },
   {
-    "target": "images/Plants/Squash/SquashL.png",
-    "kind": "animations",
-    "model": "Squash",
-    "animation": "anim_idle",
-    "still": true,
-    "geometry": {
-      "size": [
-        100,
-        226
-      ],
-      "bounds": [
-        17,
-        144,
-        85,
-        226
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/Squash/SquashR.png",
-    "kind": "animations",
-    "model": "Squash",
-    "animation": "anim_idle",
-    "still": true,
-    "geometry": {
-      "size": [
-        100,
-        226
-      ],
-      "bounds": [
-        17,
-        144,
-        85,
-        226
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/Squash/SquashAttack.gif",
-    "kind": "animations",
-    "model": "Squash",
-    "animation": "anim_jumpup",
-    "still": false,
-    "geometry": {
-      "size": [
-        100,
-        226
-      ],
-      "bounds": [
-        2,
-        1,
-        96,
-        226
-      ]
-    }
-  },
-  {
     "target": "images/Plants/Squash/0.gif",
     "kind": "animations",
     "model": "Squash",
@@ -1945,44 +1875,6 @@
         1,
         76,
         70
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/PumpkinHead/PumpkinHead.gif",
-    "kind": "animations",
-    "model": "Pumpkin",
-    "animation": "anim_idle",
-    "still": false,
-    "geometry": {
-      "size": [
-        97,
-        67
-      ],
-      "bounds": [
-        0,
-        3,
-        96,
-        66
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/PumpkinHead/0.gif",
-    "kind": "animations",
-    "model": "Pumpkin",
-    "animation": "anim_idle",
-    "still": true,
-    "geometry": {
-      "size": [
-        97,
-        67
-      ],
-      "bounds": [
-        1,
-        6,
-        93,
-        66
       ]
     }
   },
@@ -2997,126 +2889,6 @@
     }
   },
   {
-    "target": "images/Zombies/FlagZombie/FlagZombieAttack.gif",
-    "kind": "animations",
-    "model": "Zombie",
-    "animation": "anim_eat",
-    "hidden": [
-      "duck",
-      "whitewater",
-      "mustache",
-      "flaghand",
-      "anim_tongue",
-      "anim_cone",
-      "anim_bucket",
-      "screendoor"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        166,
-        144
-      ],
-      "bounds": [
-        50,
-        0,
-        150,
-        142
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/FlagZombie/0.gif",
-    "kind": "animations",
-    "model": "Zombie",
-    "animation": "anim_idle",
-    "hidden": [
-      "duck",
-      "whitewater",
-      "mustache",
-      "flaghand",
-      "anim_tongue",
-      "anim_cone",
-      "anim_bucket",
-      "screendoor"
-    ],
-    "still": true,
-    "geometry": {
-      "size": [
-        166,
-        144
-      ],
-      "bounds": [
-        50,
-        1,
-        149,
-        142
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/FlagZombie/FlagZombieLostHeadAttack.gif",
-    "kind": "animations",
-    "model": "Zombie",
-    "animation": "anim_eat",
-    "hidden": [
-      "duck",
-      "whitewater",
-      "mustache",
-      "flaghand",
-      "anim_tongue",
-      "anim_cone",
-      "anim_bucket",
-      "screendoor",
-      "anim_head",
-      "anim_hair",
-      "anim_tongue",
-      "neck"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        166,
-        144
-      ],
-      "bounds": [
-        50,
-        0,
-        150,
-        142
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/FlagZombie/FlagZombie.gif",
-    "kind": "animations",
-    "model": "Zombie",
-    "animation": "anim_walk",
-    "hidden": [
-      "duck",
-      "whitewater",
-      "mustache",
-      "flaghand",
-      "anim_tongue",
-      "anim_cone",
-      "anim_bucket",
-      "screendoor"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        166,
-        144
-      ],
-      "bounds": [
-        48,
-        0,
-        160,
-        142
-      ]
-    }
-  },
-  {
     "target": "images/Zombies/ScreenDoorZombie/LostHeadWalk1.gif",
     "kind": "animations",
     "model": "Zombie",
@@ -3345,216 +3117,6 @@
         25,
         135,
         149
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombie.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_run",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        90,
-        57,
-        297,
-        211
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        185,
-        69,
-        276,
-        214
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieDie.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        121,
-        109,
-        272,
-        218
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieAttack.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        172,
-        83,
-        265,
-        214
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/0.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": true,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        98,
-        80,
-        287,
-        209
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_jump",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        192,
-        34,
-        325,
-        209
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadWalk.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_walk",
-    "hidden": [
-      "anim_head",
-      "anim_hair",
-      "anim_tongue",
-      "neck"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        189,
-        104,
-        276,
-        214
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadAttack.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_eat",
-    "hidden": [
-      "anim_head",
-      "anim_hair",
-      "anim_tongue",
-      "neck"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        172,
-        95,
-        265,
-        214
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_jump",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        0,
-        1,
-        315,
-        209
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/1.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        95,
-        80,
-        287,
-        209
       ]
     }
   },
@@ -3824,9 +3386,10 @@
     "model": "Zombie_football",
     "animation": "anim_eat",
     "hidden": [
-      "anim_head",
       "anim_hair",
+      "anim_head",
       "anim_tongue",
+      "football_helmet",
       "neck"
     ],
     "still": false,
@@ -3888,7 +3451,9 @@
     "kind": "animations",
     "model": "Zombie_football",
     "animation": "anim_walk",
-    "hidden": [],
+    "hidden": [
+      "football_helmet"
+    ],
     "still": false,
     "geometry": {
       "size": [
@@ -3948,7 +3513,9 @@
     "kind": "animations",
     "model": "Zombie_football",
     "animation": "anim_eat",
-    "hidden": [],
+    "hidden": [
+      "football_helmet"
+    ],
     "still": false,
     "geometry": {
       "size": [
@@ -4394,466 +3961,6 @@
     }
   },
   {
-    "target": "images/Zombies/Diggerzombie/Down1.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_drill",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        42,
-        7,
-        147,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Walk2.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_dig",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        45,
-        18,
-        149,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Attack2.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        39,
-        17,
-        146,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Down.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_dig",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        42,
-        7,
-        147,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/0.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": true,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        53,
-        27,
-        146,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Up.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_landing",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        68,
-        6,
-        158,
-        146
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Walk3.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        45,
-        18,
-        149,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Die.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        6,
-        34,
-        150,
-        161
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Attack1.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        39,
-        17,
-        146,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/Walk1.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        81,
-        118,
-        151,
-        157
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Diggerzombie/DiggerZombie.gif",
-    "kind": "animations",
-    "model": "Zombie_digger",
-    "animation": "anim_dig",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        167,
-        170
-      ],
-      "bounds": [
-        53,
-        27,
-        146,
-        156
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Jump3.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_dolphinjump",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        69,
-        66,
-        163,
-        210
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Walk2.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_ride",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        174,
-        105,
-        272,
-        195
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/0.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": true,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        107,
-        88,
-        206,
-        199
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Walk4.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        13,
-        67,
-        103,
-        191
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Walk3.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_swim",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        19,
-        117,
-        99,
-        201
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Jump2.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_dolphinjump",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        99,
-        2,
-        271,
-        195
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Die.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        182,
-        126,
-        272,
-        195
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Jump.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_jumpinpool",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        0,
-        5,
-        222,
-        210
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Die2.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        55,
-        148,
-        97,
-        210
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Walk1.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_walkdolphin",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        96,
-        74,
-        209,
-        199
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Attack.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        22,
-        117,
-        99,
-        201
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/1.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        282,
-        210
-      ],
-      "bounds": [
-        102,
-        88,
-        206,
-        199
-      ]
-    }
-  },
-  {
     "target": "images/Zombies/SnorkelZombie/Sink.gif",
     "kind": "animations",
     "model": "Zombie_snorkle",
@@ -5179,396 +4286,6 @@
     }
   },
   {
-    "target": "images/Zombies/BalloonZombie/Walk.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        13,
-        76,
-        108,
-        189
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/Walk2.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        13,
-        102,
-        108,
-        189
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/Attack2.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        17,
-        108,
-        99,
-        189
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/0.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": true,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        18,
-        4,
-        95,
-        129
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/Die.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        12,
-        107,
-        184,
-        189
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/Attack.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_eat",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        17,
-        85,
-        99,
-        189
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/Drop.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_pop",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        6,
-        0,
-        122,
-        193
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/BalloonZombie/1.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        207,
-        197
-      ],
-      "bounds": [
-        18,
-        3,
-        103,
-        140
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/DeathNoImp.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_death",
-    "hidden": [
-      "imp"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        23,
-        68,
-        364,
-        299
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/Idle.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        141,
-        64,
-        335,
-        293
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/Walk.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_walk",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        122,
-        65,
-        354,
-        286
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/Death.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_death",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        23,
-        67,
-        364,
-        299
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/0.png",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_idle",
-    "hidden": [],
-    "still": true,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        148,
-        67,
-        335,
-        285
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/IdleNoImp.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_idle",
-    "hidden": [
-      "imp"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        141,
-        87,
-        335,
-        293
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/WalkNoImp.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_walk",
-    "hidden": [
-      "imp"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        122,
-        77,
-        354,
-        286
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/AttackNoImp.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_smash",
-    "hidden": [
-      "imp"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        64,
-        16,
-        386,
-        298
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/Attack.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_smash",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        64,
-        16,
-        386,
-        298
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/Throw.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_throw",
-    "hidden": [],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        8,
-        35,
-        333,
-        286
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Gargantuar/ThrowNoImp.webp",
-    "kind": "animations",
-    "model": "Zombie_gargantuar",
-    "animation": "anim_throw",
-    "hidden": [
-      "imp"
-    ],
-    "still": false,
-    "geometry": {
-      "size": [
-        390,
-        299
-      ],
-      "bounds": [
-        77,
-        54,
-        332,
-        286
-      ]
-    }
-  },
-  {
     "target": "images/Zombies/Imp/ZombieDie.gif",
     "kind": "animations",
     "model": "Zombie_imp",
@@ -5657,13 +4374,19 @@
     "target": "images/Card/Plants/Peashooter.webp",
     "kind": "cards",
     "model": "PeaShooter",
-    "animation": "anim_full_idle"
+    "animation": "anim_full_idle",
+    "hidden": [
+      "peashooter_eyebrow"
+    ]
   },
   {
     "target": "images/Card/Plants/SnowPea.webp",
     "kind": "cards",
     "model": "SnowPea",
-    "animation": "anim_full_idle"
+    "animation": "anim_full_idle",
+    "hidden": [
+      "peashooter_eyebrow"
+    ]
   },
   {
     "target": "images/Card/Plants/SunFlower.webp",
@@ -5687,7 +4410,7 @@
     "target": "images/Card/Plants/PotatoMine.webp",
     "kind": "cards",
     "model": "PotatoMine",
-    "animation": "anim_idle"
+    "animation": "anim_armed"
   },
   {
     "target": "images/Card/Plants/Chomper.webp",
@@ -5998,48 +4721,6 @@
         6,
         82,
         118
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/PumpkinHead/Pumpkin_damage1.gif",
-    "kind": "animations",
-    "model": "Pumpkin",
-    "animation": "anim_idle",
-    "overrides": {
-      "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE2"
-    },
-    "geometry": {
-      "size": [
-        97,
-        67
-      ],
-      "bounds": [
-        0,
-        7,
-        97,
-        65
-      ]
-    }
-  },
-  {
-    "target": "images/Plants/PumpkinHead/Pumpkin_damage2.gif",
-    "kind": "animations",
-    "model": "Pumpkin",
-    "animation": "anim_idle",
-    "overrides": {
-      "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE3"
-    },
-    "geometry": {
-      "size": [
-        97,
-        67
-      ],
-      "bounds": [
-        0,
-        9,
-        96,
-        64
       ]
     }
   },
@@ -6416,27 +5097,6 @@
     }
   },
   {
-    "target": "images/Plants/PumpkinHead/Pumpkin_back.gif",
-    "kind": "animations",
-    "model": "Pumpkin",
-    "animation": "anim_idle",
-    "hidden": [
-      "pumpkin_front"
-    ],
-    "geometry": {
-      "size": [
-        97,
-        67
-      ],
-      "bounds": [
-        6,
-        3,
-        87,
-        57
-      ]
-    }
-  },
-  {
     "target": "images/interface/Shovel/0.gif",
     "kind": "static",
     "source": "images/Shovel_hi_res.png"
@@ -6497,69 +5157,6 @@
         1,
         149,
         186
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieHead.gif",
-    "kind": "animations",
-    "model": "Zombie_polevaulter",
-    "animation": "anim_walk",
-    "hidden": [
-      "anim_idle",
-      "anim_run",
-      "anim_jump",
-      "anim_walk",
-      "anim_death",
-      "anim_eat",
-      "_ground",
-      "zombie_polevaulter_pole2",
-      "zombie_polevaulter_pole",
-      "zombie_polevaulter_innerhand",
-      "zombie_polevaulter_innerleg_upper",
-      "zombie_polevaulter_innerleg_foot",
-      "zombie_polevaulter_innerleg_toe",
-      "zombie_polevaulter_innerleg_lower",
-      "zombie_polevaulter_outerleg_upper",
-      "zombie_polevaulter_outerleg_foot",
-      "zombie_polevaulter_outerleg_toe",
-      "zombie_polevaulter_outerleg_lower",
-      "zombie_polevaulter_innerarm_upper",
-      "zombie_polevaulter_innerarm_lower",
-      "zombie_polevaulter_body2",
-      "zombie_polevaulter_body1",
-      "zombie_outerarm_hand",
-      "zombie_polevaulter_outerarm_upper",
-      "zombie_polevaulter_outerarm_lower"
-    ],
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        201,
-        50,
-        277,
-        210
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/PoleVaultingZombie/BoomDie.gif",
-    "kind": "animations",
-    "model": "Zombie_charred",
-    "animation": "anim_crumble",
-    "geometry": {
-      "size": [
-        348,
-        218
-      ],
-      "bounds": [
-        189,
-        89,
-        269,
-        204
       ]
     }
   },
@@ -6762,82 +5359,6 @@
     }
   },
   {
-    "target": "images/Zombies/Diggerzombie/BoomDie.gif",
-    "kind": "animations",
-    "model": "Zombie_charred_digger",
-    "animation": "anim_crumble",
-    "geometry": {
-      "size": [
-        154,
-        204
-      ],
-      "bounds": [
-        32,
-        16,
-        131,
-        136
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/DolphinRiderZombie/Head.gif",
-    "kind": "animations",
-    "model": "Zombie_dolphinrider",
-    "animation": "anim_walk",
-    "hidden": [
-      "anim_idle",
-      "anim_walkdolphin",
-      "anim_walk",
-      "anim_jumpinpool",
-      "anim_ride",
-      "anim_dolphinjump",
-      "anim_eat",
-      "anim_swim",
-      "anim_death",
-      "_ground",
-      "zombie_dolphinrider_innerarm_hand",
-      "zombie_dolphinrider_innerarm_lower",
-      "zombie_dolphinrider_innerarm_upper",
-      "zombie_dolphinrider_innerleg_foot",
-      "zombie_dolphinrider_innerleg_lower",
-      "zombie_dolphinrider_innerleg_upper",
-      "zombie_dolphinrider_dolphininwater",
-      "layer 185",
-      "layer 1852",
-      "layer 1853",
-      "layer 1854",
-      "layer 1855",
-      "zombie_dolphinrider_body2",
-      "zombie_dolphinrider_body1",
-      "zombie_dolphinrider_watershadow",
-      "zombie_dolphinrider_outerleg_foot1",
-      "zombie_dolphinrider_outerleg_foot2",
-      "zombie_dolphinrider_outerleg_lower",
-      "zombie_dolphinrider_outerleg_upper",
-      "zombie_dolphinrider_whitewater",
-      "zombie_dolphinrider_dolphinbody2",
-      "zombie_dolphinrider_dolphinfin2",
-      "zombie_dolphinrider_dolphinjaw",
-      "zombie_dolphinrider_dolphinbody1",
-      "zombie_dolphinrider_dolphinfin1",
-      "zombie_outerarm_hand",
-      "zombie_outerarm_lower",
-      "zombie_dolphinrider_outerarm_upper"
-    ],
-    "geometry": {
-      "size": [
-        144,
-        210
-      ],
-      "bounds": [
-        47,
-        52,
-        144,
-        206
-      ]
-    }
-  },
-  {
     "target": "images/Zombies/SnorkelZombie/Head.gif",
     "kind": "animations",
     "model": "Zombie_snorkle",
@@ -6903,53 +5424,6 @@
     }
   },
   {
-    "target": "images/Zombies/BalloonZombie/Head.gif",
-    "kind": "animations",
-    "model": "Zombie_balloon",
-    "animation": "anim_walk",
-    "hidden": [
-      "anim_idle",
-      "anim_swing",
-      "anim_pop",
-      "anim_eat",
-      "anim_walk",
-      "anim_death",
-      "_ground",
-      "zombie_balloon_innerleg_lower",
-      "zombie_balloon_innerleg_foot",
-      "zombie_balloon_innerleg_upper",
-      "zombie_innerarm_hand",
-      "zombie_balloon_innerarm_upper",
-      "zombie_balloon_innerarm_lower",
-      "zombie_balloon_string",
-      "zombie_balloon_bottom",
-      "zombie_balloon_top",
-      "zombie_balloon_body2",
-      "zombie_balloon_body1",
-      "zombie_balloon_outerleg_foot",
-      "zombie_balloon_outerleg_lower",
-      "zombie_balloon_outerleg_upper",
-      "zombie_outerarm_hand",
-      "zombie_outerarm_upper",
-      "zombie_outerarm_lower",
-      "hat",
-      "balloon_pop",
-      "propeller"
-    ],
-    "geometry": {
-      "size": [
-        207,
-        209
-      ],
-      "bounds": [
-        32,
-        25,
-        175,
-        209
-      ]
-    }
-  },
-  {
     "target": "images/Zombies/Imp/ZombieHead.gif",
     "kind": "animations",
     "model": "Zombie_imp",
@@ -6988,138 +5462,6 @@
     }
   },
   {
-    "target": "images/Zombies/Zomboni/2.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": false,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        125,
-        112,
-        295,
-        279
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/0.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": true,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        123,
-        113,
-        295,
-        279
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/5.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": false,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        0,
-        0,
-        464,
-        364
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/3.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": false,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        125,
-        112,
-        295,
-        279
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/BoomDie.gif",
-    "kind": "animations",
-    "model": "Zombie_charred_zamboni",
-    "animation": "anim_crumble",
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        122,
-        114,
-        296,
-        280
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/4.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": false,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        115,
-        90,
-        321,
-        279
-      ]
-    }
-  },
-  {
-    "target": "images/Zombies/Zomboni/1.gif",
-    "kind": "animations",
-    "model": "Zombie_zamboni",
-    "animation": "anim_drive",
-    "still": false,
-    "geometry": {
-      "size": [
-        464,
-        364
-      ],
-      "bounds": [
-        123,
-        112,
-        295,
-        279
-      ]
-    }
-  },
-  {
     "target": "images/interface/SeedChooser_Background.png",
     "kind": "static",
     "source": "images/SeedChooser_Background.png"
@@ -7142,12 +5484,12 @@
   {
     "target": "images/interface/selector/SelectorScreen_Minigames_button.png",
     "kind": "static",
-    "source": "reanim/SelectorScreen_Challenges_button.png"
+    "source": "reanim/SelectorScreen_Survival_button.png"
   },
   {
     "target": "images/interface/selector/SelectorScreen_Puzzle_button.png",
     "kind": "static",
-    "source": "reanim/SelectorScreen_Vasebreaker_button.png"
+    "source": "reanim/SelectorScreen_Challenges_button.png"
   },
   {
     "target": "audio/groan6.mp3",
@@ -7991,5 +6333,41 @@
     "kind": "cards",
     "model": "SplitPea",
     "animation": "anim_idle"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_EmptySign.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_WoodSign1.png",
+    "crop": [
+      17,
+      177,
+      280,
+      258
+    ]
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_BG_Right_Edge.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_BG_Right.png",
+    "crop": [
+      877,
+      0,
+      973,
+      639
+    ],
+    "mirror_tile": true,
+    "size": [
+      192,
+      639
+    ]
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_BG_Right.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_BG_Right.png",
+    "size": [
+      973,
+      639
+    ]
   }
 ]
