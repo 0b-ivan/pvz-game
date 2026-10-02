@@ -139,11 +139,14 @@ body.pvz-touch #dAll {
 	user-select: none;
 }
 
-/* Compose the selector from the native QotL widescreen layers. The left
+/* Compose the selector from the matching package layers. The left
  * scenery stays anchored to the tree, while the original 900px menu controls
  * remain centered through --pvz-menu-shift. Nothing is stretched non-uniformly. */
 #pvz-menu-world {
 	display: none;
+}
+:root {
+	--pvz-menu-shift: 0px;
 }
 
 body.pvz-touch.pvz-selector #dSurface {
@@ -159,11 +162,11 @@ body.pvz-touch.pvz-selector #iSurfaceBackground {
 	background: none;
 }
 
-body.pvz-touch.pvz-selector #iSurfaceBackground > img {
+body.pvz-selector #iSurfaceBackground > img {
 	display: none;
 }
 
-body.pvz-touch.pvz-selector #pvz-menu-world {
+body.pvz-selector #pvz-menu-world {
 	display: block;
 	position: absolute;
 	inset: 0;
@@ -182,32 +185,44 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 }
 
 .pvz-menu-left {
-	left: -12px;
-	top: 0;
-	width: 592px;
+	left: -320px;
+	top: -140px;
+	width: 849px;
 	height: auto;
 	z-index: 0;
 }
 
 .pvz-menu-center {
-	left: calc(var(--pvz-menu-shift) + 190px);
-	top: 248px;
-	width: 514px;
+	left: calc(var(--pvz-menu-shift) + 130px);
+	top: 250px;
+	width: 720px;
 	height: auto;
 	z-index: 0;
 }
 
 .pvz-menu-right {
-	left: calc(var(--pvz-menu-shift) + 200px);
-	top: 0;
-	width: 758px;
+	left: calc(var(--pvz-menu-shift) + 10px);
+	top: -39px;
+	width: 973px;
 	height: auto;
 	z-index: 3;
 }
 
+/* Continue only the right edge scenery on wide displays, without another
+ * gravestone or a blue gap below the fence. */
+body.pvz-selector #pvz-menu-world::after {
+	content: "";
+	position: absolute;
+	left: calc(var(--pvz-menu-shift) + 983px);
+	top: -39px;
+	width: max(0px, calc(var(--pvz-menu-shift) - 83px));
+	height: 639px;
+	background: url(images/interface/selector/SelectorScreen_BG_Right_Edge.png) left top / 192px 639px repeat-x;
+}
+
 .pvz-menu-zombie {
-	left: calc(var(--pvz-menu-shift) + 374px);
-	top: 117px;
+	left: calc(var(--pvz-menu-shift) + 305px);
+	top: 65px;
 	width: 210px;
 	height: 182px;
 	z-index: 2;
@@ -215,6 +230,7 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 	rotate: -8deg;
 	animation: pvz-zombie-peek 7s ease-in-out infinite;
 	animation-play-state: paused;
+	clip-path: inset(0 0 65px 0);
 }
 
 .pvz-menu-zombie-sprite {
@@ -226,12 +242,12 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 
 .pvz-menu-zombie-lid {
 	position: absolute;
-	top: 39px;
-	height: 16px;
-	border: 2px solid #2f382a;
+	top: 57px;
+	height: 10px;
+	border: 1px solid #515b48;
 	border-radius: 50%;
 	box-sizing: border-box;
-	background: #7f9075;
+	background: #9faa93;
 	transform: scaleY(0);
 	transform-origin: center;
 	animation: pvz-zombie-blink 6.8s linear infinite;
@@ -239,13 +255,13 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 }
 
 .pvz-menu-zombie-lid-left {
-	left: 48px;
-	width: 25px;
+	left: 107px;
+	width: 14px;
 }
 
 .pvz-menu-zombie-lid-right {
-	left: 82px;
-	width: 31px;
+	left: 124px;
+	width: 21px;
 }
 
 .pvz-menu-button-art {
@@ -254,20 +270,20 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 }
 
 .pvz-menu-adventure-art {
-	left: calc(var(--pvz-menu-shift) + 472px);
-	top: 80px;
+	left: calc(var(--pvz-menu-shift) + 455px);
+	top: 65px;
 	width: 329px;
 }
 
 .pvz-menu-minigames-art {
-	left: calc(var(--pvz-menu-shift) + 474px);
-	top: 203px;
+	left: calc(var(--pvz-menu-shift) + 456px);
+	top: 173px;
 	width: 313px;
 }
 
 .pvz-menu-puzzle-art {
-	left: calc(var(--pvz-menu-shift) + 478px);
-	top: 303px;
+	left: calc(var(--pvz-menu-shift) + 460px);
+	top: 257px;
 	width: 286px;
 }
 
@@ -294,9 +310,30 @@ body.pvz-touch.pvz-selector #pvz-menu-world {
 	top: 495px;
 	width: 47px;
 }
+.pvz-menu-options-art,
+.pvz-menu-help-art,
+.pvz-menu-quit-art {
+	filter: brightness(2.6) drop-shadow(0 1px 1px #000);
+}
 
-body.pvz-touch.pvz-selector #iSurfaceBackground .handbook {
+body.pvz-selector #iSurfaceBackground .handbook {
 	background: none !important;
+}
+
+/* Match the original artwork coordinates rather than the previous composite. */
+body.pvz-selector #dAdventure {
+	left: 455px;
+	top: 65px;
+	width: 329px;
+	height: 143px;
+}
+body.pvz-selector #iSurfaceBackground .mini {
+	left: 456px;
+	top: 173px;
+}
+body.pvz-selector #iSurfaceBackground .riddle {
+	left: 460px;
+	top: 257px;
 }
 
 .pvz-menu-leaves {

@@ -50,6 +50,32 @@ implement their currency, inventory, purchases or plant-care state.
 
 ## Validation
 
+### Semantic corrections after visual review
+
+The first import passed decoding and geometry checks but still mapped several
+sprites to the wrong character or state. The corrected importer applies PNG
+sidecar alpha masks as well as JPEG masks. Peashooter hides the optional Repeater
+eyebrow; Potato Mine's portrait and almanac use its armed state. Football Zombie
+loses its helmet in the lost-armor and headless attack states.
+
+The selector uses the matching 973×639 package background, native scene positions,
+the MINI-GAMES and PUZZLE buttons, and a cropped source plank. The previous right
+background had a different aspect ratio and could not share those positions.
+
+77 state assets were restored byte-for-byte from commit
+`dd0d9a00889beeb2647efb5214a38262a9cd0d97`, and removed from the import map:
+Flag Zombie, Dolphin Rider, Gargantuar, Zomboni, Pole Vaulting Zombie, Digger and
+Balloon Zombie conversions, Pumpkin's split layers, Squash's directional/attack
+poses, and the SPUDOW effect. Some were confirmed wrong (missing flag, identical
+vehicle damage/death states, a mine instead of an explosion); others lacked
+validated attachments, timing or layer composition. They keep the game's previous
+art until those conversions can reproduce the actual state transitions.
+`docs/pak-import.json` records both the 501 retained imports and the 77 restored
+files with hashes. Running the importer preserves the restoration record.
+
+These checks prevent the identified regressions; they do not establish that
+every imported animation has been exercised through every gameplay transition.
+
 The asset test checks all output hashes, decodes all image frames and checks
 pinned canvas geometry. It also covers transform inheritance, truncated
 compiled data, JPEG alpha masks and negative transform coordinates.

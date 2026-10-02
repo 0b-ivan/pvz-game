@@ -15,6 +15,20 @@ import zlib
 from PIL import Image
 
 
+def source_image(source, key):
+    """PNG as well as JPEG colour pieces can have separate grayscale masks."""
+    from io import BytesIO
+    original = Image.open(BytesIO(source[key]))
+    image = original.convert('RGBA')
+    mask_key = str(Path(key).with_suffix('')) + '_.png'
+    if 'A' not in original.getbands() and mask_key in source:
+        mask = Image.open(BytesIO(source[mask_key])).convert('L')
+        if mask.size != image.size:
+            raise ValueError(f'Alpha mask dimensions differ for {key}')
+        image.putalpha(mask)
+    return image
+
+
 def unpack(path):
     data = bytes(v ^ 0xF7 for v in path.read_bytes())
     if data[:8] != bytes.fromhex('c04ac0ba00000000'):
@@ -92,14 +106,7 @@ class Renderer:
             key = next((k for k in keys if k in self.source), None)
             if key is None:
                 raise ValueError(f'Missing image {name}')
-            image = Image.open(BytesIO(self.source[key])).convert('RGBA')
-            if key.endswith('.jpg'):
-                mask_key=key[:-4]+'_.png'
-                if mask_key in self.source:
-                    mask=Image.open(BytesIO(self.source[mask_key])).convert('L')
-                    if mask.size!=image.size:
-                        raise ValueError(f'Alpha mask dimensions differ for {name}')
-                    image.putalpha(mask)
+            image = source_image(self.source,key)
             self.images[name] = image
         return self.images[name]
 
@@ -235,11 +242,18 @@ def main():
             if kind == 'animations':
                 renderer.export(item['model'], item['animation'], target, item.get('hidden', []), item.get('still', False), item.get('overrides'),item.get('geometry'))
             elif kind == 'static':
-                image = Image.open(BytesIO(source[item['source'].lower()])).convert('RGBA')
+                image = source_image(source,item['source'].lower())
                 if 'crop' in item:
                     image = image.crop(item['crop'])
-                if image.size != Image.open(target).size:
-                    image = image.resize(Image.open(target).size, Image.Resampling.LANCZOS)
+                if item.get('mirror_tile'):
+                    from PIL import ImageOps
+                    tile = Image.new('RGBA', (image.width*2, image.height))
+                    tile.alpha_composite(ImageOps.mirror(image), (0,0))
+                    tile.alpha_composite(image, (image.width,0))
+                    image = tile
+                size = tuple(item.get('size', Image.open(target).size))
+                if image.size != size:
+                    image = image.resize(size, Image.Resampling.LANCZOS)
                 save_frames([image], target)
             elif kind == 'cards':
                 from PIL import ImageOps, ImageDraw
@@ -280,6 +294,8 @@ def main():
     existing={r['target']:r for r in previous.get('imported',[])} if previous.get('pak_sha256')==pak_hash else {}
     existing.update({r['target']:r for r in records})
     report = {'pak_sha256':pak_hash,'imported':sorted(existing.values(),key=lambda r:r['target']),'failed':failures}
+    if 'restored_originals' in previous:
+        report['restored_originals'] = previous['restored_originals']
     report_path.write_text(json.dumps(report,indent=2)+'\n')
     print(f'Imported {len(records)}; failed {len(failures)}')
     for f in failures: print(f)
