@@ -1,0 +1,7995 @@
+[
+  {
+    "target": "images/interface/options_checkbox1.png",
+    "kind": "static",
+    "source": "images/options_checkbox1.png"
+  },
+  {
+    "target": "images/interface/Almanac_PlantCard.png",
+    "kind": "static",
+    "source": "images/Almanac_PlantCard.png"
+  },
+  {
+    "target": "images/interface/button_down_left.png",
+    "kind": "static",
+    "source": "images/button_down_left.png"
+  },
+  {
+    "target": "images/interface/Scary_Pot.png",
+    "kind": "static",
+    "source": "images/Scary_Pot.png"
+  },
+  {
+    "target": "images/interface/button_left.png",
+    "kind": "static",
+    "source": "images/button_left.png"
+  },
+  {
+    "target": "images/interface/button_down_middle.png",
+    "kind": "static",
+    "source": "images/button_down_middle.png"
+  },
+  {
+    "target": "images/interface/Almanac_GroundDay.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundDay.jpg"
+  },
+  {
+    "target": "images/interface/Almanac_GroundIce.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundIce.jpg"
+  },
+  {
+    "target": "images/interface/trophy_hi_res.png",
+    "kind": "static",
+    "source": "images/trophy_hi_res.png"
+  },
+  {
+    "target": "images/interface/SodRollCap.png",
+    "kind": "static",
+    "source": "reanim/SodRollCap.png"
+  },
+  {
+    "target": "images/interface/Almanac_GroundNightPool.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundNightPool.jpg"
+  },
+  {
+    "target": "images/interface/SeedChooser_Button.png",
+    "kind": "static",
+    "source": "images/SeedChooser_Button.png"
+  },
+  {
+    "target": "images/interface/Tombstones.png",
+    "kind": "static",
+    "source": "images/Tombstones.png"
+  },
+  {
+    "target": "images/interface/ZombieNoteSmall.png",
+    "kind": "static",
+    "source": "images/ZombieNoteSmall.png"
+  },
+  {
+    "target": "images/interface/button_middle.png",
+    "kind": "static",
+    "source": "images/button_middle.png"
+  },
+  {
+    "target": "images/interface/button_right.png",
+    "kind": "static",
+    "source": "images/button_right.png"
+  },
+  {
+    "target": "images/interface/button_down_right.png",
+    "kind": "static",
+    "source": "images/button_down_right.png"
+  },
+  {
+    "target": "images/interface/brain.png",
+    "kind": "static",
+    "source": "images/brain.png"
+  },
+  {
+    "target": "images/interface/Almanac_ZombieCard.png",
+    "kind": "static",
+    "source": "images/Almanac_ZombieCard.png"
+  },
+  {
+    "target": "images/interface/Almanac_GroundNight.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundNight.jpg"
+  },
+  {
+    "target": "images/interface/Almanac_GroundRoof.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundRoof.jpg"
+  },
+  {
+    "target": "images/interface/trophy.png",
+    "kind": "static",
+    "source": "images/trophy.png"
+  },
+  {
+    "target": "images/interface/SodRoll.png",
+    "kind": "static",
+    "source": "reanim/SodRoll.png"
+  },
+  {
+    "target": "images/interface/Tombstone_mounds.png",
+    "kind": "static",
+    "source": "images/Tombstone_mounds.png"
+  },
+  {
+    "target": "images/interface/options_checkbox0.png",
+    "kind": "static",
+    "source": "images/options_checkbox0.png"
+  },
+  {
+    "target": "images/interface/Almanac_GroundPool.jpg",
+    "kind": "static",
+    "source": "images/Almanac_GroundPool.jpg"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_BG_Left.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_BG_Left.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Leaf3.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Leaf3.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Adventure_button.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Adventure_button.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Leaf5.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Leaf5.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Leaf1.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Leaf1.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Leaf4.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Leaf4.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_BG.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_BG.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Leaf2.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Leaf2.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_BG_Center.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_BG_Center.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Almanac.png",
+    "kind": "static",
+    "source": "images/SelectorScreen_Almanac.png"
+  },
+  {
+    "target": "images/interface/background3.jpg",
+    "kind": "static",
+    "source": "images/background3.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background1.jpg",
+    "kind": "static",
+    "source": "images/background1.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background4.jpg",
+    "kind": "static",
+    "source": "images/background4.png",
+    "crop": [
+      130,
+      0,
+      1530,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background5.jpg",
+    "kind": "static",
+    "source": "images/background5.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background1unsodded.jpg",
+    "kind": "static",
+    "source": "images/background1unsodded.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background2.jpg",
+    "kind": "static",
+    "source": "images/background2.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background3.png",
+    "kind": "static",
+    "source": "images/background3.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/background3.webp",
+    "kind": "static",
+    "source": "images/background3.png",
+    "crop": [
+      133,
+      0,
+      1533,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/Challenge_Background.jpg",
+    "kind": "static",
+    "source": "images/Challenge_Background.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/Almanac_PlantBack.jpg",
+    "kind": "static",
+    "source": "images/Almanac_PlantBack.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/Almanac_ZombieBack.jpg",
+    "kind": "static",
+    "source": "images/Almanac_ZombieBack.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/AwardScreen_Back.jpg",
+    "kind": "static",
+    "source": "images/AwardScreen_Back.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/Almanac_IndexBack.png",
+    "kind": "static",
+    "source": "images/Almanac_IndexBack.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/interface/Almanac_IndexBack.jpg",
+    "kind": "static",
+    "source": "images/Almanac_IndexBack.png",
+    "crop": [
+      83,
+      0,
+      983,
+      600
+    ]
+  },
+  {
+    "target": "images/Plants/Peashooter/0.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        71,
+        71
+      ],
+      "bounds": [
+        2,
+        11,
+        62,
+        69
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Peashooter/Peashooter.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        71,
+        71
+      ],
+      "bounds": [
+        2,
+        0,
+        71,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunFlower/SunFlower.gif",
+    "kind": "animations",
+    "model": "SunFlower",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        73,
+        148
+      ],
+      "bounds": [
+        0,
+        3,
+        73,
+        148
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunFlower/SunFlower1.gif",
+    "kind": "animations",
+    "model": "SunFlower",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        71,
+        71
+      ],
+      "bounds": [
+        1,
+        1,
+        70,
+        70
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunFlower/0.gif",
+    "kind": "animations",
+    "model": "SunFlower",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        71,
+        71
+      ],
+      "bounds": [
+        1,
+        10,
+        59,
+        69
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/CherryBomb/0.gif",
+    "kind": "animations",
+    "model": "CherryBomb",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        18,
+        11,
+        94,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/CherryBomb/CherryBomb.gif",
+    "kind": "animations",
+    "model": "CherryBomb",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        0,
+        0,
+        112,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/WallNut/WallNut.webp",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        65,
+        73
+      ],
+      "bounds": [
+        2,
+        0,
+        65,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/WallNut/0.webp",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        65,
+        73
+      ],
+      "bounds": [
+        4,
+        0,
+        63,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/WallNut/2.webp",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        136
+      ],
+      "bounds": [
+        0,
+        0,
+        112,
+        136
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/WallNut/1.gif",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        65,
+        73
+      ],
+      "bounds": [
+        4,
+        0,
+        63,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PotatoMine/ExplosionSpudow.gif",
+    "kind": "animations",
+    "model": "PotatoMine",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        186,
+        58
+      ],
+      "bounds": [
+        4,
+        2,
+        180,
+        54
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PotatoMine/0.gif",
+    "kind": "animations",
+    "model": "PotatoMine",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        75,
+        55
+      ],
+      "bounds": [
+        4,
+        3,
+        74,
+        53
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PotatoMine/PotatoMine_mashed.gif",
+    "kind": "animations",
+    "model": "PotatoMine",
+    "animation": "anim_mashed",
+    "still": false,
+    "geometry": {
+      "size": [
+        132,
+        93
+      ],
+      "bounds": [
+        1,
+        1,
+        132,
+        93
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PotatoMine/PotatoMine.gif",
+    "kind": "animations",
+    "model": "PotatoMine",
+    "animation": "anim_armed",
+    "still": false,
+    "geometry": {
+      "size": [
+        75,
+        55
+      ],
+      "bounds": [
+        4,
+        3,
+        74,
+        53
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PotatoMine/PotatoMineNotReady.gif",
+    "kind": "animations",
+    "model": "PotatoMine",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        75,
+        55
+      ],
+      "bounds": [
+        21,
+        24,
+        57,
+        53
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Chomper/ChomperAttack.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_bite",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        1,
+        4,
+        130,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Chomper/ChomperDigest.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_chew",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        2,
+        32,
+        82,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Chomper/0.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        3,
+        22,
+        81,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Chomper/Chomper.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        2,
+        17,
+        101,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PuffShroom/PuffShroom.gif",
+    "kind": "animations",
+    "model": "Puffshroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        40,
+        66
+      ],
+      "bounds": [
+        0,
+        29,
+        36,
+        66
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PuffShroom/PuffShroomSleep.gif",
+    "kind": "animations",
+    "model": "Puffshroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        40,
+        66
+      ],
+      "bounds": [
+        0,
+        29,
+        36,
+        66
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PuffShroom/0.gif",
+    "kind": "animations",
+    "model": "Puffshroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        40,
+        66
+      ],
+      "bounds": [
+        1,
+        31,
+        36,
+        66
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunShroom/SunShroom.gif",
+    "kind": "animations",
+    "model": "SunShroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        59,
+        61
+      ],
+      "bounds": [
+        1,
+        5,
+        57,
+        61
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunShroom/0.gif",
+    "kind": "animations",
+    "model": "SunShroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        59,
+        61
+      ],
+      "bounds": [
+        5,
+        5,
+        56,
+        61
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunShroom/SunShroom2.gif",
+    "kind": "animations",
+    "model": "SunShroom",
+    "animation": "anim_bigidle",
+    "still": false,
+    "geometry": {
+      "size": [
+        59,
+        61
+      ],
+      "bounds": [
+        10,
+        22,
+        48,
+        59
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SunShroom/SunShroomSleep.gif",
+    "kind": "animations",
+    "model": "SunShroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        59,
+        61
+      ],
+      "bounds": [
+        10,
+        22,
+        48,
+        59
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FumeShroom/0.gif",
+    "kind": "animations",
+    "model": "Fumeshroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        100,
+        88
+      ],
+      "bounds": [
+        2,
+        7,
+        81,
+        87
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FumeShroom/FumeShroomAttack.gif",
+    "kind": "animations",
+    "model": "Fumeshroom",
+    "animation": "anim_shooting",
+    "still": false,
+    "geometry": {
+      "size": [
+        100,
+        88
+      ],
+      "bounds": [
+        10,
+        18,
+        100,
+        88
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FumeShroom/FumeShroom.gif",
+    "kind": "animations",
+    "model": "Fumeshroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        100,
+        88
+      ],
+      "bounds": [
+        0,
+        1,
+        84,
+        87
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FumeShroom/FumeShroomSleep.gif",
+    "kind": "animations",
+    "model": "Fumeshroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        100,
+        88
+      ],
+      "bounds": [
+        0,
+        1,
+        84,
+        87
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GraveBuster/0.gif",
+    "kind": "animations",
+    "model": "Gravebuster",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        99,
+        106
+      ],
+      "bounds": [
+        0,
+        5,
+        98,
+        77
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GraveBuster/GraveBuster.gif",
+    "kind": "animations",
+    "model": "Gravebuster",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        99,
+        106
+      ],
+      "bounds": [
+        0,
+        5,
+        98,
+        77
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/HypnoShroom/HypnoShroom.gif",
+    "kind": "animations",
+    "model": "Hypnoshroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        68,
+        76
+      ],
+      "bounds": [
+        1,
+        0,
+        68,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/HypnoShroom/HypnoShroomSleep.gif",
+    "kind": "animations",
+    "model": "Hypnoshroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        68,
+        76
+      ],
+      "bounds": [
+        6,
+        0,
+        67,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/HypnoShroom/0.gif",
+    "kind": "animations",
+    "model": "Hypnoshroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        68,
+        76
+      ],
+      "bounds": [
+        9,
+        0,
+        64,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/ScaredyShroom/ScaredyShroom.gif",
+    "kind": "animations",
+    "model": "ScaredyShroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        57,
+        81
+      ],
+      "bounds": [
+        1,
+        14,
+        52,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/ScaredyShroom/ScaredyShroomCry.gif",
+    "kind": "animations",
+    "model": "ScaredyShroom",
+    "animation": "anim_scaredidle",
+    "still": false,
+    "geometry": {
+      "size": [
+        57,
+        81
+      ],
+      "bounds": [
+        2,
+        40,
+        52,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/ScaredyShroom/0.gif",
+    "kind": "animations",
+    "model": "ScaredyShroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        57,
+        81
+      ],
+      "bounds": [
+        2,
+        14,
+        50,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/ScaredyShroom/ScaredyShroomSleep.gif",
+    "kind": "animations",
+    "model": "ScaredyShroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        57,
+        81
+      ],
+      "bounds": [
+        4,
+        15,
+        53,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/IceShroom/IceShroomSleep.gif",
+    "kind": "animations",
+    "model": "Iceshroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        83,
+        75
+      ],
+      "bounds": [
+        0,
+        2,
+        81,
+        75
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/IceShroom/0.gif",
+    "kind": "animations",
+    "model": "Iceshroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        83,
+        75
+      ],
+      "bounds": [
+        0,
+        0,
+        82,
+        74
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/IceShroom/IceShroom.gif",
+    "kind": "animations",
+    "model": "Iceshroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        83,
+        75
+      ],
+      "bounds": [
+        0,
+        0,
+        82,
+        74
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/DoomShroom/DoomShroom.gif",
+    "kind": "animations",
+    "model": "DoomShroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        102,
+        91
+      ],
+      "bounds": [
+        6,
+        15,
+        97,
+        91
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/DoomShroom/0.gif",
+    "kind": "animations",
+    "model": "DoomShroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        102,
+        91
+      ],
+      "bounds": [
+        11,
+        15,
+        91,
+        91
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/DoomShroom/Sleep.gif",
+    "kind": "animations",
+    "model": "DoomShroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        102,
+        91
+      ],
+      "bounds": [
+        6,
+        15,
+        97,
+        91
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/LilyPad/LilyPad.gif",
+    "kind": "animations",
+    "model": "Lilypad",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        79,
+        58
+      ],
+      "bounds": [
+        1,
+        1,
+        78,
+        57
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/LilyPad/0.gif",
+    "kind": "animations",
+    "model": "Lilypad",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        79,
+        58
+      ],
+      "bounds": [
+        1,
+        1,
+        78,
+        57
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Squash/SquashL.png",
+    "kind": "animations",
+    "model": "Squash",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        100,
+        226
+      ],
+      "bounds": [
+        17,
+        144,
+        85,
+        226
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Squash/SquashR.png",
+    "kind": "animations",
+    "model": "Squash",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        100,
+        226
+      ],
+      "bounds": [
+        17,
+        144,
+        85,
+        226
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Squash/SquashAttack.gif",
+    "kind": "animations",
+    "model": "Squash",
+    "animation": "anim_jumpup",
+    "still": false,
+    "geometry": {
+      "size": [
+        100,
+        226
+      ],
+      "bounds": [
+        2,
+        1,
+        96,
+        226
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Squash/0.gif",
+    "kind": "animations",
+    "model": "Squash",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        100,
+        226
+      ],
+      "bounds": [
+        17,
+        144,
+        85,
+        226
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Squash/Squash.gif",
+    "kind": "animations",
+    "model": "Squash",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        100,
+        226
+      ],
+      "bounds": [
+        15,
+        141,
+        87,
+        226
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Threepeater/0.gif",
+    "kind": "animations",
+    "model": "ThreePeater",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        75,
+        85
+      ],
+      "bounds": [
+        7,
+        6,
+        70,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Threepeater/Threepeater.gif",
+    "kind": "animations",
+    "model": "ThreePeater",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        75,
+        85
+      ],
+      "bounds": [
+        2,
+        3,
+        73,
+        83
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TangleKlep/Grab.png",
+    "kind": "animations",
+    "model": "Tanglekelp",
+    "animation": "anim_grab",
+    "still": true,
+    "geometry": {
+      "size": [
+        61,
+        67
+      ],
+      "bounds": [
+        2,
+        2,
+        59,
+        65
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TangleKlep/0.gif",
+    "kind": "animations",
+    "model": "Tanglekelp",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        90,
+        72
+      ],
+      "bounds": [
+        0,
+        2,
+        87,
+        65
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TangleKlep/Float.gif",
+    "kind": "animations",
+    "model": "Tanglekelp",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        90,
+        72
+      ],
+      "bounds": [
+        0,
+        1,
+        87,
+        67
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Jalapeno/Jalapeno.gif",
+    "kind": "animations",
+    "model": "Jalapeno",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        68,
+        89
+      ],
+      "bounds": [
+        1,
+        2,
+        68,
+        89
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Jalapeno/0.gif",
+    "kind": "animations",
+    "model": "Jalapeno",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        68,
+        89
+      ],
+      "bounds": [
+        12,
+        12,
+        54,
+        85
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikeweed/SpikeweedAttack.webp",
+    "kind": "animations",
+    "model": "Caltrop",
+    "animation": "anim_attack",
+    "still": false,
+    "geometry": {
+      "size": [
+        89,
+        48
+      ],
+      "bounds": [
+        1,
+        2,
+        87,
+        48
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikeweed/Spikeweed.gif",
+    "kind": "animations",
+    "model": "Caltrop",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        85,
+        35
+      ],
+      "bounds": [
+        1,
+        0,
+        84,
+        34
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikeweed/0.gif",
+    "kind": "animations",
+    "model": "Caltrop",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        85,
+        35
+      ],
+      "bounds": [
+        2,
+        2,
+        83,
+        35
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikeweed/0.png",
+    "kind": "animations",
+    "model": "Caltrop",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        89,
+        48
+      ],
+      "bounds": [
+        1,
+        13,
+        87,
+        48
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikeweed/Spikeweed.webp",
+    "kind": "animations",
+    "model": "Caltrop",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        89,
+        48
+      ],
+      "bounds": [
+        0,
+        10,
+        89,
+        48
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Torchwood/Torchwood.gif",
+    "kind": "animations",
+    "model": "Torchwood",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        73,
+        87
+      ],
+      "bounds": [
+        0,
+        0,
+        70,
+        85
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Torchwood/0.gif",
+    "kind": "animations",
+    "model": "Torchwood",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        73,
+        87
+      ],
+      "bounds": [
+        1,
+        0,
+        70,
+        85
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TallNut/0.gif",
+    "kind": "animations",
+    "model": "Tallnut",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        83,
+        119
+      ],
+      "bounds": [
+        2,
+        1,
+        81,
+        119
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TallNut/TallNut.gif",
+    "kind": "animations",
+    "model": "Tallnut",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        83,
+        119
+      ],
+      "bounds": [
+        1,
+        1,
+        82,
+        119
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SeaShroom/SeaShroomSleep.gif",
+    "kind": "animations",
+    "model": "SeaShroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        48,
+        99
+      ],
+      "bounds": [
+        3,
+        43,
+        45,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SeaShroom/0.gif",
+    "kind": "animations",
+    "model": "SeaShroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        48,
+        99
+      ],
+      "bounds": [
+        4,
+        45,
+        44,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SeaShroom/SeaShroom.gif",
+    "kind": "animations",
+    "model": "SeaShroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        48,
+        99
+      ],
+      "bounds": [
+        3,
+        43,
+        45,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Plantern/Plantern.gif",
+    "kind": "animations",
+    "model": "Plantern",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        250,
+        237
+      ],
+      "bounds": [
+        83,
+        75,
+        167,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Plantern/0.gif",
+    "kind": "animations",
+    "model": "Plantern",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        250,
+        237
+      ],
+      "bounds": [
+        84,
+        75,
+        165,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Attack2.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_shootinghigh",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        0,
+        5,
+        122,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/0.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        4,
+        77,
+        87,
+        154
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Elongation.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_rise",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        3,
+        0,
+        87,
+        153
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Shorten.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_lower",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        3,
+        2,
+        87,
+        152
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Cactus2.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_idlehigh",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        2,
+        3,
+        87,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Attack.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_shooting",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        1,
+        77,
+        94,
+        154
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cactus/Cactus.gif",
+    "kind": "animations",
+    "model": "Cactus",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        122,
+        157
+      ],
+      "bounds": [
+        3,
+        71,
+        87,
+        154
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SplitPea/SplitPea.gif",
+    "kind": "animations",
+    "model": "SplitPea",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        95,
+        75
+      ],
+      "bounds": [
+        2,
+        2,
+        93,
+        74
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/SplitPea/0.gif",
+    "kind": "animations",
+    "model": "SplitPea",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        95,
+        75
+      ],
+      "bounds": [
+        2,
+        11,
+        84,
+        74
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Starfruit/0.gif",
+    "kind": "animations",
+    "model": "Starfruit",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        77,
+        70
+      ],
+      "bounds": [
+        2,
+        4,
+        74,
+        69
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Starfruit/Starfruit.gif",
+    "kind": "animations",
+    "model": "Starfruit",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        77,
+        70
+      ],
+      "bounds": [
+        0,
+        1,
+        76,
+        70
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PumpkinHead/PumpkinHead.gif",
+    "kind": "animations",
+    "model": "Pumpkin",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        97,
+        67
+      ],
+      "bounds": [
+        0,
+        3,
+        96,
+        66
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PumpkinHead/0.gif",
+    "kind": "animations",
+    "model": "Pumpkin",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        97,
+        67
+      ],
+      "bounds": [
+        1,
+        6,
+        93,
+        66
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/CoffeeBean/CoffeeBeanEat.gif",
+    "kind": "animations",
+    "model": "Coffeebean",
+    "animation": "anim_crumble",
+    "still": false,
+    "geometry": {
+      "size": [
+        39,
+        97
+      ],
+      "bounds": [
+        1,
+        1,
+        38,
+        97
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/CoffeeBean/0.gif",
+    "kind": "animations",
+    "model": "Coffeebean",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        39,
+        97
+      ],
+      "bounds": [
+        1,
+        1,
+        37,
+        46
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/CoffeeBean/CoffeeBean.gif",
+    "kind": "animations",
+    "model": "Coffeebean",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        39,
+        97
+      ],
+      "bounds": [
+        0,
+        1,
+        37,
+        50
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GatlingPea/0.gif",
+    "kind": "animations",
+    "model": "GatlingPea",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        85,
+        86
+      ],
+      "bounds": [
+        10,
+        8,
+        83,
+        85
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GatlingPea/GatlingPea.gif",
+    "kind": "animations",
+    "model": "GatlingPea",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        85,
+        86
+      ],
+      "bounds": [
+        2,
+        3,
+        84,
+        85
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TwinSunflower/TwinSunflower.gif",
+    "kind": "animations",
+    "model": "TwinSunFlower",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        83,
+        168
+      ],
+      "bounds": [
+        0,
+        0,
+        83,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TwinSunflower/0.gif",
+    "kind": "animations",
+    "model": "TwinSunFlower",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        83,
+        84
+      ],
+      "bounds": [
+        0,
+        3,
+        83,
+        82
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TwinSunflower/TwinSunflower1.gif",
+    "kind": "animations",
+    "model": "TwinSunFlower",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        83,
+        84
+      ],
+      "bounds": [
+        0,
+        0,
+        83,
+        83
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GloomShroom/GloomShroom.gif",
+    "kind": "animations",
+    "model": "GloomShroom",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        16,
+        1,
+        101,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GloomShroom/0.gif",
+    "kind": "animations",
+    "model": "GloomShroom",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        18,
+        5,
+        99,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GloomShroom/GloomShroomSleep.gif",
+    "kind": "animations",
+    "model": "GloomShroom",
+    "animation": "anim_sleep",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        16,
+        1,
+        101,
+        80
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/GloomShroom/GloomShroomAttack.gif",
+    "kind": "animations",
+    "model": "GloomShroom",
+    "animation": "anim_shooting",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        81
+      ],
+      "bounds": [
+        8,
+        0,
+        107,
+        81
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cattail/Cattail.gif",
+    "kind": "animations",
+    "model": "Cattail",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        177,
+        134
+      ],
+      "bounds": [
+        33,
+        17,
+        129,
+        91
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cattail/0.gif",
+    "kind": "animations",
+    "model": "Cattail",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        177,
+        134
+      ],
+      "bounds": [
+        45,
+        17,
+        127,
+        90
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Cattail/Attack.gif",
+    "kind": "animations",
+    "model": "Cattail",
+    "animation": "anim_shooting",
+    "still": false,
+    "geometry": {
+      "size": [
+        177,
+        134
+      ],
+      "bounds": [
+        17,
+        8,
+        127,
+        90
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikerock/Spikerock.gif",
+    "kind": "animations",
+    "model": "SpikeRock",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        84,
+        43
+      ],
+      "bounds": [
+        1,
+        0,
+        83,
+        43
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Spikerock/0.gif",
+    "kind": "animations",
+    "model": "SpikeRock",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        84,
+        43
+      ],
+      "bounds": [
+        2,
+        1,
+        82,
+        43
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Garlic/Garlic.gif",
+    "kind": "animations",
+    "model": "Garlic",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        60,
+        59
+      ],
+      "bounds": [
+        0,
+        0,
+        58,
+        58
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Garlic/0.gif",
+    "kind": "animations",
+    "model": "Garlic",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        60,
+        59
+      ],
+      "bounds": [
+        3,
+        3,
+        56,
+        58
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Blover/0.gif",
+    "kind": "animations",
+    "model": "Blover",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        146,
+        132
+      ],
+      "bounds": [
+        20,
+        25,
+        102,
+        111
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Blover/BloverBlow.gif",
+    "kind": "animations",
+    "model": "Blover",
+    "animation": "anim_blow",
+    "still": false,
+    "geometry": {
+      "size": [
+        146,
+        132
+      ],
+      "bounds": [
+        7,
+        1,
+        142,
+        127
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Blover/Blover.gif",
+    "kind": "animations",
+    "model": "Blover",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        146,
+        132
+      ],
+      "bounds": [
+        3,
+        18,
+        120,
+        111
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FlowerPot/FlowerPot.gif",
+    "kind": "animations",
+    "model": "Pot",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        72,
+        68
+      ],
+      "bounds": [
+        3,
+        2,
+        68,
+        67
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/FlowerPot/0.gif",
+    "kind": "animations",
+    "model": "Pot",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        72,
+        68
+      ],
+      "bounds": [
+        3,
+        3,
+        68,
+        67
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Repeater/Repeater.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        73,
+        71
+      ],
+      "bounds": [
+        1,
+        3,
+        73,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Repeater/0.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        73,
+        71
+      ],
+      "bounds": [
+        1,
+        10,
+        65,
+        70
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Repeater2/Repeater2.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        73,
+        71
+      ],
+      "bounds": [
+        0,
+        3,
+        72,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/Repeater2/0.gif",
+    "kind": "animations",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        73,
+        71
+      ],
+      "bounds": [
+        8,
+        10,
+        72,
+        70
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/BigChomper/ChomperAttack.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_bite",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        0,
+        0,
+        130,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/BigChomper/ChomperDigest.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_chew",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        3,
+        31,
+        101,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/BigChomper/0.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_idle",
+    "still": true,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        2,
+        18,
+        88,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/BigChomper/Chomper.gif",
+    "kind": "animations",
+    "model": "Chomper",
+    "animation": "anim_idle",
+    "still": false,
+    "geometry": {
+      "size": [
+        130,
+        114
+      ],
+      "bounds": [
+        3,
+        15,
+        105,
+        114
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/ZombieDie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_death",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        37,
+        51,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/ZombieLostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor",
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        60,
+        49,
+        150,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/Zombie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        67,
+        15,
+        159,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": true,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        73,
+        24,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/ZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        60,
+        24,
+        150,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        69,
+        24,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ConeheadZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": true,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        73,
+        1,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ConeheadZombie/ConeheadZombie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        67,
+        0,
+        159,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ConeheadZombie/ConeheadZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        60,
+        0,
+        150,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ConeheadZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        69,
+        1,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BucketheadZombie/BucketheadZombie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        66,
+        1,
+        159,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BucketheadZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "screendoor"
+    ],
+    "still": true,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        72,
+        8,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BucketheadZombie/BucketheadZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        60,
+        7,
+        150,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BucketheadZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        69,
+        8,
+        149,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FlagZombie/FlagZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        50,
+        0,
+        150,
+        142
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FlagZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": true,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        50,
+        1,
+        149,
+        142
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FlagZombie/FlagZombieLostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor",
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        50,
+        0,
+        150,
+        142
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FlagZombie/FlagZombie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "screendoor"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        48,
+        0,
+        160,
+        142
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/LostHeadWalk1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        40,
+        40,
+        145,
+        149
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/HeadWalk1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        40,
+        15,
+        145,
+        149
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/LostHeadAttack1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket",
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        49,
+        51,
+        136,
+        157
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/HeadAttack1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        49,
+        25,
+        136,
+        157
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": true,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        54,
+        25,
+        135,
+        149
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/ScreenDoorZombie.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        40,
+        15,
+        145,
+        149
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/ScreenDoorZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_eat",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        49,
+        25,
+        136,
+        157
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/ScreenDoorZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_idle",
+    "hidden": [
+      "duck",
+      "whitewater",
+      "mustache",
+      "flaghand",
+      "anim_tongue",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        157
+      ],
+      "bounds": [
+        51,
+        25,
+        135,
+        149
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombie.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_run",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        90,
+        57,
+        297,
+        211
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieWalk.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        185,
+        69,
+        276,
+        214
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieDie.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        121,
+        109,
+        272,
+        218
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        172,
+        83,
+        265,
+        214
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        98,
+        80,
+        287,
+        209
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump2.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_jump",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        192,
+        34,
+        325,
+        209
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadWalk.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        189,
+        104,
+        276,
+        214
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieLostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        172,
+        95,
+        265,
+        214
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieJump.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_jump",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        0,
+        1,
+        315,
+        209
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        95,
+        80,
+        287,
+        209
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/LostHeadWalk1.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_walk_nopaper",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        48,
+        66,
+        149,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/LostHeadAttack0.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        52,
+        62,
+        147,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/HeadAttack0.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        46,
+        22,
+        147,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/HeadWalk1.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_walk_nopaper",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        48,
+        27,
+        149,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/LostHeadWalk0.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        49,
+        66,
+        149,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/LostHeadAttack1.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        56,
+        40,
+        147,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/HeadWalk0.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        49,
+        27,
+        149,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/LostNewspaper.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_gasp",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        52,
+        38,
+        145,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/HeadAttack1.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        46,
+        22,
+        147,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        57,
+        39,
+        145,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        7,
+        62,
+        153,
+        164
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        55,
+        39,
+        145,
+        163
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/LostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        4,
+        41,
+        130,
+        160
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        4,
+        20,
+        129,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/FootballZombie.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        0,
+        0,
+        139,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/OrnLost.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        0,
+        3,
+        139,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        236,
+        170
+      ],
+      "bounds": [
+        26,
+        35,
+        229,
+        170
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        4,
+        20,
+        130,
+        160
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/OrnLostAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        4,
+        27,
+        130,
+        160
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/FootballZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_football",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        154,
+        172
+      ],
+      "bounds": [
+        4,
+        20,
+        129,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Dancing.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_armraise",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        13,
+        23,
+        105,
+        166
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/DancingZombie.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_armraise",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        33,
+        24,
+        108,
+        165
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Summon1.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_point",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        14,
+        32,
+        91,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/LostHeadSummon.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_point",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        0,
+        36,
+        92,
+        169
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/LostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        3,
+        44,
+        85,
+        165
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/LostHeadSlidingStep.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_moonwalk",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        31,
+        58,
+        107,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/SlidingStep.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_moonwalk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        14,
+        33,
+        107,
+        171
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Summon3.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_point",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        0,
+        34,
+        85,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/LostHeadDancing.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_armraise",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        10,
+        37,
+        102,
+        165
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/spotlight2.png",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        250,
+        20
+      ],
+      "bounds": [
+        7,
+        1,
+        248,
+        20
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        29,
+        55,
+        183,
+        176
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        1,
+        27,
+        95,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Summon2.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_point",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        4,
+        30,
+        88,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/Dancing.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_armraise",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        126,
+        152
+      ],
+      "bounds": [
+        23,
+        1,
+        108,
+        152
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/LostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        126,
+        152
+      ],
+      "bounds": [
+        8,
+        28,
+        90,
+        151
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/BackupDancer.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        126,
+        152
+      ],
+      "bounds": [
+        40,
+        5,
+        120,
+        151
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/LostHeadDancing.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_armraise",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        126,
+        152
+      ],
+      "bounds": [
+        25,
+        23,
+        113,
+        151
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        210,
+        155
+      ],
+      "bounds": [
+        38,
+        35,
+        210,
+        155
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        126,
+        152
+      ],
+      "bounds": [
+        20,
+        0,
+        114,
+        150
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Down1.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_drill",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        42,
+        7,
+        147,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Walk2.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_dig",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        45,
+        18,
+        149,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Attack2.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        39,
+        17,
+        146,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Down.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_dig",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        42,
+        7,
+        147,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        53,
+        27,
+        146,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Up.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_landing",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        68,
+        6,
+        158,
+        146
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Walk3.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        45,
+        18,
+        149,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        6,
+        34,
+        150,
+        161
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Attack1.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        39,
+        17,
+        146,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/Walk1.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        81,
+        118,
+        151,
+        157
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/DiggerZombie.gif",
+    "kind": "animations",
+    "model": "Zombie_digger",
+    "animation": "anim_dig",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        167,
+        170
+      ],
+      "bounds": [
+        53,
+        27,
+        146,
+        156
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Jump3.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_dolphinjump",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        69,
+        66,
+        163,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Walk2.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_ride",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        174,
+        105,
+        272,
+        195
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        107,
+        88,
+        206,
+        199
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Walk4.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        13,
+        67,
+        103,
+        191
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Walk3.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_swim",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        19,
+        117,
+        99,
+        201
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Jump2.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_dolphinjump",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        99,
+        2,
+        271,
+        195
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        182,
+        126,
+        272,
+        195
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Jump.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_jumpinpool",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        0,
+        5,
+        222,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Die2.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        55,
+        148,
+        97,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Walk1.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_walkdolphin",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        96,
+        74,
+        209,
+        199
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        22,
+        117,
+        99,
+        201
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        282,
+        210
+      ],
+      "bounds": [
+        102,
+        88,
+        206,
+        199
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Sink.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_swim",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        36,
+        123,
+        103,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Risk.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_uptoeat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        29,
+        123,
+        103,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Walk2.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_swim",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        37,
+        157,
+        86,
+        198
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        33,
+        41,
+        106,
+        180
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        43,
+        145,
+        114,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Jump.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_jumpinpool",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        44,
+        29,
+        143,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Walk1.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        13,
+        32,
+        119,
+        191
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        19,
+        123,
+        103,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        28,
+        41,
+        106,
+        180
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/Walk.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        92,
+        30,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/LostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        89,
+        64,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        91,
+        41,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/OpenBox.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        86,
+        21,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        0,
+        69,
+        195,
+        181
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        89,
+        24,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_jackbox",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        196,
+        181
+      ],
+      "bounds": [
+        89,
+        41,
+        195,
+        173
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Walk.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        13,
+        76,
+        108,
+        189
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Walk2.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        13,
+        102,
+        108,
+        189
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Attack2.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        17,
+        108,
+        99,
+        189
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/0.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        18,
+        4,
+        95,
+        129
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Die.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        12,
+        107,
+        184,
+        189
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Attack.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        17,
+        85,
+        99,
+        189
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Drop.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_pop",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        6,
+        0,
+        122,
+        193
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/1.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        207,
+        197
+      ],
+      "bounds": [
+        18,
+        3,
+        103,
+        140
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/DeathNoImp.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_death",
+    "hidden": [
+      "imp"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        23,
+        68,
+        364,
+        299
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/Idle.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        141,
+        64,
+        335,
+        293
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/Walk.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        122,
+        65,
+        354,
+        286
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/Death.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        23,
+        67,
+        364,
+        299
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/0.png",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_idle",
+    "hidden": [],
+    "still": true,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        148,
+        67,
+        335,
+        285
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/IdleNoImp.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_idle",
+    "hidden": [
+      "imp"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        141,
+        87,
+        335,
+        293
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/WalkNoImp.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_walk",
+    "hidden": [
+      "imp"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        122,
+        77,
+        354,
+        286
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/AttackNoImp.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_smash",
+    "hidden": [
+      "imp"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        64,
+        16,
+        386,
+        298
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/Attack.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_smash",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        64,
+        16,
+        386,
+        298
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/Throw.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_throw",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        8,
+        35,
+        333,
+        286
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Gargantuar/ThrowNoImp.webp",
+    "kind": "animations",
+    "model": "Zombie_gargantuar",
+    "animation": "anim_throw",
+    "hidden": [
+      "imp"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        390,
+        299
+      ],
+      "bounds": [
+        77,
+        54,
+        332,
+        286
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Imp/ZombieDie.gif",
+    "kind": "animations",
+    "model": "Zombie_imp",
+    "animation": "anim_death",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        96,
+        81,
+        162,
+        140
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Imp/ZombieLostHeadAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_imp",
+    "animation": "anim_eat",
+    "hidden": [
+      "anim_head",
+      "anim_hair",
+      "anim_tongue",
+      "neck"
+    ],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        89,
+        81,
+        147,
+        140
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Imp/Zombie.gif",
+    "kind": "animations",
+    "model": "Zombie_imp",
+    "animation": "anim_walk",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        89,
+        58,
+        146,
+        141
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Imp/ZombieAttack.gif",
+    "kind": "animations",
+    "model": "Zombie_imp",
+    "animation": "anim_eat",
+    "hidden": [],
+    "still": false,
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        87,
+        59,
+        147,
+        140
+      ]
+    }
+  },
+  {
+    "target": "images/Card/Plants/Peashooter.webp",
+    "kind": "cards",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle"
+  },
+  {
+    "target": "images/Card/Plants/SnowPea.webp",
+    "kind": "cards",
+    "model": "SnowPea",
+    "animation": "anim_full_idle"
+  },
+  {
+    "target": "images/Card/Plants/SunFlower.webp",
+    "kind": "cards",
+    "model": "SunFlower",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/CherryBomb.webp",
+    "kind": "cards",
+    "model": "CherryBomb",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/WallNut.webp",
+    "kind": "cards",
+    "model": "Wallnut",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/PotatoMine.webp",
+    "kind": "cards",
+    "model": "PotatoMine",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Chomper.webp",
+    "kind": "cards",
+    "model": "Chomper",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/PuffShroom.webp",
+    "kind": "cards",
+    "model": "Puffshroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/SunShroom.webp",
+    "kind": "cards",
+    "model": "SunShroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/FumeShroom.webp",
+    "kind": "cards",
+    "model": "Fumeshroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/GraveBuster.webp",
+    "kind": "cards",
+    "model": "Gravebuster",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/HypnoShroom.webp",
+    "kind": "cards",
+    "model": "Hypnoshroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/ScaredyShroom.webp",
+    "kind": "cards",
+    "model": "ScaredyShroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/IceShroom.webp",
+    "kind": "cards",
+    "model": "Iceshroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/DoomShroom.webp",
+    "kind": "cards",
+    "model": "DoomShroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/LilyPad.webp",
+    "kind": "cards",
+    "model": "Lilypad",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Squash.webp",
+    "kind": "cards",
+    "model": "Squash",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/TangleKlep.webp",
+    "kind": "cards",
+    "model": "Tanglekelp",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Jalapeno.webp",
+    "kind": "cards",
+    "model": "Jalapeno",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Spikeweed.webp",
+    "kind": "cards",
+    "model": "Caltrop",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Torchwood.webp",
+    "kind": "cards",
+    "model": "Torchwood",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/TallNut.webp",
+    "kind": "cards",
+    "model": "Tallnut",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/SeaShroom.webp",
+    "kind": "cards",
+    "model": "SeaShroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Plantern.webp",
+    "kind": "cards",
+    "model": "Plantern",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Cactus.webp",
+    "kind": "cards",
+    "model": "Cactus",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Starfruit.webp",
+    "kind": "cards",
+    "model": "Starfruit",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/PumpkinHead.webp",
+    "kind": "cards",
+    "model": "Pumpkin",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/CoffeeBean.webp",
+    "kind": "cards",
+    "model": "Coffeebean",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/TwinSunflower.webp",
+    "kind": "cards",
+    "model": "TwinSunFlower",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/GloomShroom.webp",
+    "kind": "cards",
+    "model": "GloomShroom",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Cattail.webp",
+    "kind": "cards",
+    "model": "Cattail",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Spikerock.webp",
+    "kind": "cards",
+    "model": "SpikeRock",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Garlic.webp",
+    "kind": "cards",
+    "model": "Garlic",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Blover.webp",
+    "kind": "cards",
+    "model": "Blover",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/FlowerPot.webp",
+    "kind": "cards",
+    "model": "Pot",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Repeater.webp",
+    "kind": "cards",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle"
+  },
+  {
+    "target": "images/Card/Plants/Repeater2.webp",
+    "kind": "cards",
+    "model": "PeaShooter",
+    "animation": "anim_full_idle"
+  },
+  {
+    "target": "images/Card/Plants/SnowRepeater.webp",
+    "kind": "cards",
+    "model": "SnowPea",
+    "animation": "anim_full_idle"
+  },
+  {
+    "target": "images/Card/Plants/BigChomper.webp",
+    "kind": "cards",
+    "model": "Chomper",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Plants/PB00.png",
+    "kind": "static",
+    "source": "images/ProjectilePea.png"
+  },
+  {
+    "target": "images/Plants/PB01.png",
+    "kind": "static",
+    "source": "images/ProjectileSnowPea.png"
+  },
+  {
+    "target": "images/Plants/PB00.gif",
+    "kind": "static",
+    "source": "images/ProjectilePea.png"
+  },
+  {
+    "target": "images/Plants/PB01.gif",
+    "kind": "static",
+    "source": "images/ProjectileSnowPea.png"
+  },
+  {
+    "target": "images/Plants/Starfruit/Star.gif",
+    "kind": "static",
+    "source": "images/Projectile_star.png"
+  },
+  {
+    "target": "images/Plants/Cactus/Projectile32.png",
+    "kind": "static",
+    "source": "images/ProjectileCactus.png"
+  },
+  {
+    "target": "images/Plants/WallNut/Wallnut_cracked1.webp",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_WALLNUT_BODY": "IMAGE_REANIM_WALLNUT_CRACKED1"
+    },
+    "geometry": {
+      "size": [
+        65,
+        73
+      ],
+      "bounds": [
+        2,
+        1,
+        65,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/WallNut/Wallnut_cracked2.webp",
+    "kind": "animations",
+    "model": "Wallnut",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_WALLNUT_BODY": "IMAGE_REANIM_WALLNUT_CRACKED2"
+    },
+    "geometry": {
+      "size": [
+        65,
+        73
+      ],
+      "bounds": [
+        2,
+        4,
+        65,
+        71
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TallNut/TallnutCracked1.gif",
+    "kind": "animations",
+    "model": "Tallnut",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_TALLNUT_BODY": "IMAGE_REANIM_TALLNUT_CRACKED1"
+    },
+    "geometry": {
+      "size": [
+        83,
+        119
+      ],
+      "bounds": [
+        0,
+        6,
+        83,
+        119
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/TallNut/TallnutCracked2.gif",
+    "kind": "animations",
+    "model": "Tallnut",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_TALLNUT_BODY": "IMAGE_REANIM_TALLNUT_CRACKED2"
+    },
+    "geometry": {
+      "size": [
+        83,
+        119
+      ],
+      "bounds": [
+        0,
+        6,
+        82,
+        118
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PumpkinHead/Pumpkin_damage1.gif",
+    "kind": "animations",
+    "model": "Pumpkin",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE2"
+    },
+    "geometry": {
+      "size": [
+        97,
+        67
+      ],
+      "bounds": [
+        0,
+        7,
+        97,
+        65
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PumpkinHead/Pumpkin_damage2.gif",
+    "kind": "animations",
+    "model": "Pumpkin",
+    "animation": "anim_idle",
+    "overrides": {
+      "IMAGE_REANIM_PUMPKIN_FRONT": "IMAGE_REANIM_PUMPKIN_DAMAGE3"
+    },
+    "geometry": {
+      "size": [
+        97,
+        67
+      ],
+      "bounds": [
+        0,
+        9,
+        96,
+        64
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Sun.gif",
+    "kind": "animations",
+    "model": "Sun",
+    "animation": "@all",
+    "geometry": {
+      "size": [
+        79,
+        79
+      ],
+      "bounds": [
+        0,
+        1,
+        76,
+        77
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Sun.webp",
+    "kind": "animations",
+    "model": "Sun",
+    "animation": "@all",
+    "geometry": {
+      "size": [
+        100,
+        100
+      ],
+      "bounds": [
+        0,
+        0,
+        100,
+        100
+      ]
+    }
+  },
+  {
+    "target": "images/interface/CoinGold.webp",
+    "kind": "animations",
+    "model": "Coin_gold",
+    "animation": "@all",
+    "geometry": {
+      "size": [
+        100,
+        100
+      ],
+      "bounds": [
+        15,
+        12,
+        90,
+        87
+      ]
+    }
+  },
+  {
+    "target": "images/interface/CoinSilver.webp",
+    "kind": "animations",
+    "model": "Coin_silver",
+    "animation": "@all",
+    "geometry": {
+      "size": [
+        84,
+        84
+      ],
+      "bounds": [
+        13,
+        10,
+        76,
+        73
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Dave.gif",
+    "kind": "animations",
+    "model": "CrazyDave",
+    "animation": "anim_idle",
+    "geometry": {
+      "size": [
+        839,
+        600
+      ],
+      "bounds": [
+        0,
+        44,
+        831,
+        600
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Dave2.gif",
+    "kind": "animations",
+    "model": "CrazyDave",
+    "animation": "anim_smalltalk",
+    "geometry": {
+      "size": [
+        1,
+        1
+      ],
+      "bounds": [
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Dave3.gif",
+    "kind": "animations",
+    "model": "CrazyDave",
+    "animation": "anim_blahblah",
+    "geometry": {
+      "size": [
+        839,
+        600
+      ],
+      "bounds": [
+        0,
+        44,
+        831,
+        600
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/LawnMower/1.webp",
+    "kind": "animations",
+    "model": "LawnMower",
+    "animation": "anim_normal",
+    "still": false,
+    "geometry": {
+      "size": [
+        97,
+        79
+      ],
+      "bounds": [
+        4,
+        2,
+        94,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/LawnMower/0.webp",
+    "kind": "animations",
+    "model": "LawnMower",
+    "animation": "anim_normal",
+    "still": true,
+    "geometry": {
+      "size": [
+        97,
+        79
+      ],
+      "bounds": [
+        6,
+        2,
+        94,
+        75
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/RoofCleaner/1.webp",
+    "kind": "animations",
+    "model": "RoofCleaner",
+    "animation": "@all",
+    "still": false,
+    "geometry": {
+      "size": [
+        82,
+        57
+      ],
+      "bounds": [
+        5,
+        0,
+        81,
+        56
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/RoofCleaner/0.webp",
+    "kind": "animations",
+    "model": "RoofCleaner",
+    "animation": "@all",
+    "still": true,
+    "geometry": {
+      "size": [
+        82,
+        57
+      ],
+      "bounds": [
+        5,
+        1,
+        81,
+        56
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/TrickedOut/1.webp",
+    "kind": "animations",
+    "model": "LawnMower",
+    "animation": "anim_tricked",
+    "still": false,
+    "geometry": {
+      "size": [
+        97,
+        79
+      ],
+      "bounds": [
+        0,
+        3,
+        95,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/TrickedOut/0.webp",
+    "kind": "animations",
+    "model": "LawnMower",
+    "animation": "anim_tricked",
+    "still": true,
+    "geometry": {
+      "size": [
+        97,
+        79
+      ],
+      "bounds": [
+        1,
+        3,
+        95,
+        76
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Land/1.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_land",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        0,
+        15,
+        78,
+        124
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Land/Swallow.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_landsuck",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        0,
+        2,
+        90,
+        124
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Land/0.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_land",
+    "still": true,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        0,
+        17,
+        73,
+        124
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Water/1.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_water",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        3,
+        57,
+        78,
+        122
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Water/Swallow.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_suck",
+    "still": false,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        1,
+        46,
+        90,
+        125
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Mowers/PoolCleaner/Water/0.webp",
+    "kind": "animations",
+    "model": "PoolCleaner",
+    "animation": "anim_water",
+    "still": true,
+    "geometry": {
+      "size": [
+        112,
+        125
+      ],
+      "bounds": [
+        6,
+        58,
+        73,
+        121
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        68,
+        28,
+        148,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Plants/PumpkinHead/Pumpkin_back.gif",
+    "kind": "animations",
+    "model": "Pumpkin",
+    "animation": "anim_idle",
+    "hidden": [
+      "pumpkin_front"
+    ],
+    "geometry": {
+      "size": [
+        97,
+        67
+      ],
+      "bounds": [
+        6,
+        3,
+        87,
+        57
+      ]
+    }
+  },
+  {
+    "target": "images/interface/Shovel/0.gif",
+    "kind": "static",
+    "source": "images/Shovel_hi_res.png"
+  },
+  {
+    "target": "images/Zombies/Zombie/ZombieHead.gif",
+    "kind": "animations",
+    "model": "Zombie",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_superlongdeath",
+      "anim_swim",
+      "anim_death2",
+      "anim_death",
+      "anim_walk2",
+      "anim_walk",
+      "anim_idle2",
+      "anim_idle",
+      "anim_eat",
+      "anim_waterdeath",
+      "anim_dance",
+      "_ground",
+      "anim_innerarm3",
+      "anim_innerarm2",
+      "anim_innerarm1",
+      "zombie_flaghand",
+      "zombie_innerarm_screendoor",
+      "zombie_neck",
+      "zombie_innerleg_upper",
+      "zombie_innerleg_lower",
+      "zombie_innerleg_foot",
+      "zombie_outerleg_upper",
+      "zombie_outerleg_foot",
+      "zombie_outerleg_lower",
+      "zombie_body",
+      "zombie_duckytube",
+      "zombie_whitewater",
+      "zombie_tie",
+      "anim_tongue",
+      "zombie_mustache",
+      "anim_screendoor",
+      "zombie_innerarm_screendoor_hand",
+      "zombie_outerarm_screendoor",
+      "zombie_outerarm_hand",
+      "zombie_outerarm_upper",
+      "zombie_whitewater2",
+      "zombie_outerarm_lower",
+      "anim_cone",
+      "anim_bucket"
+    ],
+    "geometry": {
+      "size": [
+        150,
+        186
+      ],
+      "bounds": [
+        9,
+        1,
+        149,
+        186
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/PoleVaultingZombieHead.gif",
+    "kind": "animations",
+    "model": "Zombie_polevaulter",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_idle",
+      "anim_run",
+      "anim_jump",
+      "anim_walk",
+      "anim_death",
+      "anim_eat",
+      "_ground",
+      "zombie_polevaulter_pole2",
+      "zombie_polevaulter_pole",
+      "zombie_polevaulter_innerhand",
+      "zombie_polevaulter_innerleg_upper",
+      "zombie_polevaulter_innerleg_foot",
+      "zombie_polevaulter_innerleg_toe",
+      "zombie_polevaulter_innerleg_lower",
+      "zombie_polevaulter_outerleg_upper",
+      "zombie_polevaulter_outerleg_foot",
+      "zombie_polevaulter_outerleg_toe",
+      "zombie_polevaulter_outerleg_lower",
+      "zombie_polevaulter_innerarm_upper",
+      "zombie_polevaulter_innerarm_lower",
+      "zombie_polevaulter_body2",
+      "zombie_polevaulter_body1",
+      "zombie_outerarm_hand",
+      "zombie_polevaulter_outerarm_upper",
+      "zombie_polevaulter_outerarm_lower"
+    ],
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        201,
+        50,
+        277,
+        210
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/PoleVaultingZombie/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        348,
+        218
+      ],
+      "bounds": [
+        189,
+        89,
+        269,
+        204
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        63,
+        33,
+        143,
+        148
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/NewspaperZombie/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_paper",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_death",
+      "anim_eat",
+      "anim_eat_nopaper",
+      "anim_walk",
+      "anim_walk_nopaper",
+      "anim_idle",
+      "anim_gasp",
+      "_ground",
+      "zombie_paper_rightarm_upper",
+      "zombie_paper_rightarm_lower",
+      "zombie_paper_hands2",
+      "zombie_paper_lowerbody2",
+      "zombie_paper_rightleg_upper",
+      "zombie_paper_rightleg_lower",
+      "zombie_paper_rightfoot",
+      "zombie_paper_leftleg_upper",
+      "zombie_paper_leftleg_lower",
+      "zombie_paper_leftfoot",
+      "zombie_paper_lowerbody1",
+      "zombie_paper_body",
+      "zombie_paper_leftarm_upper",
+      "zombie_paper_leftarm_lower",
+      "anim_head_look",
+      "anim_hairpiece",
+      "zombie_paper_paper",
+      "zombie_paper_hands"
+    ],
+    "geometry": {
+      "size": [
+        216,
+        164
+      ],
+      "bounds": [
+        70,
+        0,
+        213,
+        162
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        184,
+        176
+      ],
+      "bounds": [
+        15,
+        55,
+        94,
+        168
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DancingZombie/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_disco",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_moonwalk",
+      "anim_point",
+      "anim_walk",
+      "anim_armraise",
+      "anim_eat",
+      "anim_death",
+      "_ground",
+      "zombie_disco_innerarm_lowercuff",
+      "zombie_disco_innerhand",
+      "zombie_disco_innerarm_upper",
+      "zombie_disco_innerarm_lower",
+      "zombie_disco_innerfoot",
+      "zombie_disco_innerleg_lower",
+      "zombie_disco_innerleg_upper",
+      "zombie_disco_lowerbody",
+      "zombie_disco_outerfoot_lower",
+      "zombie_disco_fish",
+      "zombie_disco_outerfoot_lower_overlay",
+      "zombie_disco_outerfoot_upper",
+      "zombie_disco_outerleg_lower",
+      "zombie_disco_outerleg_upper",
+      "zombie_disco_upperbody",
+      "zombie_disco_chops",
+      "zombie_disco_medalion",
+      "zombie_disco_outerhand",
+      "zombie_disco_outerhand_point",
+      "zombie_disco_outerarm_upper",
+      "zombie_disco_outerarm_upper_bone",
+      "zombie_disco_outerarm_lower",
+      "zombie_disco_collar_overlay",
+      "zombie_disco_chops",
+      "zombie_disco_glasses"
+    ],
+    "geometry": {
+      "size": [
+        184,
+        182
+      ],
+      "bounds": [
+        37,
+        2,
+        106,
+        182
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        166,
+        152
+      ],
+      "bounds": [
+        30,
+        30,
+        109,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BackupDancer/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_backup",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_walk",
+      "anim_armraise",
+      "anim_eat",
+      "anim_death",
+      "_ground",
+      "zombie_disco_innerarm_upper",
+      "zombie_disco_innerarm_lower",
+      "zombie_disco_innerhand",
+      "zombie_disco_innerfoot",
+      "zombie_disco_innerleg_lower",
+      "zombie_disco_innerleg_upper",
+      "zombie_disco_lowerbody",
+      "zombie_disco_outerfoot_lower",
+      "zombie_disco_outerfoot_upper",
+      "zombie_disco_outerleg_lower",
+      "zombie_disco_outerleg_upper",
+      "zombie_disco_upperbody",
+      "zombie_disco_chops",
+      "anim_earing",
+      "zombie_backup_stash",
+      "zombie_disco_outerarm_upper",
+      "zombie_disco_outerarm_upper",
+      "zombie_disco_outerarm_lower",
+      "zombie_disco_outerhand",
+      "zombie_disco_collar_overlay",
+      "zombie_disco_chops"
+    ],
+    "geometry": {
+      "size": [
+        184,
+        182
+      ],
+      "bounds": [
+        0,
+        0,
+        184,
+        182
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Diggerzombie/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred_digger",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        154,
+        204
+      ],
+      "bounds": [
+        32,
+        16,
+        131,
+        136
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/DolphinRiderZombie/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_dolphinrider",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_idle",
+      "anim_walkdolphin",
+      "anim_walk",
+      "anim_jumpinpool",
+      "anim_ride",
+      "anim_dolphinjump",
+      "anim_eat",
+      "anim_swim",
+      "anim_death",
+      "_ground",
+      "zombie_dolphinrider_innerarm_hand",
+      "zombie_dolphinrider_innerarm_lower",
+      "zombie_dolphinrider_innerarm_upper",
+      "zombie_dolphinrider_innerleg_foot",
+      "zombie_dolphinrider_innerleg_lower",
+      "zombie_dolphinrider_innerleg_upper",
+      "zombie_dolphinrider_dolphininwater",
+      "layer 185",
+      "layer 1852",
+      "layer 1853",
+      "layer 1854",
+      "layer 1855",
+      "zombie_dolphinrider_body2",
+      "zombie_dolphinrider_body1",
+      "zombie_dolphinrider_watershadow",
+      "zombie_dolphinrider_outerleg_foot1",
+      "zombie_dolphinrider_outerleg_foot2",
+      "zombie_dolphinrider_outerleg_lower",
+      "zombie_dolphinrider_outerleg_upper",
+      "zombie_dolphinrider_whitewater",
+      "zombie_dolphinrider_dolphinbody2",
+      "zombie_dolphinrider_dolphinfin2",
+      "zombie_dolphinrider_dolphinjaw",
+      "zombie_dolphinrider_dolphinbody1",
+      "zombie_dolphinrider_dolphinfin1",
+      "zombie_outerarm_hand",
+      "zombie_outerarm_lower",
+      "zombie_dolphinrider_outerarm_upper"
+    ],
+    "geometry": {
+      "size": [
+        144,
+        210
+      ],
+      "bounds": [
+        47,
+        52,
+        144,
+        206
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/SnorkelZombie/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_snorkle",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_aquarium_death",
+      "anim_aquarium_bite",
+      "anim_aquarium_swim",
+      "anim_death",
+      "anim_eat",
+      "anim_uptoeat",
+      "anim_swim",
+      "anim_jumpinpool",
+      "anim_walk",
+      "anim_idle",
+      "_ground",
+      "zombie_snorkle_innerarm_hand",
+      "zombie_snorkle_innerarm_lower",
+      "zombie_snorkle_innerarm_upper",
+      "zombie_snorkle_innerleg_upper",
+      "zombie_snorkle_innerleg_foot",
+      "zombie_snorkle_innerleg_lower",
+      "zombie_snorkle_outerleg_lower",
+      "zombie_snorkle_outerleg_upper",
+      "zombie_snorkle_outerleg_toe",
+      "zombie_snorkle_body2",
+      "zombie_snorkle_body1",
+      "zombie_outerarm_hand",
+      "zombie_snorkle_outerarm_upper",
+      "zombie_outerarm_lower",
+      "zombie_snorkle_whitewater2",
+      "zombie_snorkle_whitewater"
+    ],
+    "geometry": {
+      "size": [
+        143,
+        210
+      ],
+      "bounds": [
+        59,
+        108,
+        142,
+        175
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/JackinTheBoxZombie/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        68,
+        28,
+        148,
+        143
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/BalloonZombie/Head.gif",
+    "kind": "animations",
+    "model": "Zombie_balloon",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_idle",
+      "anim_swing",
+      "anim_pop",
+      "anim_eat",
+      "anim_walk",
+      "anim_death",
+      "_ground",
+      "zombie_balloon_innerleg_lower",
+      "zombie_balloon_innerleg_foot",
+      "zombie_balloon_innerleg_upper",
+      "zombie_innerarm_hand",
+      "zombie_balloon_innerarm_upper",
+      "zombie_balloon_innerarm_lower",
+      "zombie_balloon_string",
+      "zombie_balloon_bottom",
+      "zombie_balloon_top",
+      "zombie_balloon_body2",
+      "zombie_balloon_body1",
+      "zombie_balloon_outerleg_foot",
+      "zombie_balloon_outerleg_lower",
+      "zombie_balloon_outerleg_upper",
+      "zombie_outerarm_hand",
+      "zombie_outerarm_upper",
+      "zombie_outerarm_lower",
+      "hat",
+      "balloon_pop",
+      "propeller"
+    ],
+    "geometry": {
+      "size": [
+        207,
+        209
+      ],
+      "bounds": [
+        32,
+        25,
+        175,
+        209
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Imp/ZombieHead.gif",
+    "kind": "animations",
+    "model": "Zombie_imp",
+    "animation": "anim_walk",
+    "hidden": [
+      "anim_land",
+      "anim_thrown",
+      "anim_walk",
+      "anim_eat",
+      "anim_death",
+      "_ground",
+      "zombie_imp_innerarm_upper",
+      "zombie_imp_innerarm_lower",
+      "zombie_imp_innerleg_foot",
+      "zombie_imp_innerleg_lower",
+      "zombie_imp_innerleg_upper",
+      "zombie_imp_body2",
+      "zombie_imp_body1",
+      "zombie_imp_outerleg_foot",
+      "zombie_imp_outerleg_lower",
+      "zombie_imp_outerleg_upper",
+      "zombie_imp_outerarm_upper",
+      "zombie_outerarm_lower"
+    ],
+    "geometry": {
+      "size": [
+        166,
+        144
+      ],
+      "bounds": [
+        0,
+        0,
+        166,
+        144
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/2.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": false,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        125,
+        112,
+        295,
+        279
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/0.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": true,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        123,
+        113,
+        295,
+        279
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/5.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": false,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        0,
+        0,
+        464,
+        364
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/3.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": false,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        125,
+        112,
+        295,
+        279
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/BoomDie.gif",
+    "kind": "animations",
+    "model": "Zombie_charred_zamboni",
+    "animation": "anim_crumble",
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        122,
+        114,
+        296,
+        280
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/4.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": false,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        115,
+        90,
+        321,
+        279
+      ]
+    }
+  },
+  {
+    "target": "images/Zombies/Zomboni/1.gif",
+    "kind": "animations",
+    "model": "Zombie_zamboni",
+    "animation": "anim_drive",
+    "still": false,
+    "geometry": {
+      "size": [
+        464,
+        364
+      ],
+      "bounds": [
+        123,
+        112,
+        295,
+        279
+      ]
+    }
+  },
+  {
+    "target": "images/interface/SeedChooser_Background.png",
+    "kind": "static",
+    "source": "images/SeedChooser_Background.png"
+  },
+  {
+    "target": "images/interface/Challenge_Window.png",
+    "kind": "static",
+    "source": "images/Challenge_Window.png"
+  },
+  {
+    "target": "images/interface/Challenge_Window_Highlight.png",
+    "kind": "static",
+    "source": "images/Challenge_Window_Highlight.png"
+  },
+  {
+    "target": "images/interface/coinbank.png",
+    "kind": "static",
+    "source": "images/coinbank.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Minigames_button.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Challenges_button.png"
+  },
+  {
+    "target": "images/interface/selector/SelectorScreen_Puzzle_button.png",
+    "kind": "static",
+    "source": "reanim/SelectorScreen_Vasebreaker_button.png"
+  },
+  {
+    "target": "audio/groan6.mp3",
+    "kind": "audio",
+    "source": "sounds/groan6.ogg"
+  },
+  {
+    "target": "audio/digger_zombie.mp3",
+    "kind": "audio",
+    "source": "sounds/digger_zombie.ogg"
+  },
+  {
+    "target": "audio/bungee_scream2.mp3",
+    "kind": "audio",
+    "source": "sounds/bungee_scream2.ogg"
+  },
+  {
+    "target": "audio/coffee.mp3",
+    "kind": "audio",
+    "source": "sounds/coffee.ogg"
+  },
+  {
+    "target": "audio/reverse_explosion.mp3",
+    "kind": "audio",
+    "source": "sounds/reverse_explosion.ogg"
+  },
+  {
+    "target": "audio/limbs_pop.mp3",
+    "kind": "audio",
+    "source": "sounds/limbs_pop.ogg"
+  },
+  {
+    "target": "audio/crazydaveextralong2.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveextralong2.ogg"
+  },
+  {
+    "target": "audio/groan.mp3",
+    "kind": "audio",
+    "source": "sounds/groan.ogg"
+  },
+  {
+    "target": "audio/shoop.mp3",
+    "kind": "audio",
+    "source": "sounds/shoop.ogg"
+  },
+  {
+    "target": "audio/blover.mp3",
+    "kind": "audio",
+    "source": "sounds/blover.ogg"
+  },
+  {
+    "target": "audio/juicy.mp3",
+    "kind": "audio",
+    "source": "sounds/juicy.ogg"
+  },
+  {
+    "target": "audio/dancer.mp3",
+    "kind": "audio",
+    "source": "sounds/dancer.ogg"
+  },
+  {
+    "target": "audio/paper.mp3",
+    "kind": "audio",
+    "source": "sounds/paper.ogg"
+  },
+  {
+    "target": "audio/fertilizer.mp3",
+    "kind": "audio",
+    "source": "sounds/fertilizer.ogg"
+  },
+  {
+    "target": "audio/bleep.mp3",
+    "kind": "audio",
+    "source": "sounds/bleep.ogg"
+  },
+  {
+    "target": "audio/zombie_entering_water.mp3",
+    "kind": "audio",
+    "source": "sounds/zombie_entering_water.ogg"
+  },
+  {
+    "target": "audio/points.mp3",
+    "kind": "audio",
+    "source": "sounds/points.ogg"
+  },
+  {
+    "target": "audio/splat2.mp3",
+    "kind": "audio",
+    "source": "sounds/splat2.ogg"
+  },
+  {
+    "target": "audio/gulp.mp3",
+    "kind": "audio",
+    "source": "sounds/gulp.ogg"
+  },
+  {
+    "target": "audio/dirt_rise.mp3",
+    "kind": "audio",
+    "source": "sounds/dirt_rise.ogg"
+  },
+  {
+    "target": "audio/magnetshroom.mp3",
+    "kind": "audio",
+    "source": "sounds/magnetshroom.ogg"
+  },
+  {
+    "target": "audio/explosion.mp3",
+    "kind": "audio",
+    "source": "sounds/explosion.ogg"
+  },
+  {
+    "target": "audio/crazydavelong1.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavelong1.ogg"
+  },
+  {
+    "target": "audio/zombie_falling_1.mp3",
+    "kind": "audio",
+    "source": "sounds/zombie_falling_1.ogg"
+  },
+  {
+    "target": "audio/squash_hmm2.mp3",
+    "kind": "audio",
+    "source": "sounds/squash_hmm2.ogg"
+  },
+  {
+    "target": "audio/tap.mp3",
+    "kind": "audio",
+    "source": "sounds/tap.ogg"
+  },
+  {
+    "target": "audio/swing.mp3",
+    "kind": "audio",
+    "source": "sounds/swing.ogg"
+  },
+  {
+    "target": "audio/crazydavescream.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavescream.ogg"
+  },
+  {
+    "target": "audio/phonograph.mp3",
+    "kind": "audio",
+    "source": "sounds/phonograph.ogg"
+  },
+  {
+    "target": "audio/jackinthebox.mp3",
+    "kind": "audio",
+    "source": "sounds/jackinthebox.ogg"
+  },
+  {
+    "target": "audio/throw2.mp3",
+    "kind": "audio",
+    "source": "sounds/throw2.ogg"
+  },
+  {
+    "target": "audio/hatchback_close.mp3",
+    "kind": "audio",
+    "source": "sounds/hatchback_close.ogg"
+  },
+  {
+    "target": "audio/throw.mp3",
+    "kind": "audio",
+    "source": "sounds/throw.ogg"
+  },
+  {
+    "target": "audio/crazydavecrazy.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavecrazy.ogg"
+  },
+  {
+    "target": "audio/finalfanfare.mp3",
+    "kind": "audio",
+    "source": "sounds/finalfanfare.ogg"
+  },
+  {
+    "target": "audio/chompsoft.mp3",
+    "kind": "audio",
+    "source": "sounds/chompsoft.ogg"
+  },
+  {
+    "target": "audio/groan4.mp3",
+    "kind": "audio",
+    "source": "sounds/groan4.ogg"
+  },
+  {
+    "target": "audio/newspaper_rarrgh2.mp3",
+    "kind": "audio",
+    "source": "sounds/newspaper_rarrgh2.ogg"
+  },
+  {
+    "target": "audio/crazydaveshort2.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveshort2.ogg"
+  },
+  {
+    "target": "audio/imp.mp3",
+    "kind": "audio",
+    "source": "sounds/imp.ogg"
+  },
+  {
+    "target": "audio/bowlingimpact2.mp3",
+    "kind": "audio",
+    "source": "sounds/bowlingimpact2.ogg"
+  },
+  {
+    "target": "audio/watering.mp3",
+    "kind": "audio",
+    "source": "sounds/watering.ogg"
+  },
+  {
+    "target": "audio/cherrybomb.mp3",
+    "kind": "audio",
+    "source": "sounds/cherrybomb.ogg"
+  },
+  {
+    "target": "audio/sukhbir4.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir4.ogg"
+  },
+  {
+    "target": "audio/groan5.mp3",
+    "kind": "audio",
+    "source": "sounds/groan5.ogg"
+  },
+  {
+    "target": "audio/roll_in.mp3",
+    "kind": "audio",
+    "source": "sounds/roll_in.ogg"
+  },
+  {
+    "target": "audio/crazydaveshort3.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveshort3.ogg"
+  },
+  {
+    "target": "audio/moneyfalls.mp3",
+    "kind": "audio",
+    "source": "sounds/moneyfalls.ogg"
+  },
+  {
+    "target": "audio/lightfill.mp3",
+    "kind": "audio",
+    "source": "sounds/lightfill.ogg"
+  },
+  {
+    "target": "audio/readysetplant.mp3",
+    "kind": "audio",
+    "source": "sounds/readysetplant.ogg"
+  },
+  {
+    "target": "audio/wakeup.mp3",
+    "kind": "audio",
+    "source": "sounds/wakeup.ogg"
+  },
+  {
+    "target": "audio/loadingbar_flower.mp3",
+    "kind": "audio",
+    "source": "sounds/loadingbar_flower.ogg"
+  },
+  {
+    "target": "audio/basketball.mp3",
+    "kind": "audio",
+    "source": "sounds/basketball.ogg"
+  },
+  {
+    "target": "audio/achievement.mp3",
+    "kind": "audio",
+    "source": "sounds/achievement.ogg"
+  },
+  {
+    "target": "audio/slotmachine.mp3",
+    "kind": "audio",
+    "source": "sounds/slotmachine.ogg"
+  },
+  {
+    "target": "audio/melonimpact.mp3",
+    "kind": "audio",
+    "source": "sounds/melonimpact.ogg"
+  },
+  {
+    "target": "audio/jack_surprise2.mp3",
+    "kind": "audio",
+    "source": "sounds/jack_surprise2.ogg"
+  },
+  {
+    "target": "audio/hugewave.mp3",
+    "kind": "audio",
+    "source": "sounds/hugewave.ogg"
+  },
+  {
+    "target": "audio/plant2.mp3",
+    "kind": "audio",
+    "source": "sounds/plant2.ogg"
+  },
+  {
+    "target": "audio/frozen.mp3",
+    "kind": "audio",
+    "source": "sounds/frozen.ogg"
+  },
+  {
+    "target": "audio/dolphin_before_jumping.mp3",
+    "kind": "audio",
+    "source": "sounds/dolphin_before_jumping.ogg"
+  },
+  {
+    "target": "audio/crazydavelong3.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavelong3.ogg"
+  },
+  {
+    "target": "audio/balloon_pop.mp3",
+    "kind": "audio",
+    "source": "sounds/balloon_pop.ogg"
+  },
+  {
+    "target": "audio/lowgroan.mp3",
+    "kind": "audio",
+    "source": "sounds/lowgroan.ogg"
+  },
+  {
+    "target": "audio/floop.mp3",
+    "kind": "audio",
+    "source": "sounds/floop.ogg"
+  },
+  {
+    "target": "audio/chomp2.mp3",
+    "kind": "audio",
+    "source": "sounds/chomp2.ogg"
+  },
+  {
+    "target": "audio/kernelpult.mp3",
+    "kind": "audio",
+    "source": "sounds/kernelpult.ogg"
+  },
+  {
+    "target": "audio/losemusic.mp3",
+    "kind": "audio",
+    "source": "sounds/losemusic.ogg"
+  },
+  {
+    "target": "audio/awooga.mp3",
+    "kind": "audio",
+    "source": "sounds/awooga.ogg"
+  },
+  {
+    "target": "audio/mindcontrolled.mp3",
+    "kind": "audio",
+    "source": "sounds/mindcontrolled.ogg"
+  },
+  {
+    "target": "audio/groan2.mp3",
+    "kind": "audio",
+    "source": "sounds/groan2.ogg"
+  },
+  {
+    "target": "audio/loadingbar_zombie.mp3",
+    "kind": "audio",
+    "source": "sounds/loadingbar_zombie.ogg"
+  },
+  {
+    "target": "audio/bonk.mp3",
+    "kind": "audio",
+    "source": "sounds/bonk.ogg"
+  },
+  {
+    "target": "audio/ignite.mp3",
+    "kind": "audio",
+    "source": "sounds/ignite.ogg"
+  },
+  {
+    "target": "audio/pogo_zombie.mp3",
+    "kind": "audio",
+    "source": "sounds/pogo_zombie.ogg"
+  },
+  {
+    "target": "audio/buttonclick.mp3",
+    "kind": "audio",
+    "source": "sounds/buttonclick.ogg"
+  },
+  {
+    "target": "audio/vase_breaking.mp3",
+    "kind": "audio",
+    "source": "sounds/vase_breaking.ogg"
+  },
+  {
+    "target": "audio/chomp.mp3",
+    "kind": "audio",
+    "source": "sounds/chomp.ogg"
+  },
+  {
+    "target": "audio/zamboni.mp3",
+    "kind": "audio",
+    "source": "sounds/zamboni.ogg"
+  },
+  {
+    "target": "audio/pause.mp3",
+    "kind": "audio",
+    "source": "sounds/pause.ogg"
+  },
+  {
+    "target": "audio/sukhbir3.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir3.ogg"
+  },
+  {
+    "target": "audio/splat.mp3",
+    "kind": "audio",
+    "source": "sounds/splat.ogg"
+  },
+  {
+    "target": "audio/bowling.mp3",
+    "kind": "audio",
+    "source": "sounds/bowling.ogg"
+  },
+  {
+    "target": "audio/gargantuar_thump.mp3",
+    "kind": "audio",
+    "source": "sounds/gargantuar_thump.ogg"
+  },
+  {
+    "target": "audio/bowlingimpact.mp3",
+    "kind": "audio",
+    "source": "sounds/bowlingimpact.ogg"
+  },
+  {
+    "target": "audio/snow_pea_sparkles.mp3",
+    "kind": "audio",
+    "source": "sounds/snow_pea_sparkles.ogg"
+  },
+  {
+    "target": "audio/jack_surprise.mp3",
+    "kind": "audio",
+    "source": "sounds/jack_surprise.ogg"
+  },
+  {
+    "target": "audio/bossexplosion.mp3",
+    "kind": "audio",
+    "source": "sounds/bossexplosion.ogg"
+  },
+  {
+    "target": "audio/newspaper_rip.mp3",
+    "kind": "audio",
+    "source": "sounds/newspaper_rip.ogg"
+  },
+  {
+    "target": "audio/groan3.mp3",
+    "kind": "audio",
+    "source": "sounds/groan3.ogg"
+  },
+  {
+    "target": "audio/lowgroan2.mp3",
+    "kind": "audio",
+    "source": "sounds/lowgroan2.ogg"
+  },
+  {
+    "target": "audio/hatchback_open.mp3",
+    "kind": "audio",
+    "source": "sounds/hatchback_open.ogg"
+  },
+  {
+    "target": "audio/newspaper_rarrgh.mp3",
+    "kind": "audio",
+    "source": "sounds/newspaper_rarrgh.ogg"
+  },
+  {
+    "target": "audio/polevault.mp3",
+    "kind": "audio",
+    "source": "sounds/polevault.ogg"
+  },
+  {
+    "target": "audio/evillaugh.mp3",
+    "kind": "audio",
+    "source": "sounds/evillaugh.ogg"
+  },
+  {
+    "target": "audio/ballooninflate.mp3",
+    "kind": "audio",
+    "source": "sounds/ballooninflate.ogg"
+  },
+  {
+    "target": "audio/potato_mine.mp3",
+    "kind": "audio",
+    "source": "sounds/potato_mine.ogg"
+  },
+  {
+    "target": "audio/chime.mp3",
+    "kind": "audio",
+    "source": "sounds/chime.ogg"
+  },
+  {
+    "target": "audio/buzzer.mp3",
+    "kind": "audio",
+    "source": "sounds/buzzer.ogg"
+  },
+  {
+    "target": "audio/fume.mp3",
+    "kind": "audio",
+    "source": "sounds/fume.ogg"
+  },
+  {
+    "target": "audio/coblaunch.mp3",
+    "kind": "audio",
+    "source": "sounds/coblaunch.ogg"
+  },
+  {
+    "target": "audio/sukhbir6.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir6.ogg"
+  },
+  {
+    "target": "audio/seedlift.mp3",
+    "kind": "audio",
+    "source": "sounds/seedlift.ogg"
+  },
+  {
+    "target": "audio/sukhbir5.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir5.ogg"
+  },
+  {
+    "target": "audio/crazydavescream2.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavescream2.ogg"
+  },
+  {
+    "target": "audio/gargantudeath.mp3",
+    "kind": "audio",
+    "source": "sounds/gargantudeath.ogg"
+  },
+  {
+    "target": "audio/thunder.mp3",
+    "kind": "audio",
+    "source": "sounds/thunder.ogg"
+  },
+  {
+    "target": "audio/gravebusterchomp.mp3",
+    "kind": "audio",
+    "source": "sounds/gravebusterchomp.ogg"
+  },
+  {
+    "target": "audio/zombiesplash.mp3",
+    "kind": "audio",
+    "source": "sounds/zombiesplash.ogg"
+  },
+  {
+    "target": "audio/bungee_scream3.mp3",
+    "kind": "audio",
+    "source": "sounds/bungee_scream3.ogg"
+  },
+  {
+    "target": "audio/hydraulic_short.mp3",
+    "kind": "audio",
+    "source": "sounds/hydraulic_short.ogg"
+  },
+  {
+    "target": "audio/plant.mp3",
+    "kind": "audio",
+    "source": "sounds/plant.ogg"
+  },
+  {
+    "target": "audio/dolphin_appears.mp3",
+    "kind": "audio",
+    "source": "sounds/dolphin_appears.ogg"
+  },
+  {
+    "target": "audio/gravebutton.mp3",
+    "kind": "audio",
+    "source": "sounds/gravebutton.ogg"
+  },
+  {
+    "target": "audio/jalapeno.mp3",
+    "kind": "audio",
+    "source": "sounds/jalapeno.ogg"
+  },
+  {
+    "target": "audio/portal.mp3",
+    "kind": "audio",
+    "source": "sounds/portal.ogg"
+  },
+  {
+    "target": "audio/ignite2.mp3",
+    "kind": "audio",
+    "source": "sounds/ignite2.ogg"
+  },
+  {
+    "target": "audio/yuck.mp3",
+    "kind": "audio",
+    "source": "sounds/yuck.ogg"
+  },
+  {
+    "target": "audio/plant_water.mp3",
+    "kind": "audio",
+    "source": "sounds/plant_water.ogg"
+  },
+  {
+    "target": "audio/tap2.mp3",
+    "kind": "audio",
+    "source": "sounds/tap2.ogg"
+  },
+  {
+    "target": "audio/butter.mp3",
+    "kind": "audio",
+    "source": "sounds/butter.ogg"
+  },
+  {
+    "target": "audio/bugspray.mp3",
+    "kind": "audio",
+    "source": "sounds/bugspray.ogg"
+  },
+  {
+    "target": "audio/gravestone_rumble.mp3",
+    "kind": "audio",
+    "source": "sounds/gravestone_rumble.ogg"
+  },
+  {
+    "target": "audio/kernelpult2.mp3",
+    "kind": "audio",
+    "source": "sounds/kernelpult2.ogg"
+  },
+  {
+    "target": "audio/plastichit.mp3",
+    "kind": "audio",
+    "source": "sounds/plastichit.ogg"
+  },
+  {
+    "target": "audio/bungee_scream.mp3",
+    "kind": "audio",
+    "source": "sounds/bungee_scream.ogg"
+  },
+  {
+    "target": "audio/zombaquarium_die.mp3",
+    "kind": "audio",
+    "source": "sounds/zombaquarium_die.ogg"
+  },
+  {
+    "target": "audio/winmusic.mp3",
+    "kind": "audio",
+    "source": "sounds/winmusic.ogg"
+  },
+  {
+    "target": "audio/shieldhit.mp3",
+    "kind": "audio",
+    "source": "sounds/shieldhit.ogg"
+  },
+  {
+    "target": "audio/sukhbir.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir.ogg"
+  },
+  {
+    "target": "audio/pool_cleaner.mp3",
+    "kind": "audio",
+    "source": "sounds/pool_cleaner.ogg"
+  },
+  {
+    "target": "audio/crazydavelong2.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydavelong2.ogg"
+  },
+  {
+    "target": "audio/plantgrow.mp3",
+    "kind": "audio",
+    "source": "sounds/plantgrow.ogg"
+  },
+  {
+    "target": "audio/crazydaveextralong1.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveextralong1.ogg"
+  },
+  {
+    "target": "audio/sukhbir2.mp3",
+    "kind": "audio",
+    "source": "sounds/sukhbir2.ogg"
+  },
+  {
+    "target": "audio/imp2.mp3",
+    "kind": "audio",
+    "source": "sounds/imp2.ogg"
+  },
+  {
+    "target": "audio/finalwave.mp3",
+    "kind": "audio",
+    "source": "sounds/finalwave.ogg"
+  },
+  {
+    "target": "audio/bossboulderattack.mp3",
+    "kind": "audio",
+    "source": "sounds/bossboulderattack.ogg"
+  },
+  {
+    "target": "audio/rain.mp3",
+    "kind": "audio",
+    "source": "sounds/rain.ogg"
+  },
+  {
+    "target": "audio/shieldhit2.mp3",
+    "kind": "audio",
+    "source": "sounds/shieldhit2.ogg"
+  },
+  {
+    "target": "audio/slurp.mp3",
+    "kind": "audio",
+    "source": "sounds/slurp.ogg"
+  },
+  {
+    "target": "audio/firepea.mp3",
+    "kind": "audio",
+    "source": "sounds/firepea.ogg"
+  },
+  {
+    "target": "audio/melonimpact2.mp3",
+    "kind": "audio",
+    "source": "sounds/melonimpact2.ogg"
+  },
+  {
+    "target": "audio/grassstep.mp3",
+    "kind": "audio",
+    "source": "sounds/grassstep.ogg"
+  },
+  {
+    "target": "audio/siren.mp3",
+    "kind": "audio",
+    "source": "sounds/siren.ogg"
+  },
+  {
+    "target": "audio/shovel.mp3",
+    "kind": "audio",
+    "source": "sounds/shovel.ogg"
+  },
+  {
+    "target": "audio/crazydaveshort1.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveshort1.ogg"
+  },
+  {
+    "target": "audio/zombie_falling_2.mp3",
+    "kind": "audio",
+    "source": "sounds/zombie_falling_2.ogg"
+  },
+  {
+    "target": "audio/doomshroom.mp3",
+    "kind": "audio",
+    "source": "sounds/doomshroom.ogg"
+  },
+  {
+    "target": "audio/plantern.mp3",
+    "kind": "audio",
+    "source": "sounds/plantern.ogg"
+  },
+  {
+    "target": "audio/ceramic.mp3",
+    "kind": "audio",
+    "source": "sounds/ceramic.ogg"
+  },
+  {
+    "target": "audio/plastichit2.mp3",
+    "kind": "audio",
+    "source": "sounds/plastichit2.ogg"
+  },
+  {
+    "target": "audio/bigchomp.mp3",
+    "kind": "audio",
+    "source": "sounds/bigchomp.ogg"
+  },
+  {
+    "target": "audio/prize.mp3",
+    "kind": "audio",
+    "source": "sounds/prize.ogg"
+  },
+  {
+    "target": "audio/scream.mp3",
+    "kind": "audio",
+    "source": "sounds/scream.ogg"
+  },
+  {
+    "target": "audio/lawnmower.mp3",
+    "kind": "audio",
+    "source": "sounds/lawnmower.ogg"
+  },
+  {
+    "target": "audio/ladder_zombie.mp3",
+    "kind": "audio",
+    "source": "sounds/ladder_zombie.ogg"
+  },
+  {
+    "target": "audio/splat3.mp3",
+    "kind": "audio",
+    "source": "sounds/splat3.ogg"
+  },
+  {
+    "target": "audio/boing.mp3",
+    "kind": "audio",
+    "source": "sounds/boing.ogg"
+  },
+  {
+    "target": "audio/puff.mp3",
+    "kind": "audio",
+    "source": "sounds/puff.ogg"
+  },
+  {
+    "target": "audio/yuck2.mp3",
+    "kind": "audio",
+    "source": "sounds/yuck2.ogg"
+  },
+  {
+    "target": "audio/hydraulic.mp3",
+    "kind": "audio",
+    "source": "sounds/hydraulic.ogg"
+  },
+  {
+    "target": "audio/crazydaveextralong3.mp3",
+    "kind": "audio",
+    "source": "sounds/crazydaveextralong3.ogg"
+  },
+  {
+    "target": "audio/squash_hmm.mp3",
+    "kind": "audio",
+    "source": "sounds/squash_hmm.ogg"
+  },
+  {
+    "target": "audio/coin.mp3",
+    "kind": "audio",
+    "source": "sounds/coin.ogg"
+  },
+  {
+    "target": "images/Card/Plants/GatlingPea.webp",
+    "kind": "cards",
+    "model": "GatlingPea",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/Threepeater.webp",
+    "kind": "cards",
+    "model": "ThreePeater",
+    "animation": "anim_idle"
+  },
+  {
+    "target": "images/Card/Plants/SplitPea.webp",
+    "kind": "cards",
+    "model": "SplitPea",
+    "animation": "anim_idle"
+  }
+]

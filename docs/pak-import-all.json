@@ -1,0 +1,175 @@
+{
+  "pak_sha256": "bda66f71374468f39a95c05301670ef19ae8b5ce817136840e3c03bcb14ea4b2",
+  "imported": [
+    {
+      "target": "images/Plants/Starfruit/Star.gif",
+      "kind": "static",
+      "source": "images/Projectile_star.png",
+      "sha256": "98f17472e2590a5deea2989e0bf13ca0c2c17c84ce10d7e7d18d4ddc4d8f5cfe"
+    },
+    {
+      "target": "images/Zombies/Zomboni/2.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": false,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          125,
+          112,
+          295,
+          279
+        ]
+      },
+      "sha256": "aeba9d3a50baf9a5bf6b60fa65a377ee74fdd64895583b74b6a78109d46c3b6a"
+    },
+    {
+      "target": "images/Zombies/Zomboni/0.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": true,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          123,
+          113,
+          295,
+          279
+        ]
+      },
+      "sha256": "0e9f83a22580690e714a9732618bf8bfec392c848236b4592559e815d0859292"
+    },
+    {
+      "target": "images/Zombies/Zomboni/5.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": false,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          0,
+          0,
+          464,
+          364
+        ]
+      },
+      "sha256": "624e0b3d23fa9d314c9c2ccd75322ce6c1fd41ceabf1efa2c3b63e1860f5e4f5"
+    },
+    {
+      "target": "images/Zombies/Zomboni/3.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": false,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          125,
+          112,
+          295,
+          279
+        ]
+      },
+      "sha256": "aeba9d3a50baf9a5bf6b60fa65a377ee74fdd64895583b74b6a78109d46c3b6a"
+    },
+    {
+      "target": "images/Zombies/Zomboni/BoomDie.gif",
+      "kind": "animations",
+      "model": "Zombie_charred_zamboni",
+      "animation": "anim_crumble",
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          122,
+          114,
+          296,
+          280
+        ]
+      },
+      "sha256": "4111ee69d1ba91b4766b59b1591a4b442701e15169949bdd20f455b2a556346d"
+    },
+    {
+      "target": "images/Zombies/Zomboni/4.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": false,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          115,
+          90,
+          321,
+          279
+        ]
+      },
+      "sha256": "6e68843fedb671dcc6b52b9eb2a877658b1b43114936d25d4d5928aae9d19891"
+    },
+    {
+      "target": "images/Zombies/Zomboni/1.gif",
+      "kind": "animations",
+      "model": "Zombie_zamboni",
+      "animation": "anim_drive",
+      "still": false,
+      "geometry": {
+        "size": [
+          464,
+          364
+        ],
+        "bounds": [
+          123,
+          112,
+          295,
+          279
+        ]
+      },
+      "sha256": "91f80c7d4db50675c36a30bb6ed86780c3f60995d5cc9f47f407040c9a61f111"
+    },
+    {
+      "target": "images/interface/SeedChooser_Background.png",
+      "kind": "static",
+      "source": "images/SeedChooser_Background.png",
+      "sha256": "98b9844c28cee1b813967f1180d01d83351306582b373719e5fe78d74ae4206e"
+    },
+    {
+      "target": "images/interface/Challenge_Window.png",
+      "kind": "static",
+      "source": "images/Challenge_Window.png",
+      "sha256": "0a83311f02794d3faf5899e215062cb5545d681a0d7a7a20a23941845f7b155c"
+    },
+    {
+      "target": "images/interface/Challenge_Window_Highlight.png",
+      "kind": "static",
+      "source": "images/Challenge_Window_Highlight.png",
+      "sha256": "ca04fe7cf9d5f88873855873cc02b71e30e2853b73d4091f8603d368ffd584ee"
+    },
+    {
+      "target": "images/interface/coinbank.png",
+      "kind": "static",
+      "source": "images/coinbank.png",
+      "sha256": "a5c4066a7b85382af3d2970c1b20d0c99ed4087320ec10c1e0ff983b509bfe29"
+    }
+  ],
+  "failed": []
+}

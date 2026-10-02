@@ -1,0 +1,450 @@
+{
+  "pak_sha256": "bda66f71374468f39a95c05301670ef19ae8b5ce817136840e3c03bcb14ea4b2",
+  "imported": [
+    {
+      "target": "images/interface/options_checkbox1.png",
+      "kind": "static",
+      "source": "images/options_checkbox1.png",
+      "sha256": "fc4e3f0b8ad36e6c926134de17a548c318b0c523f008a203e90f60f29b04ca70"
+    },
+    {
+      "target": "images/interface/Almanac_PlantCard.png",
+      "kind": "static",
+      "source": "images/Almanac_PlantCard.png",
+      "sha256": "fcac5af312af83ca739741eb574b796b7c53ea8990e9fea8bcc9480eb0bc416e"
+    },
+    {
+      "target": "images/interface/button_down_left.png",
+      "kind": "static",
+      "source": "images/button_down_left.png",
+      "sha256": "8c332a8872a3220d5590c3ba90aa82ddcf89f7679881403b7eda85455c5e3b06"
+    },
+    {
+      "target": "images/interface/Scary_Pot.png",
+      "kind": "static",
+      "source": "images/Scary_Pot.png",
+      "sha256": "149682726a251e5a73d9a53c9dff4f31683725275ada939ee6331dbce34fb825"
+    },
+    {
+      "target": "images/interface/button_left.png",
+      "kind": "static",
+      "source": "images/button_left.png",
+      "sha256": "618796287e3db8a4358f1debe2735529fd4d80b3126d2c00a19a90f6474a35e1"
+    },
+    {
+      "target": "images/interface/button_down_middle.png",
+      "kind": "static",
+      "source": "images/button_down_middle.png",
+      "sha256": "aabcb71984f772844c9998e6dab4db48ab31d220d067db8f7fbddbab5622c247"
+    },
+    {
+      "target": "images/interface/Almanac_GroundDay.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundDay.jpg",
+      "sha256": "d7826697c1ab17750678995bcfdda9dba2571fff989ea7faa45f81dfda79691f"
+    },
+    {
+      "target": "images/interface/Almanac_GroundIce.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundIce.jpg",
+      "sha256": "b7f4fe686729617a71e02cfb786644289c2425bac34b918c069b34c87b718108"
+    },
+    {
+      "target": "images/interface/FlagMeterLevelProgress.png",
+      "kind": "static",
+      "source": "images/FlagMeterLevelProgress.png",
+      "sha256": "63eb5d6261854bd502da07bef25162eb2758cdbb9fac66f992d3562193bd9f78"
+    },
+    {
+      "target": "images/interface/trophy_hi_res.png",
+      "kind": "static",
+      "source": "images/trophy_hi_res.png",
+      "sha256": "186b8fcaefa27dad5e7f06469777578a0ae8411c522e42a3113e4630c28a7eed"
+    },
+    {
+      "target": "images/interface/SodRollCap.png",
+      "kind": "static",
+      "source": "reanim/SodRollCap.png",
+      "sha256": "8886ebfa76d6c86a15611fe5c47bc28c59951b2cc881a8a766bde2f69905d325"
+    },
+    {
+      "target": "images/interface/Almanac_GroundNightPool.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundNightPool.jpg",
+      "sha256": "b7eed9884375e9ec57af6f49a93f2a6d0a5a1d29918aafd55bd2ad6efdb1eed5"
+    },
+    {
+      "target": "images/interface/SeedChooser_Button.png",
+      "kind": "static",
+      "source": "images/SeedChooser_Button.png",
+      "sha256": "0577c8e57a9cd19b88b9df5d39507982e7f80514bb6a02e1cc3646701241d7bb"
+    },
+    {
+      "target": "images/interface/Tombstones.png",
+      "kind": "static",
+      "source": "images/Tombstones.png",
+      "sha256": "35fb36f3b784c1b708551a0fe40b7c8a242eb7c71363bffc37675b457b8438dc"
+    },
+    {
+      "target": "images/interface/ZombieNoteSmall.png",
+      "kind": "static",
+      "source": "images/ZombieNoteSmall.png",
+      "sha256": "84db4270e862c941f678a07d868168aecb93c6374bb7dbd38c7f24cc315f0b1e"
+    },
+    {
+      "target": "images/interface/button_middle.png",
+      "kind": "static",
+      "source": "images/button_middle.png",
+      "sha256": "ab8cbea33cd8faf7d4fe590edc96eb017108bb23a66e6c6eda701f43dddad29f"
+    },
+    {
+      "target": "images/interface/button_right.png",
+      "kind": "static",
+      "source": "images/button_right.png",
+      "sha256": "de310b0bae6baf8627fbd4b3137598a4247bf24491aee8076c6a5728dbe21e70"
+    },
+    {
+      "target": "images/interface/button_down_right.png",
+      "kind": "static",
+      "source": "images/button_down_right.png",
+      "sha256": "e16fa3a3e1656810330098ab8c03fff04e195c4565bbae9e9599788a029c9bce"
+    },
+    {
+      "target": "images/interface/brain.png",
+      "kind": "static",
+      "source": "images/brain.png",
+      "sha256": "0aeee1a576e950462892109f69bd2289e56a66f395432fdba923ee1b787c25ab"
+    },
+    {
+      "target": "images/interface/Almanac_ZombieCard.png",
+      "kind": "static",
+      "source": "images/Almanac_ZombieCard.png",
+      "sha256": "56be10b9402f0c037176a43f680627d3936095fdd722d4f84e5ff258090a0f61"
+    },
+    {
+      "target": "images/interface/Almanac_GroundNight.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundNight.jpg",
+      "sha256": "473c66fd8de0a2eb9f31d09f3e57e73c6344e6ce442927cd5dbfbd7baafe7b78"
+    },
+    {
+      "target": "images/interface/Almanac_GroundRoof.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundRoof.jpg",
+      "sha256": "428276345926efc520f1264046466568f963163da34bca4f11d86a66f3b1d6e7"
+    },
+    {
+      "target": "images/interface/trophy.png",
+      "kind": "static",
+      "source": "images/trophy.png",
+      "sha256": "a338efdad994316a9f8507882627d64a9e6ee59090894a79858e7ea045777dca"
+    },
+    {
+      "target": "images/interface/SodRoll.png",
+      "kind": "static",
+      "source": "reanim/SodRoll.png",
+      "sha256": "08807bbee6ff263c08dbb58ea587a0833f52eb43becf0e762913d3184a9471cc"
+    },
+    {
+      "target": "images/interface/Tombstone_mounds.png",
+      "kind": "static",
+      "source": "images/Tombstone_mounds.png",
+      "sha256": "b5bc9b7fad5736bca16f0d0fedf6d48c03e44fb7353bbc33c9a2355e87cd8dc5"
+    },
+    {
+      "target": "images/interface/options_checkbox0.png",
+      "kind": "static",
+      "source": "images/options_checkbox0.png",
+      "sha256": "e18ff4feaeee4e46db85466890b8f869087ceffc0d824d8945f7a79c7ca86e80"
+    },
+    {
+      "target": "images/interface/Almanac_GroundPool.jpg",
+      "kind": "static",
+      "source": "images/Almanac_GroundPool.jpg",
+      "sha256": "4ceccc63ae5e1556ec6b8b64459ef742917e4555892169b89a82df9cc6844eb6"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_BG_Left.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_BG_Left.png",
+      "sha256": "742c00e46e7994d7d96b317cb26de820e11789bf70c5e8c4cdde3a79d8c69889"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Leaf3.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Leaf3.png",
+      "sha256": "25ac1488a8fd55bdbc4decd4af0e1f519078988204975985b25eda80d9754c96"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Adventure_button.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Adventure_button.png",
+      "sha256": "068e383b1d2f6710630ccbfcdd9d1bfa32fc3067306aeb3ce673553940dbe492"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Leaf5.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Leaf5.png",
+      "sha256": "72ad6ac25c69e1af398139b9845a05343f1d8c7427f1b6799ecada6274fdddb6"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Leaf1.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Leaf1.png",
+      "sha256": "53973139c191dc4fcb7197ec5810bc780c89a65b70b4db16fd487d203ee04c16"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Leaf4.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Leaf4.png",
+      "sha256": "b615b198505353a0bdc9ed6d88c29405072f6614307b3df97464f5b95913b05e"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_BG.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_BG.png",
+      "sha256": "e48b4616a16333d61155535d5a47dc384bb0bb77c58b230cbe12a75436363ae3"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Leaf2.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Leaf2.png",
+      "sha256": "4975181a59edb75554cbf5c138dbae888dc25d6c8fc803292e849c4a92209bd3"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_BG_Center.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_BG_Center.png",
+      "sha256": "eee609aaa9c94acfff129ee37b7cf11deaa8d2720875aa5c71c848d3756bccc8"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Almanac.png",
+      "kind": "static",
+      "source": "images/SelectorScreen_Almanac.png",
+      "sha256": "2342f1070080f16a45c351e162a5e65c8c017ba1e140ca8ce7cde1c6231f4cc8"
+    },
+    {
+      "target": "images/interface/background3.jpg",
+      "kind": "static",
+      "source": "images/background3.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "de249101727f29a08c35a6543d55c454736b63534fb2070415c67132e335ea06"
+    },
+    {
+      "target": "images/interface/background1.jpg",
+      "kind": "static",
+      "source": "images/background1.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "9317eb96c03b5292d07a895e18b6987a56171d9c80292d0be06ca85b360be3d0"
+    },
+    {
+      "target": "images/interface/background4.jpg",
+      "kind": "static",
+      "source": "images/background4.png",
+      "crop": [
+        130,
+        0,
+        1530,
+        600
+      ],
+      "sha256": "2e1195a89db0238ea8aec0ebe38065ebde5ac1c4d30248333339a49eef93a2c8"
+    },
+    {
+      "target": "images/interface/background5.jpg",
+      "kind": "static",
+      "source": "images/background5.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "28698464be83d625b9d38eca45791cffc7032ef21e376c6f761f0d8206246b0a"
+    },
+    {
+      "target": "images/interface/background1unsodded.jpg",
+      "kind": "static",
+      "source": "images/background1unsodded.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "2baf415f2024a0d699df4483193215576e7b742ac363d9f05a5b6c67c856c864"
+    },
+    {
+      "target": "images/interface/background2.jpg",
+      "kind": "static",
+      "source": "images/background2.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "fdf1f444cd03d0d547c17912c6b22a35ff72c363d5d3f4ab18591b5991f648cd"
+    },
+    {
+      "target": "images/interface/background3.png",
+      "kind": "static",
+      "source": "images/background3.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "2c30c5363d0207e3947f44a649cd89b66f9fb0541b76a19fdb86ee2d139f9217"
+    },
+    {
+      "target": "images/interface/background3.webp",
+      "kind": "static",
+      "source": "images/background3.png",
+      "crop": [
+        133,
+        0,
+        1533,
+        600
+      ],
+      "sha256": "526377f3071f5bd3d1504717af7d15107e19aa8025f7383a49def94205aef116"
+    },
+    {
+      "target": "images/interface/Challenge_Background.jpg",
+      "kind": "static",
+      "source": "images/Challenge_Background.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "db5c7556227243c8b56b9d8fe562c6bd974088ebbebd440ea309a296a4323e12"
+    },
+    {
+      "target": "images/interface/Almanac_PlantBack.jpg",
+      "kind": "static",
+      "source": "images/Almanac_PlantBack.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "f7b9ee2cd324739771a679ab124b6fecd9c27ccdc3d8d2d1db9905486ffda572"
+    },
+    {
+      "target": "images/interface/Almanac_ZombieBack.jpg",
+      "kind": "static",
+      "source": "images/Almanac_ZombieBack.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "eb3b1984e9c4324dee7ccdb192e0dcf68ab03935b8762f35586519744ea7a11f"
+    },
+    {
+      "target": "images/interface/AwardScreen_Back.jpg",
+      "kind": "static",
+      "source": "images/AwardScreen_Back.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "6a86e6fcf085aa2f0cc0aa5e5be4295b3d8b76696be7438e31d6bada719cd6e7"
+    },
+    {
+      "target": "images/interface/Almanac_IndexBack.png",
+      "kind": "static",
+      "source": "images/Almanac_IndexBack.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "9cd6c2360da5fea84ae16c12f823208a0bfc911c19f10038bf4be00f323187a5"
+    },
+    {
+      "target": "images/interface/Almanac_IndexBack.jpg",
+      "kind": "static",
+      "source": "images/Almanac_IndexBack.png",
+      "crop": [
+        83,
+        0,
+        983,
+        600
+      ],
+      "sha256": "e5a4f033f2ae5fa159e854ceb0d337fd32a12f3b499b2af53684402a2e0bf898"
+    },
+    {
+      "target": "images/Plants/PB00.png",
+      "kind": "static",
+      "source": "images/ProjectilePea.png",
+      "sha256": "99d13db5bca3fdbefa4bab5b3400d09d5a7fda503608dca1a009ba503473c5f2"
+    },
+    {
+      "target": "images/Plants/PB01.png",
+      "kind": "static",
+      "source": "images/ProjectileSnowPea.png",
+      "sha256": "1f786af6b864175136c3911b850ddd06db030b55e92ad2a451e132e74f7df15f"
+    },
+    {
+      "target": "images/Plants/PB00.gif",
+      "kind": "static",
+      "source": "images/ProjectilePea.png",
+      "sha256": "a02bbdae4ec51e4afae951a981053e09570714ddeebd36ea9733d33e16feeeaa"
+    },
+    {
+      "target": "images/Plants/PB01.gif",
+      "kind": "static",
+      "source": "images/ProjectileSnowPea.png",
+      "sha256": "f2452471c14e4f187452cfd5cefff414db8591d4c6a12f9345ae921bcc774def"
+    },
+    {
+      "target": "images/Plants/Starfruit/Star.gif",
+      "kind": "static",
+      "source": "images/Projectile_star.png",
+      "sha256": "98f17472e2590a5deea2989e0bf13ca0c2c17c84ce10d7e7d18d4ddc4d8f5cfe"
+    },
+    {
+      "target": "images/Plants/Cactus/Projectile32.png",
+      "kind": "static",
+      "source": "images/ProjectileCactus.png",
+      "sha256": "643e6f9ce64af0181a82fdf34526def87e652306eeae52b68d52caf69f3dde88"
+    },
+    {
+      "target": "images/interface/Shovel/0.gif",
+      "kind": "static",
+      "source": "images/Shovel_hi_res.png",
+      "sha256": "443e99b5a682625066361ed78567fd178ef5ef7e4b380f0b7787d31bc4eb26c7"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Minigames_button.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Challenges_button.png",
+      "sha256": "b39c7a39834ab00acd0436c6d6390215041b8669de342b518645cc2b33caa365"
+    },
+    {
+      "target": "images/interface/selector/SelectorScreen_Puzzle_button.png",
+      "kind": "static",
+      "source": "reanim/SelectorScreen_Vasebreaker_button.png",
+      "sha256": "0cf92e6114a21acf4b571e174909cdfc425e03ee9f62333f67576469631567b3"
+    }
+  ],
+  "failed": []
+}
